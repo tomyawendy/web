@@ -309,6 +309,47 @@ img { max-width: 100%; display: block; }
     min-height: auto;
     padding: 112px 0 118px;
 }
+.insights-figma-stage {
+    position: relative;
+    height: 813px;
+    padding: 0;
+    background: #fff url("../figma/news-stage.png") center top / 1924px 813px no-repeat;
+}
+.insights-figma-stage > .container {
+    visibility: hidden;
+}
+.insights-stage-hotspots {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+}
+.insights-stage-hotspots a {
+    position: absolute;
+    display: block;
+    color: transparent;
+    font-size: 0;
+    text-decoration: none;
+}
+.insights-hotspot-all {
+    left: calc(50% + 566px);
+    top: 198px;
+    width: 200px;
+    height: 36px;
+}
+.insights-hotspot-card {
+    top: 285px;
+    width: 448px;
+    height: 420px;
+}
+.insights-hotspot-card-1 {
+    left: calc(50% - 704px);
+}
+.insights-hotspot-card-2 {
+    left: calc(50% - 224px);
+}
+.insights-hotspot-card-3 {
+    left: calc(50% + 256px);
+}
 .listing-page .container {
     max-width: 1410px;
 }
