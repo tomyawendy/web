@@ -306,6 +306,7 @@ img { max-width: 100%; display: block; }
     background: #fff;
 }
 .insights-entry-stage {
+    min-height: auto;
     padding: 112px 0 118px;
 }
 .listing-page .container {
