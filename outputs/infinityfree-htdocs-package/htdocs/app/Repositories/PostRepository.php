@@ -1,0 +1,90 @@
+<?php
+
+declare(strict_types=1);
+
+namespace App\Repositories;
+
+class PostRepository extends BaseRepository
+{
+    public function allByType(string $type, bool $publishedOnly = false): array
+    {
+        $where = 'WHERE p.type = :type';
+        if ($publishedOnly) {
+            $where .= ' AND p.status = "published"';
+        }
+
+        $locale = current_locale();
+        $fallbackLocale = (string) config('app.locale', 'en');
+
+        return $this->fetchAll(
+            "SELECT p.*,
+                    c.name AS category_name,
+                    COALESCE(t_current.title, t_fallback.title) AS title,
+                    COALESCE(t_current.excerpt, t_fallback.excerpt) AS excerpt
+             FROM posts p
+             LEFT JOIN post_categories c ON c.id = p.category_id
+             LEFT JOIN post_translations t_current ON t_current.post_id = p.id AND t_current.locale = :locale
+             LEFT JOIN post_translations t_fallback ON t_fallback.post_id = p.id AND t_fallback.locale = :fallback_locale
+             {$where}
+             ORDER BY p.is_pinned DESC, p.published_at DESC, p.id DESC",
+            ['type' => $type, 'locale' => $locale, 'fallback_locale' => $fallbackLocale]
+        );
+    }
+
+    public function categories(string $type): array
+    {
+        return $this->fetchAll('SELECT * FROM post_categories WHERE type = :type ORDER BY sort_order ASC, id DESC', ['type' => $type]);
+    }
+
+    public function find(int $id): ?array
+    {
+        $post = $this->fetchOne('SELECT * FROM posts WHERE id = :id', ['id' => $id]);
+        if (!$post) {
+            return null;
+        }
+
+        $post['translations'] = $this->fetchAll('SELECT * FROM post_translations WHERE post_id = :id', ['id' => $id]);
+        return $post;
+    }
+
+    public function findBySlug(string $slug, string $type): ?array
+    {
+        $post = $this->fetchOne('SELECT * FROM posts WHERE slug = :slug AND type = :type AND status = "published"', ['slug' => $slug, 'type' => $type]);
+        if (!$post) {
+            return null;
+        }
+
+        $post['translations'] = $this->fetchAll('SELECT * FROM post_translations WHERE post_id = :id', ['id' => $post['id']]);
+        return $post;
+    }
+
+    public function save(array $post, array $translations): int
+    {
+        if (!empty($post['id'])) {
+            $this->execute(
+                'UPDATE posts SET type = :type, category_id = :category_id, slug = :slug, cover_image = :cover_image, attachment_path = :attachment_path, attachment_name = :attachment_name, status = :status, is_pinned = :is_pinned, is_featured = :is_featured, sort_order = :sort_order, published_at = :published_at, updated_at = NOW() WHERE id = :id',
+                $post
+            );
+            $postId = (int) $post['id'];
+            $this->execute('DELETE FROM post_translations WHERE post_id = :post_id', ['post_id' => $postId]);
+        } else {
+            $this->execute(
+                'INSERT INTO posts (type, category_id, slug, cover_image, attachment_path, attachment_name, status, is_pinned, is_featured, sort_order, published_at, created_at, updated_at)
+                 VALUES (:type, :category_id, :slug, :cover_image, :attachment_path, :attachment_name, :status, :is_pinned, :is_featured, :sort_order, :published_at, NOW(), NOW())',
+                $post
+            );
+            $postId = $this->lastInsertId();
+        }
+
+        foreach ($translations as $translation) {
+            $translation['post_id'] = $postId;
+            $this->execute(
+                'INSERT INTO post_translations (post_id, locale, title, excerpt, content, seo_title, seo_keywords, seo_description)
+                 VALUES (:post_id, :locale, :title, :excerpt, :content, :seo_title, :seo_keywords, :seo_description)',
+                $translation
+            );
+        }
+
+        return $postId;
+    }
+}

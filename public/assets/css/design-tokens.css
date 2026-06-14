@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap");
+
+:root {
+    /* Planet Aviation design tokens.
+       This file is the shared source of truth for repeated visual values. */
+    --color-brand-cyan: #49DFD7;
+    --color-brand-blue-start: #11D1DF;
+    --color-brand-blue-end: #060EE0;
+    --color-brand-navy: #0B2B5E;
+    --color-brand-ink: #0F1125;
+    --color-header-link: #475569;
+    --color-text-secondary: #475569;
+    --color-text: #22365e;
+    --color-muted: #CBD5E1;
+    --color-line: #dfe5ec;
+    --color-panel: #F8F9FA;
+    --color-footer: #11152d;
+    --color-surface-white: #FFFFFF;
+
+    --font-body: "Inter", "Segoe UI", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
+    --font-display: "Poppins", "Inter", "Segoe UI", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
+    --font-nav: "Manrope", "Inter", "Segoe UI", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
+    --font-yahei: "Microsoft YaHei", "Microsoft YaHei UI", sans-serif;
+    --font-yahei-ui: "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
+
+    --layout-container: 1410px;
+    --layout-header-height: 116px;
+    --layout-gutter-desktop: 32px;
+    --layout-gutter-mobile: 16px;
+    --layout-section-gap: 24px;
+
+    --hero-min-height: 646px;
+    --hero-shell-max-width: 1410px;
+    --hero-card-width: 430px;
+    --hero-card-padding-top: 56px;
+    --hero-card-padding-right: 34px;
+    --hero-card-padding-bottom: 22px;
+    --hero-card-padding-left: 40px;
+    --hero-kicker-size: 24px;
+    --hero-kicker-width: 360px;
+    --hero-title-size: 24px;
+    --hero-title-width: 376px;
+    --hero-title-line-height: 1.12;
+    --hero-title-spacing: 0;
+    --hero-subtitle-size: 16px;
+    --hero-subtitle-line-height: 1.5;
+    --hero-button-min-width: 132px;
+    --hero-button-min-height: 28px;
+    --hero-button-radius: 18px;
+    --hero-button-padding-x: 18px;
+    --hero-button-padding-y: 8px;
+
+    --lookup-strip-bg: #F2F2F2;
+    --lookup-title-size: 20px;
+    --lookup-title-line-height: 1.2;
+    --lookup-pill-height: 32px;
+    --lookup-pill-padding-x: 18px;
+    --lookup-pill-radius: 2px;
+    --lookup-pill-bg: #0B2B5E;
+    --lookup-pill-text: #FFFFFF;
+}
