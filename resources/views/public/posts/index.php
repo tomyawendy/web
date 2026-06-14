@@ -1,14 +1,16 @@
-<section class="news-section listing-page <?= $type === 'news' ? 'insights-entry-stage' : 'documents-entry-stage' ?>">
+<section class="news-section listing-page <?= $type === 'news' ? 'insights-entry-stage insights-figma-stage' : 'documents-entry-stage' ?>">
+    <?php if ($type === 'news'): ?>
+        <?php if ($posts): ?>
+            <nav class="insights-stage-hotspots" aria-label="Insights quick links">
+                <a class="insights-hotspot-all" href="<?= e(app_url('insights')) ?>"><?= e(setting_value($settings ?? [], 'news_view_all_label', 'VIEW ALL ARTICLES')) ?></a>
+                <?php foreach (array_slice($posts, 0, 3) as $index => $item): ?>
+                    <a class="insights-hotspot-card insights-hotspot-card-<?= e((string) ($index + 1)) ?>" href="<?= e(app_url('insights/' . $item['slug'])) ?>"><?= e($item['title']) ?></a>
+                <?php endforeach; ?>
+            </nav>
+        <?php endif; ?>
+    <?php endif; ?>
     <div class="container">
-        <?php if ($type === 'news'): ?>
-            <?php
-            $headingKicker = setting_value($settings ?? [], 'news_kicker_label', 'Insights');
-            $headingTitle = setting_value($settings ?? [], 'news_heading', 'Latest News');
-            $headingActionText = setting_value($settings ?? [], 'news_view_all_label', 'VIEW ALL ARTICLES');
-            $headingActionHref = app_url('insights');
-            include base_path('resources/views/public/components/section_heading.php');
-            ?>
-        <?php else: ?>
+        <?php if ($type !== 'news'): ?>
             <div class="service-head listing-page-head">
                 <div>
                     <span class="tiny-link"><?= e(setting_value($settings ?? [], 'nav_documents_label', 'Documents')) ?></span>
