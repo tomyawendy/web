@@ -1,0 +1,43 @@
+name: Deploy to InfinityFree
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Write production database config
+        run: |
+          cat > outputs/infinityfree-htdocs-package/htdocs/config/database.php <<'PHP'
+          <?php
+
+          declare(strict_types=1);
+
+          return [
+              'driver' => 'mysql',
+              'host' => '${{ secrets.INFINITYFREE_DB_HOST }}',
+              'port' => '3306',
+              'database' => '${{ secrets.INFINITYFREE_DB_DATABASE }}',
+              'username' => '${{ secrets.INFINITYFREE_DB_USERNAME }}',
+              'password' => '${{ secrets.INFINITYFREE_DB_PASSWORD }}',
+              'charset' => 'utf8mb4',
+              'collation' => 'utf8mb4_unicode_ci',
+          ];
+          PHP
+
+      - name: Upload htdocs package by FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.INFINITYFREE_FTP_SERVER }}
+          username: ${{ secrets.INFINITYFREE_FTP_USERNAME }}
+          password: ${{ secrets.INFINITYFREE_FTP_PASSWORD }}
+          protocol: ftp
+          port: 21
+          local-dir: outputs/infinityfree-htdocs-package/htdocs/
+          server-dir: htdocs/
+          log-level: standard
