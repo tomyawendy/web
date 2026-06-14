@@ -16,3 +16,7 @@
         <div class="post-detail-visual"<?= background_style($post['cover_image'] ?? '') ?>></div>
     </div>
 </section>
+<?php $homeContactStage = true; ?>
+<?php include base_path('resources/views/public/partials/contact_block.php'); ?>
+<?php $homeNewsletterStage = true; ?>
+<?php include base_path('resources/views/public/partials/newsletter.php'); ?>

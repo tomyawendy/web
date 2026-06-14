@@ -1,12 +1,22 @@
 <section class="news-section listing-page <?= $type === 'news' ? 'insights-entry-stage' : 'documents-entry-stage' ?>">
     <div class="container">
-        <div class="service-head listing-page-head">
-            <div>
-                <span class="tiny-link"><?= e($type === 'news' ? setting_value($settings ?? [], 'news_kicker_label', 'INSIGHT') : setting_value($settings ?? [], 'nav_documents_label', 'Documents')) ?></span>
-                <h2><?= e($title) ?></h2>
-                <p><?= e($type === 'news' ? 'Latest aviation market updates, operational notices, and logistics insights from Planet Aviation.' : 'Official documents, operational notices, and downloadable files for quick reference.') ?></p>
+        <?php if ($type === 'news'): ?>
+            <?php
+            $headingKicker = setting_value($settings ?? [], 'news_kicker_label', 'Insights');
+            $headingTitle = setting_value($settings ?? [], 'news_heading', 'Latest News');
+            $headingActionText = setting_value($settings ?? [], 'news_view_all_label', 'VIEW ALL ARTICLES');
+            $headingActionHref = app_url('insights');
+            include base_path('resources/views/public/components/section_heading.php');
+            ?>
+        <?php else: ?>
+            <div class="service-head listing-page-head">
+                <div>
+                    <span class="tiny-link"><?= e(setting_value($settings ?? [], 'nav_documents_label', 'Documents')) ?></span>
+                    <h2><?= e($title) ?></h2>
+                    <p><?= e('Official documents, operational notices, and downloadable files for quick reference.') ?></p>
+                </div>
             </div>
-        </div>
+        <?php endif; ?>
         <?php if ($posts): ?>
             <div class="news-grid">
                 <?php foreach ($posts as $item): ?>
@@ -29,3 +39,7 @@
         <?php endif; ?>
     </div>
 </section>
+<?php $homeContactStage = true; ?>
+<?php include base_path('resources/views/public/partials/contact_block.php'); ?>
+<?php $homeNewsletterStage = true; ?>
+<?php include base_path('resources/views/public/partials/newsletter.php'); ?>
