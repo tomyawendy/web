@@ -639,6 +639,13 @@ html[lang="es"] .contact-block.home-contact-stage > .container,
 html[lang="es"] .home-contact-stage > .container {
     visibility: visible !important;
 }
+html[lang="es"] .home-contact-stage .contact-copy,
+html[lang="es"] .home-contact-stage .contact-copy *,
+html[lang="es"] .home-contact-stage .contact-visual,
+html[lang="es"] .home-newsletter-stage .newsletter-copy,
+html[lang="es"] .home-newsletter-stage .newsletter-copy * {
+    visibility: visible !important;
+}
 html[lang="es"] .home-newsletter-stage {
     min-height: 0;
     padding: 84px 0;
