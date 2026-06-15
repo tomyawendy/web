@@ -97,12 +97,14 @@ html[lang="es"] .hero-panel-home {
 html[lang="es"] .hero-panel-home::before {
     content: "";
     position: absolute;
-    left: calc(50% - 704px);
+    left: calc(50% - 712px);
     top: 0;
     z-index: 1;
-    width: 760px;
-    height: 392px;
-    background: linear-gradient(90deg, rgba(239, 249, 253, 1) 0%, rgba(239, 249, 253, 1) 78%, rgba(239, 249, 253, 0.96) 91%, rgba(239, 249, 253, 0) 100%);
+    width: 830px;
+    height: 410px;
+    background:
+        linear-gradient(90deg, rgba(239, 249, 253, 1) 0%, rgba(239, 249, 253, 0.98) 64%, rgba(239, 249, 253, 0.74) 84%, rgba(239, 249, 253, 0) 100%),
+        linear-gradient(180deg, rgba(239, 249, 253, 0.82) 0%, rgba(239, 249, 253, 0.98) 58%, rgba(239, 249, 253, 0.38) 100%);
     pointer-events: none;
 }
 html[lang="es"] .hero-panel-home .hero-home-shell {
@@ -115,41 +117,43 @@ html[lang="es"] .hero-home-image {
 }
 html[lang="es"] .hero-home-card {
     display: block;
-    left: 24px;
-    top: 60px;
-    width: 620px;
+    left: 28px;
+    top: 56px;
+    width: 650px;
     min-height: 330px;
     background: transparent;
 }
 html[lang="es"] .hero-kicker {
-    margin-bottom: 10px;
-    width: 520px;
-    max-width: 520px;
-    font-size: 34px;
+    margin-bottom: 14px;
+    width: 600px;
+    max-width: 600px;
+    font-size: 45px;
     line-height: 1.02;
-    letter-spacing: -0.026em;
+    font-weight: 700;
+    letter-spacing: -0.036em;
 }
 html[lang="es"] .hero-home-card h1 {
-    width: 520px;
-    max-width: 520px;
-    margin-bottom: 18px;
-    font-size: 38px;
-    line-height: 1.04;
-    letter-spacing: -0.044em;
+    width: 590px;
+    max-width: 590px;
+    margin-bottom: 24px;
+    font-size: 43px;
+    line-height: 1.05;
+    font-weight: 600;
+    letter-spacing: -0.048em;
 }
 html[lang="es"] .hero-subtitle {
-    max-width: 390px;
-    margin-bottom: 22px;
-    font-size: 11px;
-    line-height: 1.55;
+    max-width: 485px;
+    margin-bottom: 25px;
+    font-size: 13px;
+    line-height: 1.62;
 }
 html[lang="es"] .hero-button {
-    min-width: 152px;
-    min-height: 38px;
-    padding: 0 28px;
-    font-size: 11px;
-    line-height: 38px;
-    border-radius: 20px;
+    min-width: 222px;
+    min-height: 58px;
+    padding: 0 38px;
+    font-size: 15px;
+    line-height: 58px;
+    border-radius: 30px;
 }
 html[lang="es"] .home-about-section {
     height: auto;
