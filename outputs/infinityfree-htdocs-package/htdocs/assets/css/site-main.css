@@ -647,9 +647,7 @@ html[lang="es"] .service-hotspots {
 html[lang="es"] .why-section {
     height: 709px;
     padding: 0;
-    background:
-        linear-gradient(90deg, rgba(12, 42, 93, 0.995), rgba(12, 42, 93, 0.975)),
-        url("../figma/why-stage.png") center / cover no-repeat !important;
+    background: #0c2a5d !important;
     overflow: hidden;
     display: flex;
     align-items: center;
