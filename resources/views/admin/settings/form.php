@@ -52,6 +52,7 @@ $groups = [
             ['name' => 'services_heading', 'label' => 'Services Heading', 'type' => 'input', 'default' => 'Delivering Service Excellence'],
             ['name' => 'services_intro', 'label' => 'Services Intro', 'type' => 'textarea', 'default' => 'Planet Aviation offers a comprehensive portfolio of air cargo products and services. Every shipment is handled with precision, care, and professionalism.'],
             ['name' => 'services_fourth_home_title', 'label' => 'Fourth Home Service Title', 'type' => 'input', 'default' => 'General Sales & Service Agent'],
+            ['name' => 'services_impact_label', 'label' => 'Services Impact Label', 'type' => 'input', 'default' => 'Our Impact'],
             ['name' => 'services_learn_more_label', 'label' => 'Services Learn More Label', 'type' => 'input', 'default' => 'LEARN MORE'],
             ['name' => 'why_heading', 'label' => 'Why Heading', 'type' => 'input', 'default' => 'Why Partners Choose Us'],
             ['name' => 'why_background_image', 'label' => 'Why Background Image Path', 'type' => 'input', 'default' => ''],
@@ -95,6 +96,7 @@ $groups = [
         'title' => 'Contact, Newsletter, Footer & Messages',
         'description' => 'Lead form labels, newsletter block, footer copy, and the fallback messages used by the site.',
         'fields' => [
+            ['name' => 'contact_kicker_label', 'label' => 'Contact Kicker Label', 'type' => 'input', 'default' => 'CONTACT'],
             ['name' => 'contact_heading', 'label' => 'Contact Heading', 'type' => 'input', 'default' => 'Contact Us'],
             ['name' => 'contact_intro', 'label' => 'Contact Intro', 'type' => 'textarea', 'default' => ''],
             ['name' => 'contact_visual_image', 'label' => 'Contact Visual Image Path', 'type' => 'input', 'default' => ''],
@@ -106,6 +108,7 @@ $groups = [
             ['name' => 'contact_submit_text', 'label' => 'Contact Submit Text', 'type' => 'input', 'default' => 'SUBMIT'],
             ['name' => 'newsletter_title', 'label' => 'Newsletter Title', 'type' => 'textarea', 'default' => 'Sign Up To The Logistics Pulse Newsletter'],
             ['name' => 'newsletter_body', 'label' => 'Newsletter Body', 'type' => 'textarea', 'default' => ''],
+            ['name' => 'newsletter_kicker_label', 'label' => 'Newsletter Kicker Label', 'type' => 'input', 'default' => 'NEWSLETTER'],
             ['name' => 'newsletter_placeholder', 'label' => 'Newsletter Placeholder', 'type' => 'input', 'default' => 'Enter your email address'],
             ['name' => 'newsletter_submit_text', 'label' => 'Newsletter Submit Text', 'type' => 'input', 'default' => 'SUBMIT'],
             ['name' => 'newsletter_background_image', 'label' => 'Newsletter Background Image Path', 'type' => 'input', 'default' => ''],
