@@ -673,6 +673,74 @@ html[lang="es"] .site-footer {
 html[lang="es"] .site-footer > * {
     visibility: visible;
 }
+html[lang="es"] .about-page-stage {
+    height: auto;
+    min-height: 560px;
+    padding: 104px 0 112px;
+    background: #fff;
+}
+html[lang="es"] .about-page-stage .home-about-shell {
+    visibility: visible;
+    display: grid;
+    grid-template-columns: minmax(0, 0.95fr) minmax(420px, 0.85fr);
+    gap: 72px;
+    align-items: start;
+}
+html[lang="es"] .about-page-stage .home-about-copy {
+    max-width: 760px;
+}
+html[lang="es"] .about-page-stage .home-about-copy h2 {
+    margin-bottom: 28px;
+    font-size: 52px;
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+}
+html[lang="es"] .about-page-stage .home-about-copy p {
+    max-width: 760px;
+    font-size: 18px;
+    line-height: 1.82;
+    color: #404a5f;
+}
+html[lang="es"] .about-page-stage .home-about-shell::after {
+    content: "";
+    display: block;
+    width: 100%;
+    min-height: 420px;
+    border-radius: 18px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.04)), url("../figma/about-photo.png") center/cover no-repeat;
+}
+html[lang="es"] .services-entry-stage {
+    height: auto;
+    min-height: 0;
+    padding: 104px 0 116px;
+    background: var(--lookup-strip-bg);
+}
+html[lang="es"] .services-entry-stage > .container {
+    visibility: visible;
+}
+html[lang="es"] .services-entry-list {
+    margin-top: 44px;
+}
+html[lang="es"] .insights-figma-stage {
+    height: auto;
+    min-height: 0;
+    padding: 112px 0 118px;
+    background: #fff;
+}
+html[lang="es"] .insights-figma-stage > .container {
+    visibility: visible;
+}
+html[lang="es"] .insights-stage-hotspots {
+    display: none;
+}
+html[lang="es"] .insights-entry-stage .service-head h2 {
+    font-size: 44px;
+    line-height: 1.08;
+}
+html[lang="es"] .post-back-link {
+    background: #eef5ff;
+    color: var(--color-brand-navy);
+}
 
 .about-page { padding: 66px 0 0; }
 .about-page-shell { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; padding: 64px 0 70px; }

@@ -83,6 +83,8 @@ $groups = [
             ['name' => 'news_heading', 'label' => 'News Heading', 'type' => 'input', 'default' => 'Latest News'],
             ['name' => 'news_view_all_label', 'label' => 'News View All Label', 'type' => 'input', 'default' => 'VIEW ALL ARTICLES'],
             ['name' => 'read_more_label', 'label' => 'Read More Label', 'type' => 'input', 'default' => 'READ MORE'],
+            ['name' => 'back_to_insights_label', 'label' => 'Back To Insights Label', 'type' => 'input', 'default' => 'BACK TO INSIGHTS'],
+            ['name' => 'back_to_documents_label', 'label' => 'Back To Documents Label', 'type' => 'input', 'default' => 'BACK TO DOCUMENTS'],
             ['name' => 'download_attachment_label', 'label' => 'Download Attachment Label', 'type' => 'input', 'default' => 'DOWNLOAD ATTACHMENT'],
             ['name' => 'documents_intro', 'label' => 'Documents Intro', 'type' => 'textarea', 'default' => 'Official documents, operational notices, and downloadable files for quick reference.'],
             ['name' => 'empty_insights_title', 'label' => 'Empty Insights Title', 'type' => 'input', 'default' => 'No insights published yet.'],

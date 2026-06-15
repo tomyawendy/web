@@ -16,6 +16,8 @@ INSERT INTO site_settings (locale, setting_key, setting_value, updated_at) VALUE
 ('es', 'services_impact_label', 'Nuestro impacto', NOW()),
 ('es', 'contact_kicker_label', 'CONTACTO', NOW()),
 ('es', 'newsletter_kicker_label', 'BOLETÍN', NOW()),
+('es', 'back_to_insights_label', 'VOLVER A NOTICIAS', NOW()),
+('es', 'back_to_documents_label', 'VOLVER A DOCUMENTOS', NOW()),
 ('es', 'documents_intro', 'Documentos oficiales, avisos operativos y archivos descargables para consulta rápida.', NOW()),
 ('es', 'empty_insights_title', 'Aún no hay noticias publicadas.', NOW()),
 ('es', 'empty_insights_body', 'Cuando el contenido se publique en el CMS, aparecerá aquí automáticamente.', NOW()),

@@ -14,7 +14,9 @@
                     <p><a class="quote-button" href="<?= e(media_url($post['attachment_path'])) ?>" target="_blank"><?= e(setting_value($settings ?? [], 'download_attachment_label', 'DOWNLOAD ATTACHMENT')) ?></a></p>
                 <?php endif; ?>
             </div>
-            <a class="post-back-link" href="<?= e(app_url($post['type'] === 'news' ? 'insights' : 'documents')) ?>"><?= e($post['type'] === 'news' ? 'BACK TO INSIGHTS' : 'BACK TO DOCUMENTS') ?></a>
+            <?php $backToInsightsDefault = current_locale() === 'es' ? 'VOLVER A NOTICIAS' : 'BACK TO INSIGHTS'; ?>
+            <?php $backToDocumentsDefault = current_locale() === 'es' ? 'VOLVER A DOCUMENTOS' : 'BACK TO DOCUMENTS'; ?>
+            <a class="post-back-link" href="<?= e(app_url($post['type'] === 'news' ? 'insights' : 'documents')) ?>"><?= e($post['type'] === 'news' ? setting_value($settings ?? [], 'back_to_insights_label', $backToInsightsDefault) : setting_value($settings ?? [], 'back_to_documents_label', $backToDocumentsDefault)) ?></a>
         </div>
         <div class="post-detail-visual"<?= background_style($post['cover_image'] ?? '') ?>></div>
     </div>

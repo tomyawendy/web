@@ -74,6 +74,8 @@ class SettingController extends Controller
                 'news_heading' => (string) $this->request->input("news_heading_{$locale}"),
                 'news_view_all_label' => (string) $this->request->input("news_view_all_label_{$locale}"),
                 'read_more_label' => (string) $this->request->input("read_more_label_{$locale}"),
+                'back_to_insights_label' => (string) $this->request->input("back_to_insights_label_{$locale}"),
+                'back_to_documents_label' => (string) $this->request->input("back_to_documents_label_{$locale}"),
                 'download_attachment_label' => (string) $this->request->input("download_attachment_label_{$locale}"),
                 'documents_intro' => (string) $this->request->input("documents_intro_{$locale}"),
                 'empty_insights_title' => (string) $this->request->input("empty_insights_title_{$locale}"),
