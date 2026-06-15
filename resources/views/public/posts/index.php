@@ -15,7 +15,7 @@
                 <div>
                     <span class="tiny-link"><?= e(setting_value($settings ?? [], 'nav_documents_label', 'Documents')) ?></span>
                     <h2><?= e($title) ?></h2>
-                    <p><?= e('Official documents, operational notices, and downloadable files for quick reference.') ?></p>
+                    <p><?= e(setting_value($settings ?? [], 'documents_intro', 'Official documents, operational notices, and downloadable files for quick reference.')) ?></p>
                 </div>
             </div>
         <?php endif; ?>
@@ -35,8 +35,8 @@
             </div>
         <?php else: ?>
             <div class="listing-empty">
-                <h3><?= e($type === 'news' ? 'No insights published yet.' : 'No documents available yet.') ?></h3>
-                <p><?= e($type === 'news' ? 'Once content is published in the CMS, it will appear here automatically.' : 'Upload and publish documents in the backend, then they will appear here automatically.') ?></p>
+                <h3><?= e($type === 'news' ? setting_value($settings ?? [], 'empty_insights_title', 'No insights published yet.') : setting_value($settings ?? [], 'empty_documents_title', 'No documents available yet.')) ?></h3>
+                <p><?= e($type === 'news' ? setting_value($settings ?? [], 'empty_insights_body', 'Once content is published in the CMS, it will appear here automatically.') : setting_value($settings ?? [], 'empty_documents_body', 'Upload and publish documents in the backend, then they will appear here automatically.')) ?></p>
             </div>
         <?php endif; ?>
     </div>

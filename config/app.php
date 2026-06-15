@@ -8,7 +8,7 @@ return [
     'locale' => 'en',
     'locales' => [
         'en' => 'English',
-        'es' => 'Espanol',
+        'es' => 'Español',
     ],
     'admin_prefix' => 'backstage',
     'uploads' => [

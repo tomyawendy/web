@@ -83,6 +83,11 @@ $groups = [
             ['name' => 'news_view_all_label', 'label' => 'News View All Label', 'type' => 'input', 'default' => 'VIEW ALL ARTICLES'],
             ['name' => 'read_more_label', 'label' => 'Read More Label', 'type' => 'input', 'default' => 'READ MORE'],
             ['name' => 'download_attachment_label', 'label' => 'Download Attachment Label', 'type' => 'input', 'default' => 'DOWNLOAD ATTACHMENT'],
+            ['name' => 'documents_intro', 'label' => 'Documents Intro', 'type' => 'textarea', 'default' => 'Official documents, operational notices, and downloadable files for quick reference.'],
+            ['name' => 'empty_insights_title', 'label' => 'Empty Insights Title', 'type' => 'input', 'default' => 'No insights published yet.'],
+            ['name' => 'empty_insights_body', 'label' => 'Empty Insights Body', 'type' => 'textarea', 'default' => 'Once content is published in the CMS, it will appear here automatically.'],
+            ['name' => 'empty_documents_title', 'label' => 'Empty Documents Title', 'type' => 'input', 'default' => 'No documents available yet.'],
+            ['name' => 'empty_documents_body', 'label' => 'Empty Documents Body', 'type' => 'textarea', 'default' => 'Upload and publish documents in the backend, then they will appear here automatically.'],
         ],
     ],
     [

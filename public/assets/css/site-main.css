@@ -401,13 +401,19 @@ img { max-width: 100%; display: block; }
 .listing-page .news-card {
     gap: 10px;
     overflow: hidden;
+    min-width: 0;
+    isolation: isolate;
 }
 .listing-page .news-thumb {
+    display: block;
+    width: 100%;
     height: 218px;
     border-radius: 4px;
     background-size: cover !important;
     background-position: center !important;
     box-shadow: none;
+    overflow: hidden;
+    transform: translateZ(0);
 }
 .listing-page .news-card span {
     color: #8b96a6;
@@ -443,6 +449,8 @@ img { max-width: 100%; display: block; }
     display: grid;
     grid-template-rows: 218px auto auto auto;
     gap: 10px;
+    min-width: 0;
+    overflow: hidden;
 }
 .insights-entry-stage .news-thumb {
     width: 100%;
