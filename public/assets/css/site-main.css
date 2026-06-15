@@ -593,6 +593,9 @@ html[lang="es"] .service-overview {
 html[lang="es"] .service-overview > .container {
     visibility: visible;
 }
+html[lang="es"] .service-overview:not(.services-entry-stage) {
+    padding-bottom: 85px;
+}
 html[lang="es"] .service-hotspots {
     display: none;
 }
