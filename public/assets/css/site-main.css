@@ -89,6 +89,33 @@ img { max-width: 100%; display: block; }
 .home-about-section .hero-button.mini::after { content: "→"; margin-left: 12px; font-size: 16px; line-height: 1; }
 .home-about-visual { display: none; }
 
+html[lang="es"] .hero-panel-home {
+    height: 647px;
+    background: #f6fbfe;
+}
+html[lang="es"] .hero-panel-home .hero-home-shell {
+    opacity: 1;
+}
+html[lang="es"] .hero-home-image {
+    background-image: linear-gradient(90deg, rgba(236, 249, 252, 0.96) 0%, rgba(236, 249, 252, 0.70) 42%, rgba(236, 249, 252, 0.18) 68%), url("../figma/hero-plane.png");
+    background-size: cover;
+    background-position: center right;
+}
+html[lang="es"] .hero-home-card {
+    display: block;
+    left: 0;
+    top: 73px;
+}
+html[lang="es"] .home-about-section {
+    height: auto;
+    min-height: 581px;
+    padding: 112px 0;
+    background: #fff;
+}
+html[lang="es"] .home-about-section .home-about-shell {
+    visibility: visible;
+}
+
 .home-about-section {
     position: relative;
     height: 581px;
