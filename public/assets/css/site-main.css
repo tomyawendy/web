@@ -115,11 +115,41 @@ html[lang="es"] .hero-home-image {
 }
 html[lang="es"] .hero-home-card {
     display: block;
-    left: 68px;
-    top: 73px;
-    width: 520px;
-    min-height: 300px;
+    left: 24px;
+    top: 60px;
+    width: 620px;
+    min-height: 330px;
     background: transparent;
+}
+html[lang="es"] .hero-kicker {
+    margin-bottom: 10px;
+    width: 520px;
+    max-width: 520px;
+    font-size: 34px;
+    line-height: 1.02;
+    letter-spacing: -0.026em;
+}
+html[lang="es"] .hero-home-card h1 {
+    width: 520px;
+    max-width: 520px;
+    margin-bottom: 18px;
+    font-size: 38px;
+    line-height: 1.04;
+    letter-spacing: -0.044em;
+}
+html[lang="es"] .hero-subtitle {
+    max-width: 390px;
+    margin-bottom: 22px;
+    font-size: 11px;
+    line-height: 1.55;
+}
+html[lang="es"] .hero-button {
+    min-width: 152px;
+    min-height: 38px;
+    padding: 0 28px;
+    font-size: 11px;
+    line-height: 38px;
+    border-radius: 20px;
 }
 html[lang="es"] .home-about-section {
     height: auto;
