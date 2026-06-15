@@ -672,9 +672,12 @@ html[lang="es"] .home-newsletter-stage .newsletter-copy * {
     visibility: visible !important;
 }
 html[lang="es"] .newsletter-block {
-    min-height: 490px;
+    min-height: 463px;
     padding: 0;
     background: #151831;
+}
+html[lang="es"] .newsletter-block .newsletter-shell {
+    min-height: 463px;
 }
 html[lang="es"] .home-newsletter-stage {
     min-height: 490px;
@@ -696,10 +699,12 @@ html[lang="es"] .site-footer > * {
     visibility: visible;
 }
 html[lang="es"] .about-page-stage {
-    height: auto;
-    min-height: 560px;
-    padding: 104px 0 112px;
+    height: 637px;
+    min-height: 637px;
+    padding: 0;
     background: #fff;
+    display: flex;
+    align-items: center;
 }
 html[lang="es"] .about-page-stage .home-about-shell {
     visibility: visible;
@@ -732,8 +737,8 @@ html[lang="es"] .about-page-stage .home-about-shell::after {
     background: linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.04)), url("../figma/about-photo.png") center/cover no-repeat;
 }
 html[lang="es"] .services-entry-stage {
-    height: auto;
-    min-height: 0;
+    height: 2218px;
+    min-height: 2218px;
     padding: 104px 0 116px;
     background: var(--lookup-strip-bg);
 }
@@ -744,8 +749,8 @@ html[lang="es"] .services-entry-list {
     margin-top: 44px;
 }
 html[lang="es"] .insights-figma-stage {
-    height: auto;
-    min-height: 0;
+    height: 813px;
+    min-height: 813px;
     padding: 96px 0 118px;
     background: #fff;
 }
