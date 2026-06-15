@@ -762,6 +762,13 @@ html[lang="es"] .post-back-link {
     background: #eef5ff;
     color: var(--color-brand-navy);
 }
+html[lang="es"] .post-detail-page {
+    min-height: 0;
+    padding: 96px 0 108px;
+}
+html[lang="es"] .post-detail-shell {
+    gap: 72px;
+}
 
 .about-page { padding: 66px 0 0; }
 .about-page-shell { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; padding: 64px 0 70px; }
