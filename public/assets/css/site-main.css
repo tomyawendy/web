@@ -648,8 +648,8 @@ html[lang="es"] .why-section {
     height: 709px;
     padding: 0;
     background:
-        linear-gradient(90deg, rgba(12, 42, 93, 0.96), rgba(12, 42, 93, 0.88)),
-        url("../figma/why-bg.png") center / cover no-repeat !important;
+        linear-gradient(90deg, rgba(12, 42, 93, 0.98), rgba(12, 42, 93, 0.94)),
+        url("../figma/why-stage.png") center / cover no-repeat !important;
     overflow: hidden;
     display: flex;
     align-items: center;
