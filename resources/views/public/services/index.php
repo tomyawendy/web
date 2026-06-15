@@ -19,7 +19,8 @@
                     <article class="home-service-row" id="service-<?= e($service['slug']) ?>">
                         <div class="home-service-copy">
                             <span class="home-service-index"><?= e(sprintf('%02d', $index + 1)) ?></span>
-                            <h3><?= e($index === 3 ? setting_value($settings, 'services_fourth_home_title', $service['title']) : $service['title']) ?></h3>
+                            <?php $serviceTitle = ($index === 3 && current_locale() !== 'es') ? setting_value($settings, 'services_fourth_home_title', $service['title']) : $service['title']; ?>
+                            <h3><?= e($serviceTitle) ?></h3>
                             <p class="home-service-lead"><?= e($service['summary']) ?></p>
                             <?php if ($serviceItems): ?>
                                 <strong class="home-service-label"><?= e(setting_value($settings, 'services_impact_label', 'Our Impact')) ?></strong>

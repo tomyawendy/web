@@ -10,15 +10,21 @@
         <?php endif; ?>
     <?php endif; ?>
     <div class="container">
-        <?php if ($type !== 'news'): ?>
-            <div class="service-head listing-page-head">
-                <div>
+        <div class="service-head listing-page-head">
+            <div>
+                <?php if ($type === 'news'): ?>
+                    <span class="tiny-link"><?= e(setting_value($settings ?? [], 'news_kicker_label', 'INSIGHT')) ?></span>
+                    <h2><?= e(setting_value($settings ?? [], 'news_heading', $title)) ?></h2>
+                <?php else: ?>
                     <span class="tiny-link"><?= e(setting_value($settings ?? [], 'nav_documents_label', 'Documents')) ?></span>
                     <h2><?= e($title) ?></h2>
                     <p><?= e(setting_value($settings ?? [], 'documents_intro', 'Official documents, operational notices, and downloadable files for quick reference.')) ?></p>
-                </div>
+                <?php endif; ?>
             </div>
-        <?php endif; ?>
+            <?php if ($type === 'news'): ?>
+                <a class="news-link listing-view-all" href="<?= e(app_url('insights')) ?>"><?= e(setting_value($settings ?? [], 'news_view_all_label', 'VIEW ALL ARTICLES')) ?></a>
+            <?php endif; ?>
+        </div>
         <?php if ($posts): ?>
             <div class="news-grid">
                 <?php foreach ($posts as $item): ?>

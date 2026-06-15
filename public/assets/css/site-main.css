@@ -653,9 +653,16 @@ html[lang="es"] .home-contact-stage > .container {
 html[lang="es"] .home-contact-stage .contact-copy,
 html[lang="es"] .home-contact-stage .contact-copy *,
 html[lang="es"] .home-contact-stage .contact-visual,
+html[lang="es"] .newsletter-block .newsletter-copy,
+html[lang="es"] .newsletter-block .newsletter-copy *,
 html[lang="es"] .home-newsletter-stage .newsletter-copy,
 html[lang="es"] .home-newsletter-stage .newsletter-copy * {
     visibility: visible !important;
+}
+html[lang="es"] .newsletter-block {
+    min-height: 0;
+    padding: 84px 0;
+    background: #151831;
 }
 html[lang="es"] .home-newsletter-stage {
     min-height: 0;
@@ -724,7 +731,7 @@ html[lang="es"] .services-entry-list {
 html[lang="es"] .insights-figma-stage {
     height: auto;
     min-height: 0;
-    padding: 112px 0 118px;
+    padding: 96px 0 118px;
     background: #fff;
 }
 html[lang="es"] .insights-figma-stage > .container {
@@ -736,6 +743,20 @@ html[lang="es"] .insights-stage-hotspots {
 html[lang="es"] .insights-entry-stage .service-head h2 {
     font-size: 44px;
     line-height: 1.08;
+}
+html[lang="es"] .insights-entry-stage .listing-page-head {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 32px;
+    margin-bottom: 42px;
+}
+html[lang="es"] .insights-entry-stage .listing-page-head .tiny-link {
+    margin-bottom: 16px;
+}
+html[lang="es"] .insights-entry-stage .listing-view-all {
+    flex: 0 0 auto;
+    margin-bottom: 8px;
 }
 html[lang="es"] .post-back-link {
     background: #eef5ff;
