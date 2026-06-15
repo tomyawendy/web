@@ -8,6 +8,9 @@
             <div class="prose">
                 <?= $content['content'] ?>
                 <?php if (!empty($post['attachment_path'])): ?>
+                    <?php if (!empty($post['attachment_description'])): ?>
+                        <p><?= e((string) $post['attachment_description']) ?></p>
+                    <?php endif; ?>
                     <p><a class="quote-button" href="<?= e(media_url($post['attachment_path'])) ?>" target="_blank"><?= e(setting_value($settings ?? [], 'download_attachment_label', 'DOWNLOAD ATTACHMENT')) ?></a></p>
                 <?php endif; ?>
             </div>

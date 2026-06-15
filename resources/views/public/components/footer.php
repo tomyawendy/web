@@ -11,12 +11,12 @@
             </div>
             <div class="footer-column">
                 <span class="footer-title"><?= e(setting_value($settings ?? [], 'footer_services_title', 'Services')) ?></span>
-                <a href="<?= e(app_url('contact')) ?>"><?= e(setting_value($settings ?? [], 'footer_contacts_label', 'Contacts')) ?></a>
+                <a href="<?= e(app_url('contact')) ?>"><?= e(setting_value($settings ?? [], 'footer_contact_label', 'Contact')) ?></a>
                 <a href="<?= e(app_url('insights')) ?>"><?= e(setting_value($settings ?? [], 'footer_news_label', 'News')) ?></a>
             </div>
             <div class="footer-column">
                 <span class="footer-title"><?= e(setting_value($settings ?? [], 'footer_about_title', 'About')) ?></span>
-                <a href="<?= e(app_url('about')) ?>"><?= e(setting_value($settings ?? [], 'footer_iata_label', 'IATA certification')) ?></a>
+                <a href="<?= e(app_url('about')) ?>"><?= e(setting_value($settings ?? [], 'footer_certification_label', 'IATA certification')) ?></a>
             </div>
         </div>
         <div class="footer-cert">

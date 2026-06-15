@@ -2,7 +2,7 @@
 <form class="admin-form panel" method="post" action="<?= e(admin_url('services/save')) ?>">
     <?= csrf_field() ?>
     <input type="hidden" name="id" value="<?= e((string) ($item['id'] ?? '')) ?>">
-    <h2><?= e($metaTitle ?? 'Service Card') ?></h2>
+    <h2><?= e($metaTitle ?? 'Service') ?></h2>
     <p>These cards power both the homepage service rows and the dedicated Our Services page.</p>
     <label>Slug<input name="slug" value="<?= e((string) ($item['slug'] ?? '')) ?>" required></label>
     <div class="button-row">

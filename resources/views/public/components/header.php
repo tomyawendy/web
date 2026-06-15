@@ -4,6 +4,7 @@ $isHome = $currentPath === '/';
 $isAbout = $currentPath === '/about' || str_starts_with($currentPath, '/page/about');
 $isServices = str_starts_with($currentPath, '/services');
 $isInsights = str_starts_with($currentPath, '/insights') || str_starts_with($currentPath, '/news');
+$isDocuments = str_starts_with($currentPath, '/documents');
 $isContact = $currentPath === '/contact';
 $locales = config('app.locales', []);
 $activeLocale = current_locale();
@@ -19,6 +20,7 @@ $activeLocaleLabel = $locales[$activeLocale] ?? 'English';
             <a class="<?= $isAbout ? 'active' : '' ?>" href="<?= e(app_url('about')) ?>"><?= e(setting_value($settings ?? [], 'nav_about_label', 'Who We Are?')) ?></a>
             <a class="<?= $isServices ? 'active' : '' ?>" href="<?= e(app_url('services')) ?>"><?= e(setting_value($settings ?? [], 'nav_services_label', 'Our Services')) ?></a>
             <a class="<?= $isInsights ? 'active' : '' ?>" href="<?= e(app_url('insights')) ?>"><?= e(setting_value($settings ?? [], 'nav_insights_label', 'Insights')) ?></a>
+            <a class="<?= $isDocuments ? 'active' : '' ?>" href="<?= e(app_url('documents')) ?>"><?= e(setting_value($settings ?? [], 'nav_documents_label', 'Documents')) ?></a>
             <a class="<?= $isContact ? 'active' : '' ?>" href="<?= e(app_url('contact')) ?>"><?= e(setting_value($settings ?? [], 'nav_contact_label', 'Contact')) ?></a>
         </nav>
         <div class="nav-tools">

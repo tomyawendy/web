@@ -22,6 +22,11 @@ class UploadService
             throw new \RuntimeException(unsupported_file_type_message());
         }
 
+        $maxBytes = (int) config('app.upload_max_bytes.' . $type, 0);
+        if ($maxBytes > 0 && (int) ($file['size'] ?? 0) > $maxBytes) {
+            throw new \RuntimeException(file_too_large_message());
+        }
+
         $folder = date('Y/m');
         $directory = upload_path($folder);
         if (!is_dir($directory)) {

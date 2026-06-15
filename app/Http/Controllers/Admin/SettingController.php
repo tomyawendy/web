@@ -15,7 +15,7 @@ class SettingController extends Controller
     {
         $this->view('admin/settings/form', [
             'settings' => (new SettingRepository($this->db))->allGrouped(),
-            'metaTitle' => 'Frontend Sections',
+            'metaTitle' => 'Site Settings',
         ], 'layouts/admin');
     }
 
@@ -110,15 +110,23 @@ class SettingController extends Controller
                 'newsletter_error_required' => (string) $this->request->input("newsletter_error_required_{$locale}"),
                 'newsletter_error_duplicate' => (string) $this->request->input("newsletter_error_duplicate_{$locale}"),
                 'newsletter_success_message' => (string) $this->request->input("newsletter_success_message_{$locale}"),
+                'site_meta_title' => (string) $this->request->input("site_meta_title_{$locale}"),
+                'site_meta_keywords' => (string) $this->request->input("site_meta_keywords_{$locale}"),
+                'site_meta_description' => (string) $this->request->input("site_meta_description_{$locale}"),
+                'site_og_image' => (string) $this->request->input("site_og_image_{$locale}"),
+                'homepage_meta_title' => (string) $this->request->input("homepage_meta_title_{$locale}"),
+                'homepage_meta_keywords' => (string) $this->request->input("homepage_meta_keywords_{$locale}"),
+                'homepage_meta_description' => (string) $this->request->input("homepage_meta_description_{$locale}"),
+                'homepage_og_image' => (string) $this->request->input("homepage_og_image_{$locale}"),
             ];
         }
 
         try {
             (new SettingRepository($this->db))->saveMany($payload);
         } catch (PDOException $exception) {
-            redirect_with_flash(admin_url('settings'), 'error', 'We could not save the frontend sections. Please try again.');
+            redirect_with_flash(admin_url('settings'), 'error', 'We could not save the site settings. Please try again.');
         }
         (new ActivityLogService($this->db))->log($_SESSION['admin']['id'] ?? null, 'save', 'settings', null, 'Updated site settings');
-        redirect_with_flash(admin_url('settings'), 'success', 'Frontend sections saved successfully.');
+        redirect_with_flash(admin_url('settings'), 'success', 'Site settings saved successfully.');
     }
 }

@@ -5,9 +5,11 @@ use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\BannerController;
 use App\Http\Controllers\Admin\ContactController as AdminContactController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\LogController;
 use App\Http\Controllers\Admin\MediaController;
 use App\Http\Controllers\Admin\NewsletterController as AdminNewsletterController;
 use App\Http\Controllers\Admin\PageController as AdminPageController;
+use App\Http\Controllers\Admin\PostCategoryController;
 use App\Http\Controllers\Admin\PostController as AdminPostController;
 use App\Http\Controllers\Admin\ServiceController as AdminServiceController;
 use App\Http\Controllers\Admin\SettingController;
@@ -33,7 +35,11 @@ $router->get("/{$prefix}/services/{id}", [AdminServiceController::class, 'edit']
 $router->get("/{$prefix}/posts", [AdminPostController::class, 'index'], ['auth', 'permission:manage_posts']);
 $router->get("/{$prefix}/posts/create", [AdminPostController::class, 'create'], ['auth', 'permission:manage_posts']);
 $router->post("/{$prefix}/posts/save", [AdminPostController::class, 'save'], ['auth', 'permission:manage_posts']);
+$router->post("/{$prefix}/posts/bulk", [AdminPostController::class, 'bulk'], ['auth', 'permission:manage_posts']);
 $router->get("/{$prefix}/posts/{id}", [AdminPostController::class, 'edit'], ['auth', 'permission:manage_posts']);
+$router->get("/{$prefix}/post-categories", [PostCategoryController::class, 'index'], ['auth', 'permission:manage_posts']);
+$router->post("/{$prefix}/post-categories/save", [PostCategoryController::class, 'save'], ['auth', 'permission:manage_posts']);
+$router->get("/{$prefix}/post-categories/{id}", [PostCategoryController::class, 'edit'], ['auth', 'permission:manage_posts']);
 
 $router->get("/{$prefix}/banners", [BannerController::class, 'index'], ['auth', 'permission:manage_banners']);
 $router->get("/{$prefix}/banners/create", [BannerController::class, 'create'], ['auth', 'permission:manage_banners']);
@@ -45,8 +51,15 @@ $router->post("/{$prefix}/settings", [SettingController::class, 'save'], ['auth'
 
 $router->get("/{$prefix}/media", [MediaController::class, 'index'], ['auth', 'permission:manage_media']);
 $router->post("/{$prefix}/media/upload", [MediaController::class, 'upload'], ['auth', 'permission:manage_media']);
+$router->post("/{$prefix}/media/delete", [MediaController::class, 'delete'], ['auth', 'permission:manage_media']);
 $router->get("/{$prefix}/contacts", [AdminContactController::class, 'index'], ['auth', 'permission:view_contacts']);
+$router->get("/{$prefix}/contacts/export", [AdminContactController::class, 'export'], ['auth', 'permission:view_contacts']);
+$router->post("/{$prefix}/contacts/status", [AdminContactController::class, 'status'], ['auth', 'permission:view_contacts']);
 $router->get("/{$prefix}/newsletters", [AdminNewsletterController::class, 'index'], ['auth', 'permission:view_newsletters']);
+$router->get("/{$prefix}/newsletters/export", [AdminNewsletterController::class, 'export'], ['auth', 'permission:view_newsletters']);
+$router->post("/{$prefix}/newsletters/status", [AdminNewsletterController::class, 'status'], ['auth', 'permission:view_newsletters']);
+$router->get("/{$prefix}/logs", [LogController::class, 'index'], ['auth', 'permission:manage_logs']);
 $router->get("/{$prefix}/admins", [AdminController::class, 'index'], ['auth', 'permission:manage_admins']);
 $router->get("/{$prefix}/admins/create", [AdminController::class, 'create'], ['auth', 'permission:manage_admins']);
 $router->post("/{$prefix}/admins/save", [AdminController::class, 'save'], ['auth', 'permission:manage_admins']);
+$router->get("/{$prefix}/admins/{id}", [AdminController::class, 'edit'], ['auth', 'permission:manage_admins']);

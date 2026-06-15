@@ -16,9 +16,16 @@ class PostController extends Controller
     {
         $type = normalize_post_type((string) $this->request->query('type', 'news'));
         $repo = new PostRepository($this->db);
+        $filters = [
+            'q' => trim((string) $this->request->query('q', '')),
+            'status' => (string) $this->request->query('status', ''),
+            'category_id' => (int) $this->request->query('category_id', 0),
+        ];
         $this->view('admin/posts/index', [
             'type' => $type,
-            'items' => $repo->allByType($type, false),
+            'items' => $repo->allByType($type, false, $filters),
+            'categories' => $repo->categories($type),
+            'filters' => $filters,
             'metaTitle' => $type === 'news' ? 'Insights' : 'Documents',
         ], 'layouts/admin');
     }
@@ -55,6 +62,7 @@ class PostController extends Controller
             'cover_image' => trim((string) $this->request->input('cover_image')),
             'attachment_path' => $attachment['file_path'] ?? (string) $this->request->input('existing_attachment_path'),
             'attachment_name' => $attachment['file_name'] ?? (string) $this->request->input('existing_attachment_name'),
+            'attachment_description' => trim((string) $this->request->input('attachment_description', '')),
             'status' => (string) $this->request->input('status', 'draft'),
             'is_pinned' => $this->request->input('is_pinned') ? 1 : 0,
             'is_featured' => $this->request->input('is_featured') ? 1 : 0,
@@ -86,6 +94,39 @@ class PostController extends Controller
         }
         (new ActivityLogService($this->db))->log($_SESSION['admin']['id'] ?? null, 'save', 'posts', $id, 'Saved ' . $post['type'] . ' ' . $post['slug']);
         redirect_with_flash(admin_url('posts?type=' . $post['type']), 'success', $post['type'] === 'news' ? 'Insight saved successfully.' : 'Document saved successfully.');
+    }
+
+    public function bulk(): void
+    {
+        $type = normalize_post_type((string) $this->request->input('type', 'news'));
+        if (!verify_csrf($this->request->input('_csrf'))) {
+            redirect_with_flash(admin_url('posts?type=' . $type), 'error', session_expired_message());
+        }
+
+        $ids = $_POST['ids'] ?? [];
+        $ids = is_array($ids) ? $ids : [];
+        $bulkAction = (string) $this->request->input('bulk_action', 'status');
+        $repo = new PostRepository($this->db);
+
+        if ($bulkAction === 'delete') {
+            $count = $repo->bulkDelete($type, $ids);
+            if ($count === 0) {
+                redirect_with_flash(admin_url('posts?type=' . $type), 'error', 'Select at least one item to delete.');
+            }
+
+            (new ActivityLogService($this->db))->log($_SESSION['admin']['id'] ?? null, 'bulk_delete', 'posts', null, 'Deleted ' . $count . ' ' . $type . ' item(s)');
+            redirect_with_flash(admin_url('posts?type=' . $type), 'success', 'Selected items deleted successfully.');
+        }
+
+        $status = (string) $this->request->input('bulk_status', '');
+        $count = $repo->bulkStatus($type, $ids, $status);
+
+        if ($count === 0) {
+            redirect_with_flash(admin_url('posts?type=' . $type), 'error', 'Select at least one item and a valid status.');
+        }
+
+        (new ActivityLogService($this->db))->log($_SESSION['admin']['id'] ?? null, 'bulk_status', 'posts', null, 'Changed ' . $count . ' ' . $type . ' item(s) to ' . $status);
+        redirect_with_flash(admin_url('posts?type=' . $type), 'success', 'Bulk status updated successfully.');
     }
 
     private function form(?int $id = null): void

@@ -23,6 +23,7 @@ class ServiceController extends Controller
             'settings' => $settings,
             'contactPage' => (new PageRepository($this->db))->findBySlug('contact'),
             'metaTitle' => site_meta_title($settings, $settings['nav_services_label'] ?? 'Our Services'),
+            'metaDescription' => $settings['services_intro'] ?? '',
         ], 'layouts/public');
     }
 
@@ -53,6 +54,9 @@ class ServiceController extends Controller
             'news' => array_slice((new PostRepository($this->db))->allByType('news', true), 0, 3),
             'contactPage' => (new PageRepository($this->db))->findBySlug('contact'),
             'metaTitle' => site_meta_title($settings, $active['seo_title'] ?: $active['title']),
+            'metaDescription' => $active['seo_description'] ?? $active['summary'] ?? '',
+            'metaKeywords' => $active['seo_keywords'] ?? '',
+            'metaImage' => $service['cover_image'] ?? '',
         ], 'layouts/public');
     }
 }

@@ -8,12 +8,15 @@ return [
     'locale' => 'en',
     'locales' => [
         'en' => 'English',
-        'es' => 'Spanish',
-        'zh' => 'Chinese',
+        'es' => 'Espanol',
     ],
     'admin_prefix' => 'backstage',
     'uploads' => [
         'images' => ['jpg', 'jpeg', 'png', 'gif', 'webp', 'svg'],
         'documents' => ['pdf', 'doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx'],
+    ],
+    'upload_max_bytes' => [
+        'images' => 5242880,
+        'documents' => 10485760,
     ],
 ];

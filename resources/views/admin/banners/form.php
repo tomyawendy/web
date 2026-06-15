@@ -2,7 +2,7 @@
 <form class="admin-form panel" method="post" action="<?= e(admin_url('banners/save')) ?>">
     <?= csrf_field() ?>
     <input type="hidden" name="id" value="<?= e((string) ($item['id'] ?? '')) ?>">
-    <h2><?= e($metaTitle ?? 'Hero Banner') ?></h2>
+    <h2><?= e($metaTitle ?? 'Banner') ?></h2>
     <p>This banner controls the homepage hero headline, supporting text, CTA label, and target link.</p>
     <div class="button-row">
         <label>Image Path<input name="image" value="<?= e((string) ($item['image'] ?? '')) ?>"></label>

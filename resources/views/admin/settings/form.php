@@ -119,14 +119,30 @@ $groups = [
             ['name' => 'newsletter_success_message', 'label' => 'Newsletter Success Message', 'type' => 'textarea', 'default' => 'Thank you for subscribing to our newsletter.'],
         ],
     ],
+    [
+        'id' => 'seo',
+        'title' => 'SEO Settings',
+        'description' => 'Site-level fallback SEO fields and homepage SEO fields. Detail pages still use their own SEO fields first.',
+        'fields' => [
+            ['name' => 'site_meta_title', 'label' => 'Default Meta Title', 'type' => 'input', 'default' => 'Planet Aviation'],
+            ['name' => 'site_meta_keywords', 'label' => 'Default Meta Keywords', 'type' => 'textarea', 'default' => 'aviation, air cargo, logistics, GSSA'],
+            ['name' => 'site_meta_description', 'label' => 'Default Meta Description', 'type' => 'textarea', 'default' => 'Planet Aviation provides air cargo, GSSA, logistics, handling, trucking, and insurance solutions.'],
+            ['name' => 'site_og_image', 'label' => 'Default Share Image Path', 'type' => 'input', 'default' => 'assets/figma/hero-plane.png'],
+            ['name' => 'homepage_meta_title', 'label' => 'Homepage Meta Title', 'type' => 'input', 'default' => 'Premium Choice For Air Logistics Solution!'],
+            ['name' => 'homepage_meta_keywords', 'label' => 'Homepage Meta Keywords', 'type' => 'textarea', 'default' => 'air logistics, air cargo, GSSA, freight forwarding'],
+            ['name' => 'homepage_meta_description', 'label' => 'Homepage Meta Description', 'type' => 'textarea', 'default' => 'Specializing in air freight operations across Europe, Asia, Middle East and Latin America.'],
+            ['name' => 'homepage_og_image', 'label' => 'Homepage Share Image Path', 'type' => 'input', 'default' => 'assets/figma/hero-plane.png'],
+        ],
+    ],
 ];
 ?>
 <form class="admin-form panel settings-form" method="post" action="<?= e(admin_url('settings')) ?>">
     <?= csrf_field() ?>
     <div class="settings-hero">
         <div>
-            <h2>Frontend Sections</h2>
-            <p>Everything that appears on the public site is grouped here by section, so the team can update content without hunting through one giant form.</p>
+            <h2>Site Settings</h2>
+            <p>Everything that appears on the public site is grouped by frontend section, so the team can update content without hunting through one giant form.</p>
+            <p class="field-note">Important: approved Figma stage areas are visually locked. Change text, links, and reusable paths here, but do not expect every stage image to change unless that section is rebuilt and screenshot-checked.</p>
         </div>
         <div class="settings-badges">
             <span><?= e((string) count($locales)) ?> locales</span>
@@ -180,6 +196,6 @@ $groups = [
     <?php endforeach; ?>
 
     <div class="settings-save-bar">
-        <button class="button-primary" type="submit">Save Frontend Sections</button>
+        <button class="button-primary" type="submit">Save Site Settings</button>
     </div>
 </form>

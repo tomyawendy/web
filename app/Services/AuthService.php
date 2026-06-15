@@ -39,6 +39,15 @@ class AuthService
             return false;
         }
 
+        try {
+            $this->db->query('UPDATE admins SET last_login_at = NOW(), last_login_ip = :ip WHERE id = :id', [
+                'id' => $admin['id'],
+                'ip' => $_SERVER['REMOTE_ADDR'] ?? null,
+            ]);
+        } catch (\Throwable $exception) {
+            // The login must still work if the optional audit columns are not imported yet.
+        }
+
         $permissions = $admin['role_slug'] === 'super-admin'
             ? ['*']
             : array_column($this->db->query(

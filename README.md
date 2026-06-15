@@ -4,10 +4,10 @@ Traditional `PHP + MySQL` website and backstage CMS for Planet Aviation. The pro
 
 ## Features
 
-- Multilingual public website with `English`, `Spanish`, and `Chinese` content slots
+- Bilingual public website with `English` as the default language and `Spanish` as a manual-switch language
 - Figma-aligned homepage, Who We Are page, Our Services page, Insights listing/detail, Documents listing/detail, and Contact sections
 - Admin login, logout, password change, and role-based permissions
-- CMS modules for content pages, service cards, insights/documents, hero banners, media library, frontend sections, contact leads, newsletter subscribers, and admins
+- CMS modules for pages, services, insights, documents, banners, media library, site settings, SEO settings, contact leads, newsletter subscribers, administrators, and operation logs
 - Attachment upload support for document-style posts
 - Activity logging for important admin actions
 
@@ -62,7 +62,7 @@ The seed uses a first-login fallback format for the default password. After firs
 - For Nginx, route all non-file requests to `public/index.php`.
 - For local PHP built-in server testing, use `public/router.php` so static assets are served correctly.
 - Uploaded files are served from `public/assets/uploads/`.
-- The current frontend structure has been reshaped around the confirmed Figma information architecture, and the backend fields now map to those frontend sections.
+- The current frontend structure has been reshaped around the confirmed Figma information architecture, and the backend fields now map to those frontend modules.
 
 ### InfinityFree quick notes
 
@@ -76,7 +76,7 @@ The seed uses a first-login fallback format for the default password. After firs
 
 ## Important Notes
 
-- The backend is intentionally stronger than a generic news-only CMS: it separates content pages, service cards, insights, documents, hero banners, media, frontend sections, and contact leads.
+- The backend is intentionally stronger than a generic news-only CMS: it separates pages, services, insights, documents, banners, media, site settings, SEO settings, contact leads, newsletter subscribers, administrators, and logs.
 - Newsletter subscriptions are stored separately from contact leads and can be reviewed in the backstage CMS.
 - The project does not yet include enterprise approval workflows, OA features, or ERP/CRM integrations.
-- Local verification has been completed against a running PHP 8.3 + MariaDB environment, including frontend pages, admin login, media upload, contact submissions, newsletter subscriptions, and 404 handling.
+- Final runtime verification should be completed after deployment, including frontend pages, admin login, media upload, contact submissions, newsletter subscriptions, and 404 handling.

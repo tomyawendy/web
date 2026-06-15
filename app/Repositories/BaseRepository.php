@@ -35,4 +35,22 @@ abstract class BaseRepository
     {
         return (int) $this->db->pdo()->lastInsertId();
     }
+
+    protected function columnExists(string $table, string $column): bool
+    {
+        static $cache = [];
+        $key = $table . '.' . $column;
+        if (array_key_exists($key, $cache)) {
+            return $cache[$key];
+        }
+
+        try {
+            $row = $this->fetchOne("SHOW COLUMNS FROM {$table} LIKE :column", ['column' => $column]);
+            $cache[$key] = $row !== null;
+        } catch (\Throwable $exception) {
+            $cache[$key] = false;
+        }
+
+        return $cache[$key];
+    }
 }

@@ -29,6 +29,21 @@ class AdminController extends Controller
         ], 'layouts/admin');
     }
 
+    public function edit(string $id): void
+    {
+        $repo = new AdminRepository($this->db);
+        $item = $repo->find((int) $id);
+        if (!$item) {
+            redirect_with_flash(admin_url('admins'), 'error', account_not_found_message());
+        }
+
+        $this->view('admin/admins/form', [
+            'item' => $item,
+            'roles' => $repo->roles(),
+            'metaTitle' => 'Edit Administrator',
+        ], 'layouts/admin');
+    }
+
     public function save(): void
     {
         if (!verify_csrf($this->request->input('_csrf'))) {
@@ -36,30 +51,40 @@ class AdminController extends Controller
         }
 
         $password = (string) $this->request->input('password');
-        if ($password === '') {
+        $id = (int) $this->request->input('id', 0);
+        if ($id === 0 && $password === '') {
             redirect_with_flash(admin_url('admins/create'), 'error', password_required_message());
         }
 
         $payload = [
+            'id' => $id,
             'role_id' => (int) $this->request->input('role_id'),
             'username' => trim((string) $this->request->input('username')),
-            'password_hash' => password_hash($password, PASSWORD_DEFAULT),
             'name' => trim((string) $this->request->input('name')),
             'email' => trim((string) $this->request->input('email')),
             'is_active' => $this->request->input('is_active') ? 1 : 0,
         ];
+        if ($password !== '') {
+            $payload['password_hash'] = password_hash($password, PASSWORD_DEFAULT);
+        }
 
         try {
             $repo = new AdminRepository($this->db);
-            $id = $repo->create($payload);
+            if ($id > 0) {
+                $repo->update($payload);
+            } else {
+                $payload['password_hash'] = $payload['password_hash'] ?? password_hash($password, PASSWORD_DEFAULT);
+                unset($payload['id']);
+                $id = $repo->create($payload);
+            }
         } catch (PDOException $exception) {
             $message = is_duplicate_key_error($exception)
                 ? 'This username is already in use.'
                 : 'We could not save the administrator account. Please try again.';
-            redirect_with_flash(admin_url('admins/create'), 'error', $message);
+            redirect_with_flash($id > 0 ? admin_url('admins/' . $id) : admin_url('admins/create'), 'error', $message);
         }
 
-        (new ActivityLogService($this->db))->log($_SESSION['admin']['id'] ?? null, 'create', 'admins', $id, 'Created administrator account');
-        redirect_with_flash(admin_url('admins'), 'success', 'Administrator created successfully.');
+        (new ActivityLogService($this->db))->log($_SESSION['admin']['id'] ?? null, $this->request->input('id') ? 'update' : 'create', 'admins', $id, 'Saved administrator account');
+        redirect_with_flash(admin_url('admins'), 'success', 'Administrator saved successfully.');
     }
 }

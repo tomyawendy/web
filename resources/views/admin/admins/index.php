@@ -10,11 +10,11 @@
 </div>
 <div class="panel admin-table-wrap">
     <table class="admin-table">
-        <thead><tr><th>Name</th><th>Username</th><th>Role</th><th>Status</th></tr></thead>
+        <thead><tr><th>Name</th><th>Username</th><th>Role</th><th>Status</th><th>Last Login</th><th></th></tr></thead>
         <tbody>
         <?php if (empty($items)): ?>
             <tr>
-                <td colspan="4">No administrator accounts found.</td>
+                <td colspan="6">No administrator accounts found.</td>
             </tr>
         <?php endif; ?>
         <?php foreach ($items as $item): ?>
@@ -23,6 +23,13 @@
                 <td><code><?= e($item['username']) ?></code></td>
                 <td><span class="table-badge"><?= e($item['role_name']) ?></span></td>
                 <td><span class="status-badge <?= $item['is_active'] ? 'status-badge-published' : 'status-badge-archived' ?>"><?= $item['is_active'] ? 'Active' : 'Disabled' ?></span></td>
+                <td>
+                    <?= e(format_datetime($item['last_login_at'] ?? null)) ?>
+                    <?php if (!empty($item['last_login_ip'])): ?>
+                        <span class="table-muted"><?= e((string) $item['last_login_ip']) ?></span>
+                    <?php endif; ?>
+                </td>
+                <td><a href="<?= e(admin_url('admins/' . $item['id'])) ?>">Edit</a></td>
             </tr>
         <?php endforeach; ?>
         </tbody>

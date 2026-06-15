@@ -1,11 +1,11 @@
 <div class="panel admin-section">
     <div class="toolbar">
         <div class="toolbar-copy">
-            <span class="tiny-label">Hero banners</span>
-            <h2>Hero Banners</h2>
+            <span class="tiny-label">Banners</span>
+            <h2>Banners</h2>
             <p>Control the homepage banner headline, supporting copy, CTA, and image. Only one banner is active at a time in the live design.</p>
         </div>
-        <a class="button-primary" href="<?= e(admin_url('banners/create')) ?>">Create Hero Banner</a>
+        <a class="button-primary" href="<?= e(admin_url('banners/create')) ?>">Create Banner</a>
     </div>
 </div>
 <div class="panel admin-table-wrap">
@@ -14,7 +14,7 @@
         <tbody>
         <?php if (empty($items)): ?>
             <tr>
-                <td colspan="6">No hero banners found.</td>
+                <td colspan="6">No banners found.</td>
             </tr>
         <?php endif; ?>
         <?php foreach ($items as $item): ?>

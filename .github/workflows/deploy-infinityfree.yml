@@ -11,6 +11,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Sync source files into htdocs package
+        run: |
+          mkdir -p outputs/infinityfree-htdocs-package/htdocs
+          rsync -a --delete --exclude='assets/uploads/' public/ outputs/infinityfree-htdocs-package/htdocs/
+          rsync -a --delete app/ outputs/infinityfree-htdocs-package/htdocs/app/
+          rsync -a --delete bootstrap/ outputs/infinityfree-htdocs-package/htdocs/bootstrap/
+          rsync -a --delete config/ outputs/infinityfree-htdocs-package/htdocs/config/
+          rsync -a --delete database/ outputs/infinityfree-htdocs-package/htdocs/database/
+          rsync -a --delete resources/ outputs/infinityfree-htdocs-package/htdocs/resources/
+          rsync -a --delete routes/ outputs/infinityfree-htdocs-package/htdocs/routes/
+          rsync -a --delete deployment/ outputs/infinityfree-htdocs-package/htdocs/deployment/
+          cp README.md outputs/infinityfree-htdocs-package/htdocs/README.md
+
       - name: Write production database config
         run: |
           cat > outputs/infinityfree-htdocs-package/htdocs/config/database.php <<'PHP'
@@ -41,3 +54,7 @@ jobs:
           local-dir: outputs/infinityfree-htdocs-package/htdocs/
           server-dir: htdocs/
           log-level: standard
+          exclude: |
+            **/.git*
+            **/.git*/**
+            assets/uploads/**

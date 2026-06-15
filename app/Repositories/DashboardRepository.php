@@ -27,4 +27,30 @@ class DashboardRepository extends BaseRepository
              LIMIT 12'
         );
     }
+
+    public function logs(array $filters = []): array
+    {
+        $where = 'WHERE 1 = 1';
+        $params = [];
+
+        if (!empty($filters['module'])) {
+            $where .= ' AND l.module = :module';
+            $params['module'] = (string) $filters['module'];
+        }
+
+        if (!empty($filters['q'])) {
+            $where .= ' AND (l.action LIKE :q OR l.summary LIKE :q OR a.username LIKE :q)';
+            $params['q'] = '%' . trim((string) $filters['q']) . '%';
+        }
+
+        return $this->fetchAll(
+            "SELECT l.*, a.username
+             FROM operation_logs l
+             LEFT JOIN admins a ON a.id = l.admin_id
+             {$where}
+             ORDER BY l.id DESC
+             LIMIT 200",
+            $params
+        );
+    }
 }

@@ -48,6 +48,7 @@ class PostController extends Controller
             'settings' => $settings,
             'contactPage' => (new PageRepository($this->db))->findBySlug('contact'),
             'metaTitle' => site_meta_title($settings, $resolvedTitle),
+            'metaDescription' => $settings['post_not_found_message'] ?? '',
         ], 'layouts/public');
     }
 
@@ -81,6 +82,9 @@ class PostController extends Controller
             'settings' => $settings,
             'contactPage' => (new \App\Repositories\PageRepository($this->db))->findBySlug('contact'),
             'metaTitle' => site_meta_title($settings, $active['seo_title'] ?: $active['title']),
+            'metaDescription' => $active['seo_description'] ?? $active['excerpt'] ?? '',
+            'metaKeywords' => $active['seo_keywords'] ?? '',
+            'metaImage' => $post['cover_image'] ?? '',
         ], 'layouts/public');
     }
 }

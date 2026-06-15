@@ -23,15 +23,19 @@ class HomeControllerV2 extends Controller
 
         $settings = $settingsRepo->allGrouped();
         $locale = current_locale();
+        $activeSettings = $settings[$locale] ?? [];
 
         $this->view('public/home_v2', [
-            'settings' => $settings[$locale] ?? [],
+            'settings' => $activeSettings,
             'heroBanner' => $bannerRepo->active()[0] ?? null,
             'aboutPage' => $pageRepo->findBySlug('about'),
             'contactPage' => $pageRepo->findBySlug('contact'),
             'services' => $serviceRepo->allPublished(),
             'news' => array_slice($postRepo->allByType('news', true), 0, 3),
-            'metaTitle' => site_meta_title($settings[$locale] ?? [], $settings[$locale]['homepage_title'] ?? 'Premium Choice For Air Logistics Solution!'),
+            'metaTitle' => site_meta_title($activeSettings, $activeSettings['homepage_meta_title'] ?? ($activeSettings['homepage_title'] ?? 'Premium Choice For Air Logistics Solution!')),
+            'metaDescription' => $activeSettings['homepage_meta_description'] ?? ($activeSettings['homepage_subtitle'] ?? ''),
+            'metaKeywords' => $activeSettings['homepage_meta_keywords'] ?? '',
+            'metaImage' => $activeSettings['homepage_og_image'] ?? '',
         ], 'layouts/public');
     }
 }

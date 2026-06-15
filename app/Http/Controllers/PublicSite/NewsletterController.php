@@ -36,11 +36,17 @@ class NewsletterController extends Controller
         }
 
         try {
-            (new NewsletterRepository($this->db))->create([
+            $repo = new NewsletterRepository($this->db);
+            $existing = $repo->findByEmail($email);
+            if ($existing && array_key_exists('is_active', $existing) && empty($existing['is_active'])) {
+                $repo->reactivate($email, current_locale(), request_path());
+            } else {
+                $repo->create([
                 'email' => $email,
                 'locale' => current_locale(),
                 'source_path' => request_path(),
-            ]);
+                ]);
+            }
         } catch (PDOException $exception) {
             $message = is_duplicate_key_error($exception)
                 ? (string) ($settings['newsletter_error_duplicate'] ?? newsletter_email_duplicate_message())

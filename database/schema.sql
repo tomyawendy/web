@@ -25,6 +25,8 @@ CREATE TABLE admins (
     name VARCHAR(120) NOT NULL,
     email VARCHAR(150) DEFAULT NULL,
     is_active TINYINT(1) NOT NULL DEFAULT 1,
+    last_login_at DATETIME DEFAULT NULL,
+    last_login_ip VARCHAR(50) DEFAULT NULL,
     created_at DATETIME NOT NULL,
     updated_at DATETIME NOT NULL
 );
@@ -92,6 +94,7 @@ CREATE TABLE posts (
     cover_image VARCHAR(255) DEFAULT NULL,
     attachment_path VARCHAR(255) DEFAULT NULL,
     attachment_name VARCHAR(255) DEFAULT NULL,
+    attachment_description TEXT DEFAULT NULL,
     status VARCHAR(30) NOT NULL DEFAULT 'draft',
     is_pinned TINYINT(1) NOT NULL DEFAULT 0,
     is_featured TINYINT(1) NOT NULL DEFAULT 0,
@@ -150,6 +153,7 @@ CREATE TABLE media (
     file_type VARCHAR(30) NOT NULL,
     mime_type VARCHAR(120) DEFAULT NULL,
     file_size INT NOT NULL DEFAULT 0,
+    alt_text VARCHAR(255) DEFAULT NULL,
     created_at DATETIME NOT NULL
 );
 
@@ -162,6 +166,9 @@ CREATE TABLE contact_submissions (
     subject VARCHAR(255) DEFAULT NULL,
     message TEXT NOT NULL,
     locale VARCHAR(10) NOT NULL DEFAULT 'en',
+    status VARCHAR(30) NOT NULL DEFAULT 'new',
+    admin_note TEXT DEFAULT NULL,
+    updated_at DATETIME DEFAULT NULL,
     created_at DATETIME NOT NULL
 );
 
@@ -170,6 +177,8 @@ CREATE TABLE newsletter_subscriptions (
     email VARCHAR(150) NOT NULL UNIQUE,
     locale VARCHAR(10) NOT NULL DEFAULT 'en',
     source_path VARCHAR(255) DEFAULT NULL,
+    is_active TINYINT(1) NOT NULL DEFAULT 1,
+    unsubscribed_at DATETIME DEFAULT NULL,
     created_at DATETIME NOT NULL
 );
 

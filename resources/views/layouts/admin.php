@@ -16,16 +16,23 @@
         </div>
         <nav>
             <a href="<?= e(admin_url()) ?>">Dashboard</a>
-            <?php if (admin_can('manage_pages')): ?><a href="<?= e(admin_url('pages')) ?>">Content Pages</a><?php endif; ?>
-            <?php if (admin_can('manage_services')): ?><a href="<?= e(admin_url('services')) ?>">Service Cards</a><?php endif; ?>
+            <span class="nav-group-label">Website CMS</span>
+            <?php if (admin_can('manage_settings')): ?><a href="<?= e(admin_url('settings') . '#home-en') ?>">Home Page</a><?php endif; ?>
+            <?php if (admin_can('manage_pages')): ?><a href="<?= e(admin_url('pages')) ?>">Pages</a><?php endif; ?>
+            <?php if (admin_can('manage_services')): ?><a href="<?= e(admin_url('services')) ?>">Services</a><?php endif; ?>
             <?php if (admin_can('manage_posts')): ?><a href="<?= e(admin_url('posts?type=news')) ?>">Insights</a><?php endif; ?>
             <?php if (admin_can('manage_posts')): ?><a href="<?= e(admin_url('posts?type=document')) ?>">Documents</a><?php endif; ?>
-            <?php if (admin_can('manage_banners')): ?><a href="<?= e(admin_url('banners')) ?>">Hero Banners</a><?php endif; ?>
-            <?php if (admin_can('manage_media')): ?><a href="<?= e(admin_url('media')) ?>">Media</a><?php endif; ?>
+            <?php if (admin_can('manage_posts')): ?><a href="<?= e(admin_url('post-categories?type=news')) ?>">Content Categories</a><?php endif; ?>
+            <?php if (admin_can('manage_banners')): ?><a href="<?= e(admin_url('banners')) ?>">Banners</a><?php endif; ?>
+            <?php if (admin_can('manage_media')): ?><a href="<?= e(admin_url('media')) ?>">Media Library</a><?php endif; ?>
+            <span class="nav-group-label">Operations</span>
             <?php if (admin_can('view_contacts')): ?><a href="<?= e(admin_url('contacts')) ?>">Contact Leads</a><?php endif; ?>
             <?php if (admin_can('view_newsletters')): ?><a href="<?= e(admin_url('newsletters')) ?>">Newsletter Subscribers</a><?php endif; ?>
-            <?php if (admin_can('manage_settings')): ?><a href="<?= e(admin_url('settings')) ?>">Frontend Sections</a><?php endif; ?>
-            <?php if (admin_can('manage_admins')): ?><a href="<?= e(admin_url('admins')) ?>">Admins</a><?php endif; ?>
+            <span class="nav-group-label">System</span>
+            <?php if (admin_can('manage_settings')): ?><a href="<?= e(admin_url('settings') . '#branding-en') ?>">Site Settings</a><?php endif; ?>
+            <?php if (admin_can('manage_settings')): ?><a href="<?= e(admin_url('settings') . '#seo-en') ?>">SEO Settings</a><?php endif; ?>
+            <?php if (admin_can('manage_logs')): ?><a href="<?= e(admin_url('logs')) ?>">Operation Logs</a><?php endif; ?>
+            <?php if (admin_can('manage_admins')): ?><a href="<?= e(admin_url('admins')) ?>">Admins / Roles</a><?php endif; ?>
         </nav>
     </aside>
     <div class="admin-main">

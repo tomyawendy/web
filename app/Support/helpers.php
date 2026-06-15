@@ -186,6 +186,7 @@ function status_options(): array
         'draft' => 'Draft',
         'published' => 'Published',
         'offline' => 'Offline',
+        'archived' => 'Archived',
     ];
 }
 
@@ -435,6 +436,11 @@ function unsupported_file_type_message(): string
 function file_move_failed_message(): string
 {
     return 'The file could not be saved. Please try again.';
+}
+
+function file_too_large_message(): string
+{
+    return 'This file is larger than the allowed upload size.';
 }
 
 function newsletter_email_required_message(): string

@@ -21,4 +21,12 @@ class ContactRepository extends BaseRepository
     {
         return $this->fetchAll('SELECT * FROM contact_submissions ORDER BY id DESC');
     }
+
+    public function updateStatus(int $id, string $status, string $adminNote): void
+    {
+        $this->execute(
+            'UPDATE contact_submissions SET status = :status, admin_note = :admin_note, updated_at = NOW() WHERE id = :id',
+            ['id' => $id, 'status' => $status, 'admin_note' => $adminNote]
+        );
+    }
 }

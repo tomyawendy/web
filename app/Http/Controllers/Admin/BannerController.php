@@ -15,7 +15,7 @@ class BannerController extends Controller
     {
         $this->view('admin/banners/index', [
             'items' => (new BannerRepository($this->db))->allAdmin(),
-            'metaTitle' => 'Hero Banners',
+            'metaTitle' => 'Banners',
         ], 'layouts/admin');
     }
 
@@ -72,7 +72,7 @@ class BannerController extends Controller
 
         $this->view('admin/banners/form', [
             'item' => $item,
-            'metaTitle' => $id ? 'Edit Hero Banner' : 'Create Hero Banner',
+            'metaTitle' => $id ? 'Edit Banner' : 'Create Banner',
         ], 'layouts/admin');
     }
 }

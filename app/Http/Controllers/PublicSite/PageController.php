@@ -51,6 +51,9 @@ class PageController extends Controller
             'services' => (new ServiceRepository($this->db))->allPublished(),
             'news' => array_slice((new PostRepository($this->db))->allByType('news', true), 0, 3),
             'metaTitle' => site_meta_title($settings, $active['seo_title'] ?: $active['title']),
+            'metaDescription' => $active['seo_description'] ?? $active['excerpt'] ?? '',
+            'metaKeywords' => $active['seo_keywords'] ?? '',
+            'metaImage' => $page['seo_image'] ?? '',
         ], 'layouts/public');
     }
 }

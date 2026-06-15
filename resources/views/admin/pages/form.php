@@ -2,7 +2,7 @@
 <form class="admin-form panel" method="post" action="<?= e(admin_url('pages/save')) ?>">
     <?= csrf_field() ?>
     <input type="hidden" name="id" value="<?= e((string) ($item['id'] ?? '')) ?>">
-    <h2><?= e($metaTitle ?? 'Content Page') ?></h2>
+    <h2><?= e($metaTitle ?? 'Page') ?></h2>
     <p>Use `about` for the Who We Are page and `contact` for the contact page sections shown on the frontend.</p>
     <label>Slug<input name="slug" value="<?= e((string) ($item['slug'] ?? '')) ?>" required></label>
     <label>Template

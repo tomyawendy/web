@@ -15,7 +15,7 @@ class PageController extends Controller
     {
         $this->view('admin/pages/index', [
             'items' => (new PageRepository($this->db))->all(),
-            'metaTitle' => 'Content Pages',
+            'metaTitle' => 'Pages',
         ], 'layouts/admin');
     }
 
@@ -43,7 +43,7 @@ class PageController extends Controller
 
         $this->view('admin/pages/form', [
             'item' => $page,
-            'metaTitle' => $id ? 'Edit Content Page' : 'Create Content Page',
+            'metaTitle' => $id ? 'Edit Page' : 'Create Page',
         ], 'layouts/admin');
     }
 

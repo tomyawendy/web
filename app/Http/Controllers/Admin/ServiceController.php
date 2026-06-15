@@ -15,7 +15,7 @@ class ServiceController extends Controller
     {
         $this->view('admin/services/index', [
             'items' => (new ServiceRepository($this->db))->allAdmin(),
-            'metaTitle' => 'Service Cards',
+            'metaTitle' => 'Services',
         ], 'layouts/admin');
     }
 
@@ -79,7 +79,7 @@ class ServiceController extends Controller
 
         $this->view('admin/services/form', [
             'item' => $item,
-            'metaTitle' => $id ? 'Edit Service Card' : 'Create Service Card',
+            'metaTitle' => $id ? 'Edit Service' : 'Create Service',
         ], 'layouts/admin');
     }
 }

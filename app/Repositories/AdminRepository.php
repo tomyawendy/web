@@ -21,6 +21,11 @@ class AdminRepository extends BaseRepository
         return $this->fetchAll('SELECT * FROM roles ORDER BY id ASC');
     }
 
+    public function find(int $id): ?array
+    {
+        return $this->fetchOne('SELECT * FROM admins WHERE id = :id', ['id' => $id]);
+    }
+
     public function create(array $payload): int
     {
         $this->execute(
@@ -30,5 +35,16 @@ class AdminRepository extends BaseRepository
         );
 
         return $this->lastInsertId();
+    }
+
+    public function update(array $payload): void
+    {
+        $sql = 'UPDATE admins SET role_id = :role_id, username = :username, name = :name, email = :email, is_active = :is_active, updated_at = NOW()';
+        if (!empty($payload['password_hash'])) {
+            $sql .= ', password_hash = :password_hash';
+        }
+        $sql .= ' WHERE id = :id';
+
+        $this->execute($sql, $payload);
     }
 }

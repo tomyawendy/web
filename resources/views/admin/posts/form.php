@@ -7,6 +7,7 @@
     <input type="hidden" name="existing_attachment_name" value="<?= e((string) ($item['attachment_name'] ?? '')) ?>">
     <h2><?= e($metaTitle ?? ($type === 'news' ? 'Insight' : 'Document')) ?></h2>
     <p><?= $type === 'news' ? 'Insights appear in the Latest News section and the Insights listing page.' : 'Documents appear on the Documents listing page and can expose downloadable attachments.' ?></p>
+    <p class="field-note">Current editing scope: English and Spanish fields only. The public site defaults to English and switches to Spanish manually.</p>
     <label>Slug<input name="slug" value="<?= e((string) ($item['slug'] ?? '')) ?>" required></label>
     <div class="button-row">
         <label>Category
@@ -17,10 +18,17 @@
                 <?php endforeach; ?>
             </select>
         </label>
-        <label>Cover Image Path<input name="cover_image" value="<?= e((string) ($item['cover_image'] ?? '')) ?>"></label>
+        <label>Cover Image Path
+            <input name="cover_image" value="<?= e((string) ($item['cover_image'] ?? '')) ?>" placeholder="assets/uploads/2026/06/example.jpg">
+            <span class="field-note">Upload the file in Media Library first, then paste the copied path here.</span>
+        </label>
     </div>
     <?php if (!empty($item['cover_image'])): ?>
-        <p>Current cover image: <a href="<?= e(media_url((string) $item['cover_image'])) ?>" target="_blank"><?= e((string) $item['cover_image']) ?></a></p>
+        <div class="current-media-preview">
+            <span>Current cover image</span>
+            <a href="<?= e(media_url((string) $item['cover_image'])) ?>" target="_blank"><?= e((string) $item['cover_image']) ?></a>
+            <img class="media-thumb" src="<?= e(media_url((string) $item['cover_image'])) ?>" alt="">
+        </div>
     <?php endif; ?>
     <div class="button-row">
         <label>Status
@@ -37,10 +45,16 @@
         <label class="checkbox-line"><input type="checkbox" name="is_pinned" value="1" <?= !empty($item['is_pinned']) ? 'checked' : '' ?>> Pinned</label>
         <label class="checkbox-line"><input type="checkbox" name="is_featured" value="1" <?= !empty($item['is_featured']) ? 'checked' : '' ?>> Featured</label>
     </div>
-    <label>Attachment (documents only)<input type="file" name="attachment"></label>
+    <label>Attachment <?= $type === 'document' ? '(recommended for documents)' : '(optional)' ?><input type="file" name="attachment"></label>
     <?php if (!empty($item['attachment_name'])): ?>
-        <p>Current attachment: <a href="<?= e(media_url((string) $item['attachment_path'])) ?>" target="_blank"><?= e($item['attachment_name']) ?></a></p>
+        <div class="current-media-preview">
+            <span>Current attachment</span>
+            <a href="<?= e(media_url((string) $item['attachment_path'])) ?>" target="_blank"><?= e($item['attachment_name']) ?></a>
+        </div>
     <?php endif; ?>
+    <label>Attachment Description
+        <textarea name="attachment_description" placeholder="Explain what this downloadable file contains."><?= e((string) ($item['attachment_description'] ?? '')) ?></textarea>
+    </label>
     <?php foreach (config('app.locales', []) as $locale => $label): ?>
         <fieldset>
             <legend><?= e($label) ?></legend>

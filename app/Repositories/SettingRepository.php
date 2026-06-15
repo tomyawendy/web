@@ -14,6 +14,12 @@ class SettingRepository extends BaseRepository
             $settings[$row['locale']][$row['setting_key']] = $row['setting_value'];
         }
 
+        $fallbackLocale = (string) config('app.locale', 'en');
+        $fallback = $settings[$fallbackLocale] ?? [];
+        foreach (array_keys(config('app.locales', [])) as $locale) {
+            $settings[$locale] = array_merge($fallback, $settings[$locale] ?? []);
+        }
+
         return $settings;
     }
 
