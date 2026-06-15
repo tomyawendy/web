@@ -97,12 +97,12 @@ html[lang="es"] .hero-panel-home {
 html[lang="es"] .hero-panel-home::before {
     content: "";
     position: absolute;
-    left: calc(50% - 704px);
+    left: calc(50% - 720px);
     top: 0;
     z-index: 1;
-    width: 830px;
+    width: 920px;
     height: 392px;
-    background: linear-gradient(90deg, rgba(239, 249, 253, 1) 0%, rgba(239, 249, 253, 1) 72%, rgba(239, 249, 253, 0.82) 88%, rgba(239, 249, 253, 0) 100%);
+    background: linear-gradient(90deg, rgba(239, 249, 253, 1) 0%, rgba(239, 249, 253, 1) 54%, rgba(239, 249, 253, 0.92) 68%, rgba(239, 249, 253, 0.58) 84%, rgba(239, 249, 253, 0) 100%);
     pointer-events: none;
 }
 html[lang="es"] .hero-panel-home .hero-home-shell {
@@ -123,29 +123,27 @@ html[lang="es"] .hero-home-card {
 }
 html[lang="es"] .hero-kicker {
     margin-bottom: 14px;
-    width: 600px;
-    max-width: 600px;
-    font-size: 45px;
+    width: 680px;
+    max-width: 680px;
+    font-size: 50px;
     line-height: 1.02;
     font-weight: 700;
-    letter-spacing: -0.036em;
+    letter-spacing: -0.042em;
 }
 html[lang="es"] .hero-home-card h1 {
-    width: 590px;
-    max-width: 590px;
-    margin-bottom: 24px;
+    width: 610px;
+    max-width: 610px;
+    margin-bottom: 0;
     font-size: 42px;
     line-height: 1.06;
-    font-weight: 500;
-    letter-spacing: -0.048em;
+    font-weight: 400;
+    letter-spacing: -0.05em;
 }
 html[lang="es"] .hero-subtitle {
-    max-width: 485px;
-    margin-bottom: 25px;
-    font-size: 13px;
-    line-height: 1.62;
+    display: none;
 }
 html[lang="es"] .hero-button {
+    margin-top: 34px;
     min-width: 222px;
     min-height: 58px;
     padding: 0 38px;
