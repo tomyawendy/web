@@ -5,8 +5,7 @@ declare(strict_types=1);
 $root = __DIR__;
 $dbConfigPath = $root . '/config/database.php';
 $patches = [
-    $root . '/database/patches/2026_06_14_cms_operations.sql',
-    $root . '/database/patches/2026_06_14_spanish_frontend.sql',
+    $root . '/database/patches/2026_06_15_spanish_completion.sql',
 ];
 
 header('Content-Type: text/plain; charset=utf-8');
