@@ -100,9 +100,9 @@ html[lang="es"] .hero-panel-home::before {
     left: calc(50% - 720px);
     top: 0;
     z-index: 1;
-    width: 920px;
+    width: 940px;
     height: 392px;
-    background: linear-gradient(90deg, rgba(239, 249, 253, 1) 0%, rgba(239, 249, 253, 1) 54%, rgba(239, 249, 253, 0.92) 68%, rgba(239, 249, 253, 0.58) 84%, rgba(239, 249, 253, 0) 100%);
+    background: linear-gradient(90deg, rgba(239, 249, 253, 1) 0%, rgba(239, 249, 253, 1) 72%, rgba(239, 249, 253, 0.88) 84%, rgba(239, 249, 253, 0.42) 94%, rgba(239, 249, 253, 0) 100%);
     pointer-events: none;
 }
 html[lang="es"] .hero-panel-home .hero-home-shell {
