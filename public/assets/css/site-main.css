@@ -584,6 +584,78 @@ html[lang="es"] .home-about-section .home-about-shell {
 .footer-copy { border-top: 1px solid rgba(255,255,255,0.08); min-height: 76px; display: flex; align-items: center; color: rgba(255,255,255,0.55); font-size: 12px; font-family: var(--font-yahei-ui); }
 .footer-copy .container { text-align: center; letter-spacing: 0; }
 
+html[lang="es"] .service-overview {
+    height: auto;
+    min-height: 0;
+    padding: 122px 0 110px;
+    background: var(--lookup-strip-bg);
+}
+html[lang="es"] .service-overview > .container {
+    visibility: visible;
+}
+html[lang="es"] .service-hotspots {
+    display: none;
+}
+html[lang="es"] .why-section {
+    height: auto;
+    padding: 96px 0 110px;
+    background: #0c2a5d !important;
+    overflow: visible;
+}
+html[lang="es"] .why-shell {
+    display: block;
+}
+html[lang="es"] .world-section {
+    height: auto;
+    padding: 96px 0 110px;
+    background: #fff;
+    overflow: visible;
+}
+html[lang="es"] .world-section > .container {
+    visibility: visible;
+}
+html[lang="es"] .partners-section {
+    height: auto;
+    padding: 80px 0;
+    background: var(--lookup-strip-bg);
+}
+html[lang="es"] .partners-section > .container {
+    visibility: visible;
+}
+html[lang="es"] .home-news-stage {
+    height: auto;
+    padding: 112px 0 118px;
+    background: #fff;
+}
+html[lang="es"] .home-news-stage > .container {
+    visibility: visible;
+}
+html[lang="es"] .home-contact-stage {
+    height: auto;
+    padding: 96px 0 112px;
+    background: #f1f1f1;
+}
+html[lang="es"] .contact-block.home-contact-stage > .container,
+html[lang="es"] .home-contact-stage > .container {
+    visibility: visible !important;
+}
+html[lang="es"] .home-newsletter-stage {
+    min-height: 0;
+    padding: 84px 0;
+    background: #151831;
+}
+html[lang="es"] .home-newsletter-stage > .container,
+html[lang="es"] .newsletter-shell .newsletter-copy {
+    visibility: visible;
+}
+html[lang="es"] .site-footer {
+    height: auto;
+    background: var(--color-footer);
+}
+html[lang="es"] .site-footer > * {
+    visibility: visible;
+}
+
 .about-page { padding: 66px 0 0; }
 .about-page-shell { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; padding: 64px 0 70px; }
 .about-page-copy h1 { margin: 0 0 26px; }
