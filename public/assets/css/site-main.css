@@ -838,6 +838,110 @@ html[lang="es"] .post-detail-shell {
     gap: 86px;
 }
 
+/* Spanish home pages use the same Latin type system as the English UI. */
+html[lang="es"] .hero-kicker,
+html[lang="es"] .service-head h2,
+html[lang="es"] .home-about-copy h2,
+html[lang="es"] .why-shell h2,
+html[lang="es"] .world-shell h2,
+html[lang="es"] .partners-section h2,
+html[lang="es"] .newsletter-copy h2,
+html[lang="es"] .lookup-strip p,
+html[lang="es"] .home-service-copy h3,
+html[lang="es"] .home-service-index {
+    font-family: var(--font-display);
+}
+html[lang="es"] .hero-home-card h1,
+html[lang="es"] .home-about-copy p,
+html[lang="es"] .service-head p,
+html[lang="es"] .home-service-lead,
+html[lang="es"] .home-service-bullets,
+html[lang="es"] .why-grid p,
+html[lang="es"] .world-shell p,
+html[lang="es"] .region-list span,
+html[lang="es"] .partners-subtitle,
+html[lang="es"] .news-card span,
+html[lang="es"] .news-card p,
+html[lang="es"] .contact-copy p,
+html[lang="es"] .contact-grid label,
+html[lang="es"] .newsletter-copy p,
+html[lang="es"] .footer-copy {
+    font-family: var(--font-body);
+}
+html[lang="es"] .lookup-pills a,
+html[lang="es"] .hero-button,
+html[lang="es"] .hero-button.mini,
+html[lang="es"] .tiny-link,
+html[lang="es"] .services-filter-link,
+html[lang="es"] .news-link,
+html[lang="es"] .submit-button,
+html[lang="es"] .newsletter-button,
+html[lang="es"] .footer-title,
+html[lang="es"] .footer-column a,
+html[lang="es"] .footer-column span,
+html[lang="es"] .footer-cert span {
+    font-family: var(--font-nav);
+}
+html[lang="es"] .hero-kicker {
+    font-size: 48px;
+    font-weight: 700;
+}
+html[lang="es"] .hero-home-card h1 {
+    font-size: 42px;
+    font-weight: 400;
+    letter-spacing: -0.044em;
+}
+html[lang="es"] .lookup-strip p {
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+html[lang="es"] .lookup-pills a {
+    font-weight: 800;
+    letter-spacing: -0.01em;
+}
+html[lang="es"] .home-about-copy h2,
+html[lang="es"] .service-overview .service-head h2,
+html[lang="es"] .why-shell h2,
+html[lang="es"] .world-shell h2,
+html[lang="es"] .home-news-stage .service-head h2,
+html[lang="es"] .contact-copy h2 {
+    font-size: 42px;
+    line-height: 1.16;
+    font-weight: 700;
+    letter-spacing: -0.032em;
+}
+html[lang="es"] .home-about-copy p,
+html[lang="es"] .service-overview .home-services-head p,
+html[lang="es"] .home-service-bullets,
+html[lang="es"] .world-shell p,
+html[lang="es"] .news-card p,
+html[lang="es"] .contact-copy p,
+html[lang="es"] .newsletter-copy p {
+    font-size: 16px;
+    line-height: 1.72;
+    font-weight: 400;
+}
+html[lang="es"] .home-service-index,
+html[lang="es"] .home-service-copy h3 {
+    font-size: 28px;
+    line-height: 1.22;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+}
+html[lang="es"] .tiny-link {
+    font-weight: 800;
+    letter-spacing: 0.12em;
+}
+html[lang="es"] .news-card h3 {
+    font-family: var(--font-display);
+    font-size: 18px;
+    line-height: 1.32;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
 .about-page { padding: 66px 0 0; }
 .about-page-shell { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; padding: 64px 0 70px; }
 .about-page-copy h1 { margin: 0 0 26px; }
