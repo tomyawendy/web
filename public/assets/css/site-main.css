@@ -97,14 +97,12 @@ html[lang="es"] .hero-panel-home {
 html[lang="es"] .hero-panel-home::before {
     content: "";
     position: absolute;
-    left: calc(50% - 712px);
+    left: calc(50% - 704px);
     top: 0;
     z-index: 1;
-    width: 830px;
-    height: 410px;
-    background:
-        linear-gradient(90deg, rgba(239, 249, 253, 1) 0%, rgba(239, 249, 253, 0.98) 64%, rgba(239, 249, 253, 0.74) 84%, rgba(239, 249, 253, 0) 100%),
-        linear-gradient(180deg, rgba(239, 249, 253, 0.82) 0%, rgba(239, 249, 253, 0.98) 58%, rgba(239, 249, 253, 0.38) 100%);
+    width: 770px;
+    height: 392px;
+    background: linear-gradient(90deg, rgba(239, 249, 253, 1) 0%, rgba(239, 249, 253, 0.99) 58%, rgba(239, 249, 253, 0.74) 82%, rgba(239, 249, 253, 0) 100%);
     pointer-events: none;
 }
 html[lang="es"] .hero-panel-home .hero-home-shell {
@@ -136,9 +134,9 @@ html[lang="es"] .hero-home-card h1 {
     width: 590px;
     max-width: 590px;
     margin-bottom: 24px;
-    font-size: 43px;
-    line-height: 1.05;
-    font-weight: 600;
+    font-size: 42px;
+    line-height: 1.06;
+    font-weight: 500;
     letter-spacing: -0.048em;
 }
 html[lang="es"] .hero-subtitle {
