@@ -614,6 +614,17 @@ html[lang="es"] .world-section {
 html[lang="es"] .world-section > .container {
     visibility: visible;
 }
+html[lang="es"] .world-map {
+    background-image: url("../figma/world-map-clean.png") !important;
+    background-size: contain !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+html[lang="es"] .home-service-row:nth-child(4) .home-service-visual {
+    background-image: linear-gradient(135deg, rgba(184, 238, 240, 0.92), rgba(216, 247, 251, 0.76)), url("../figma/hero-plane.png") !important;
+    background-size: cover !important;
+    background-position: right center !important;
+}
 html[lang="es"] .partners-section {
     height: auto;
     padding: 80px 0;
