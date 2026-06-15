@@ -14,6 +14,9 @@ $servicesHeadingParts = preg_split("/\R+/", $servicesHeading, 2) ?: [$servicesHe
 if (strpos($heroTitle, "\n") === false && preg_match('/^Premium Choice for Air Logistics Solution!?$/i', trim($heroTitle))) {
     $heroTitle = "Premium Choice\nFor Air Logistics\nSolution!";
 }
+if (current_locale() === 'es' && !preg_match('/[!?¡¿]$/u', trim($heroTitle))) {
+    $heroTitle .= '!';
+}
 ?>
 <section class="hero-panel-home">
     <div class="container hero-home-shell">
