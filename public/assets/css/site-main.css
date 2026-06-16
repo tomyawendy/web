@@ -644,39 +644,208 @@ html[lang="es"] .service-overview:not(.services-entry-stage) {
 html[lang="es"] .service-hotspots {
     display: none;
 }
+html[lang="es"] .service-overview .home-services-head {
+    align-items: start;
+    margin-bottom: 70px;
+}
+html[lang="es"] .service-overview .home-services-head p {
+    margin-top: 26px;
+    max-width: 640px;
+    padding-left: 92px;
+}
+html[lang="es"] .home-service-visual {
+    width: 690px;
+    min-height: 248px;
+    background-size: cover;
+    background-position: center;
+}
+html[lang="es"] .home-service-row:nth-child(4) .home-service-visual {
+    background-image: url("../figma/service_4.png") !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
 html[lang="es"] .why-section {
     height: 709px;
     padding: 0;
-    background: #0c2a5d !important;
+    background: #0c2a5d url("../figma/why-bg-clean.png") center top / 1924px 709px no-repeat !important;
     overflow: hidden;
-    display: flex;
-    align-items: center;
+    display: block;
 }
 html[lang="es"] .why-shell {
     display: block;
     width: 100%;
+    padding-top: 104px;
+}
+html[lang="es"] .why-shell h2 {
+    margin-bottom: 66px;
+    color: #fff;
+    text-align: center;
+}
+html[lang="es"] .why-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 50px 104px;
+}
+html[lang="es"] .why-grid article {
+    padding: 0;
+}
+html[lang="es"] .why-grid span {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+html[lang="es"] .why-grid span::before {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    font-family: var(--font-nav);
+    font-size: 21px;
+    font-weight: 800;
+}
+html[lang="es"] .why-icon-shield::before { content: "✓"; }
+html[lang="es"] .why-icon-bank::before { content: "▥"; }
+html[lang="es"] .why-icon-megaphone::before { content: "›"; font-size: 30px; transform: rotate(-22deg); }
+html[lang="es"] .why-icon-team::before { content: "••"; letter-spacing: -4px; }
+html[lang="es"] .why-icon-chart::before { content: "↗"; }
+html[lang="es"] .why-icon-layers::before { content: "◇"; }
+html[lang="es"] .why-grid h3 {
+    margin: 0 0 14px;
+    color: #57e4e0;
+    font-size: 22px;
+    line-height: 1.24;
+}
+html[lang="es"] .why-grid p {
+    color: rgba(255,255,255,0.9);
+    font-size: 15px;
+    line-height: 1.55;
 }
 html[lang="es"] .world-section {
     height: 1087px;
-    padding: 0;
+    padding: 115px 0 0;
     background: #fff;
     overflow: hidden;
-    display: flex;
-    align-items: center;
+    display: block;
 }
 html[lang="es"] .world-section > .container {
     visibility: visible;
+}
+html[lang="es"] .world-shell {
+    grid-template-columns: 390px minmax(0, 1fr);
+    gap: 44px;
+    align-items: start;
+}
+html[lang="es"] .world-shell .tiny-link {
+    margin-bottom: 16px;
+}
+html[lang="es"] .world-shell h2 {
+    margin-bottom: 10px;
+}
+html[lang="es"] .world-shell p {
+    max-width: 355px;
+    line-height: 1.55;
+}
+html[lang="es"] .region-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 42px;
+    margin-top: 74px;
+}
+html[lang="es"] .region-group {
+    display: grid;
+    gap: 10px;
+    align-content: start;
+}
+html[lang="es"] .region-group strong {
+    position: relative;
+    margin-bottom: 8px;
+    padding-left: 18px;
+    color: #111427;
+    font-family: var(--font-display);
+    font-size: 16px;
+    line-height: 1.2;
+}
+html[lang="es"] .region-group strong::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #0727ff;
+}
+html[lang="es"] .region-list span {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.22;
+    font-weight: 400;
+}
+html[lang="es"] .world-map-card {
+    position: relative;
+    padding-top: 138px;
+}
+html[lang="es"] .world-note {
+    position: absolute;
+    top: 0;
+    right: 144px;
+    display: grid;
+    grid-template-columns: 64px 300px;
+    gap: 28px;
+    align-items: center;
+    color: var(--color-brand-navy);
+}
+html[lang="es"] .world-note span {
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+    background: #f1f3f7;
+    position: relative;
+}
+html[lang="es"] .world-note span::before {
+    content: "◉";
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    color: var(--color-brand-navy);
+    font-size: 32px;
+}
+html[lang="es"] .world-note p {
+    max-width: 300px;
+    color: var(--color-brand-navy);
+    font-size: 16px;
+    line-height: 1.5;
 }
 html[lang="es"] .world-map {
     background-image: url("../figma/world-map-clean.png") !important;
     background-size: contain !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
+    min-height: 430px;
+    border: 0;
+    border-radius: 0;
+    background-color: transparent !important;
 }
-html[lang="es"] .home-service-row:nth-child(4) .home-service-visual {
-    background-image: url("../figma/service-4-crop.png") !important;
-    background-size: cover !important;
-    background-position: center !important;
+html[lang="es"] .world-map-card .stats-row {
+    gap: 0;
+    margin-top: 86px;
+}
+html[lang="es"] .world-map-card .stats-row article + article {
+    border-left: 1px solid #ededed;
+}
+html[lang="es"] .world-map-card .stats-row strong {
+    font-size: 52px;
+    background: linear-gradient(90deg, #12c4d6, #0635ee);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+html[lang="es"] .world-map-card .stats-row span {
+    color: #909090;
+    font-size: 16px;
+    font-weight: 400;
 }
 html[lang="es"] .partners-section {
     height: 433px;
