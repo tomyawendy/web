@@ -94,6 +94,14 @@ html[lang="es"] .hero-panel-home {
     height: 647px;
     background: #fff url("../figma/hero-full-stage.png") center top / 1924px 647px no-repeat;
 }
+html[lang="es"] .hero-panel-home::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: url("../figma/hero-full-stage.png") center top / 1924px 647px no-repeat;
+    pointer-events: none;
+}
 html[lang="es"] .hero-panel-home::before {
     content: "";
     position: absolute;
@@ -655,6 +663,7 @@ html[lang="es"] .service-overview .home-services-head p {
 }
 html[lang="es"] .home-service-visual {
     width: 690px;
+    height: 248px;
     min-height: 248px;
     background-size: cover;
     background-position: center;
