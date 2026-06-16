@@ -92,14 +92,14 @@ img { max-width: 100%; display: block; }
 html[lang="es"] .hero-panel-home {
     position: relative;
     height: 647px;
-    background: #fff url("../figma/hero-full-stage.png") center top / 1924px 647px no-repeat;
+    background: #fff;
 }
 html[lang="es"] .hero-panel-home::after {
     content: "";
     position: absolute;
     inset: 0;
     z-index: 0;
-    background: url("../figma/hero-full-stage.png") center top / 1924px 647px no-repeat;
+    background: url("../figma/hero-plane.png") right top / auto 647px no-repeat;
     pointer-events: none;
 }
 html[lang="es"] .hero-panel-home::before {
