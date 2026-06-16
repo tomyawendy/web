@@ -660,7 +660,7 @@ html[lang="es"] .home-service-visual {
     background-position: center;
 }
 html[lang="es"] .home-service-row:nth-child(4) .home-service-visual {
-    background-image: url("../figma/service_4.png") !important;
+    background-image: url("../figma/service-4-clean.png") !important;
     background-size: cover !important;
     background-position: center center !important;
 }
@@ -1280,6 +1280,24 @@ html[lang="es"] .news-card h3 {
     .span-2 { grid-column: auto; }
     .stats-row { grid-template-columns: 1fr; }
     .news-link { font-size: 12px; }
+}
+
+@media (min-width: 821px) {
+    html[lang="es"] .hero-home-card {
+        position: absolute;
+        left: 28px;
+        top: 56px;
+        width: 650px;
+        max-width: 650px;
+        margin: 0;
+        padding: var(--hero-card-padding-top) var(--hero-card-padding-right) var(--hero-card-padding-bottom) var(--hero-card-padding-left);
+    }
+    html[lang="es"] .hero-home-image {
+        position: absolute;
+        inset: 0 auto auto 0;
+        width: 100%;
+        height: var(--hero-min-height);
+    }
 }
 
 .contact-block.home-contact-stage,

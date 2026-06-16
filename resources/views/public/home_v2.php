@@ -111,7 +111,7 @@ if ($isSpanishHome) {
             <?php foreach (array_slice($services, 0, 4) as $index => $service): ?>
                 <?php $serviceItems = array_slice(content_list_items($service['content'] ?? ''), 0, 4); ?>
                 <?php $serviceVisual = $service['cover_image'] ?? ''; ?>
-                <?php $figmaServiceVisual = $index === 3 ? 'figma/service_4.png' : 'figma/service-' . ($index + 1) . '-crop.png'; ?>
+                <?php $figmaServiceVisual = $index === 3 ? 'figma/service-4-clean.png' : 'figma/service-' . ($index + 1) . '-crop.png'; ?>
                 <?php $usesLegacyFigmaSeed = preg_match('#^assets/figma/service_[24]\.png$#', $serviceVisual) === 1; ?>
                 <?php $serviceVisualStyle = ($serviceVisual !== '' && !$usesLegacyFigmaSeed) ? background_style($serviceVisual) : ' style="background-image:url(' . e(asset_url($figmaServiceVisual)) . ')"'; ?>
                 <article class="home-service-row" id="service-<?= e($service['slug']) ?>">
