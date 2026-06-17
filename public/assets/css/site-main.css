@@ -103,9 +103,9 @@ html[lang="es"] .hero-panel-home::before {
     left: calc(50% - 720px);
     top: 0;
     z-index: 1;
-    width: 740px;
+    width: 900px;
     height: 392px;
-    background: linear-gradient(90deg, rgba(239, 249, 253, 1) 0%, rgba(239, 249, 253, 0.96) 56%, rgba(239, 249, 253, 0.62) 78%, rgba(239, 249, 253, 0.18) 92%, rgba(239, 249, 253, 0) 100%);
+    background: linear-gradient(90deg, rgba(239, 249, 253, 1) 0%, rgba(239, 249, 253, 1) 66%, rgba(239, 249, 253, 0.78) 84%, rgba(239, 249, 253, 0.18) 96%, rgba(239, 249, 253, 0) 100%);
     pointer-events: none;
 }
 html[lang="es"] .hero-panel-home .hero-home-shell {
@@ -695,8 +695,8 @@ html[lang="es"] .why-section {
     height: 709px;
     padding: 0;
     background:
-        linear-gradient(180deg, rgba(10, 43, 91, 0.18), rgba(10, 43, 91, 0.18)),
-        #0c2a5d url("../figma/why-stage-full.png") center top / 1924px 709px no-repeat !important;
+        linear-gradient(180deg, rgba(10, 43, 91, 0.08), rgba(10, 43, 91, 0.08)),
+        #0c2a5d url("../figma/why-bg-clean.png") center top / 1924px 709px no-repeat !important;
     overflow: hidden;
     display: block;
 }
