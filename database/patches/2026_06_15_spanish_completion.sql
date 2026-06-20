@@ -34,7 +34,7 @@ UPDATE site_settings SET setting_value = CASE setting_key
     WHEN 'nav_insights_label' THEN 'Noticias'
     WHEN 'nav_documents_label' THEN 'Documentos'
     WHEN 'nav_contact_label' THEN 'Contacto'
-    WHEN 'homepage_title' THEN 'Soluciones premium\npara logística aérea'
+    WHEN 'homepage_title' THEN 'Soluciones premium\npara logística aérea!'
     WHEN 'homepage_subtitle' THEN 'Especialistas en operaciones de carga aérea en Europa, Asia, Oriente Medio y América Latina.'
     WHEN 'hero_button_text' THEN 'SABER MÁS'
     WHEN 'lookup_label' THEN 'Estoy buscando'
