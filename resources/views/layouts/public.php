@@ -30,6 +30,8 @@
     <link rel="preload" href="<?= e(asset_url('figma/news-2-noedge.png')) ?>" as="image">
     <link rel="preload" href="<?= e(asset_url('figma/news-3-noedge.png')) ?>" as="image">
     <link rel="preload" href="<?= e(asset_url('figma/service-4-clean.png')) ?>" as="image">
+    <link rel="preload" href="<?= e(asset_url('figma/contact-photo.png')) ?>" as="image">
+    <link rel="preload" href="<?= e(asset_url('figma/newsletter-bg.png')) ?>" as="image">
 </head>
 <body class="site-body">
 <?php include base_path('resources/views/public/components/header.php'); ?>
