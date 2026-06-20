@@ -1759,6 +1759,10 @@ html[lang="es"] .home-about-copy p {
     line-height: 1.55;
     letter-spacing: -0.01em;
 }
+html[lang="es"] .home-about-section .hero-button.mini::after,
+html[lang="es"] .hero-button.mini::after {
+    content: "\2192";
+}
 html[lang="es"] .service-overview .home-services-head {
     grid-template-columns: 520px 690px;
     gap: 158px;
