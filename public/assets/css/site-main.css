@@ -86,7 +86,7 @@ img { max-width: 100%; display: block; }
 .home-about-copy h2 { margin: 0 0 24px; font-family: var(--font-yahei-ui); font-size: 40px; line-height: 1.32; color: var(--color-brand-navy); max-width: 690px; font-weight: 700; letter-spacing: 0; }
 .home-about-copy p { margin: 0 0 34px; max-width: 1235px; font-size: 16px; line-height: 1.5; color: #303030; white-space: pre-line; font-family: var(--font-yahei-ui); }
 .home-about-section .hero-button.mini { min-width: 222px; min-height: 56px; padding: 0 40px; font-size: 16px; line-height: 24px; border-radius: 30px; letter-spacing: 0.1em; }
-.home-about-section .hero-button.mini::after { content: "?"; margin-left: 12px; font-size: 16px; line-height: 1; }
+.home-about-section .hero-button.mini::after { content: "→"; margin-left: 12px; font-size: 16px; line-height: 1; }
 .home-about-visual { display: none; }
 
 html[lang="es"] .hero-panel-home {
@@ -202,7 +202,7 @@ html[lang="es"] .home-about-section .home-about-shell {
 .service-overview .home-services-head { display: grid; grid-template-columns: 520px 1fr; align-items: end; gap: 180px; max-width: none; margin: 0 0 74px; padding: 0; text-align: left; }
 .service-overview .home-services-head > div { max-width: 520px; text-align: left; }
 .service-overview .home-services-head p { justify-self: end; max-width: 650px; text-align: left; position: relative; padding-left: 88px; }
-.service-overview .home-services-head p::before { content: "?"; position: absolute; left: 0; top: 10px; width: 54px; height: 54px; display: inline-flex; align-items: center; justify-content: center; color: var(--color-brand-navy); font-size: 28px; line-height: 1; background: rgba(255,255,255,0.45); border-radius: 50%; transform: rotate(-10deg); }
+.service-overview .home-services-head p::before { content: "✈"; position: absolute; left: 0; top: 10px; width: 54px; height: 54px; display: inline-flex; align-items: center; justify-content: center; color: var(--color-brand-navy); font-size: 28px; line-height: 1; background: rgba(255,255,255,0.45); border-radius: 50%; transform: rotate(-10deg); }
 .tiny-link { display: inline-block; margin-bottom: 16px; color: #7baad4; font-family: var(--font-display); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; }
 .service-head h2,
 .services-page-head h1,
@@ -284,7 +284,7 @@ html[lang="es"] .home-about-section .home-about-shell {
 .service-card-link,
 .news-card-link { display: block; color: inherit; text-decoration: none; }
 .home-service-row .hero-button.mini { grid-column: 1 / -1; margin-top: 20px; width: fit-content; min-width: 128px; min-height: 40px; padding: 0 20px; background: #49dfd7; color: #fff; font-size: 14px; line-height: 20px; border-radius: 30px; letter-spacing: 0; position: relative; }
-.home-service-row .hero-button.mini::after { content: "?"; position: absolute; left: calc(100% + 2px); top: 0; width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center; border: 2px solid #49dfd7; border-radius: 50%; color: #49dfd7; background: transparent; font-size: 22px; line-height: 1; }
+.home-service-row .hero-button.mini::after { content: "→"; position: absolute; left: calc(100% + 2px); top: 0; width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center; border: 2px solid #49dfd7; border-radius: 50%; color: #49dfd7; background: transparent; font-size: 22px; line-height: 1; }
 .services-page-points { margin: 18px 0 0; padding-left: 18px; color: #334155; line-height: 1.9; }
 .services-page-points li + li { margin-top: 6px; }
 
@@ -734,12 +734,12 @@ html[lang="es"] .why-grid span::before {
     font-size: 21px;
     font-weight: 800;
 }
-html[lang="es"] .why-icon-shield::before { content: "?"; }
-html[lang="es"] .why-icon-bank::before { content: "?"; }
-html[lang="es"] .why-icon-megaphone::before { content: ">"; font-size: 30px; transform: rotate(-22deg); }
-html[lang="es"] .why-icon-team::before { content: ".."; letter-spacing: -4px; }
-html[lang="es"] .why-icon-chart::before { content: "?"; }
-html[lang="es"] .why-icon-layers::before { content: "?"; }
+html[lang="es"] .why-icon-shield::before { content: "✓"; }
+html[lang="es"] .why-icon-bank::before { content: "▥"; }
+html[lang="es"] .why-icon-megaphone::before { content: "›"; font-size: 30px; transform: rotate(-22deg); }
+html[lang="es"] .why-icon-team::before { content: "••"; letter-spacing: -4px; }
+html[lang="es"] .why-icon-chart::before { content: "↗"; }
+html[lang="es"] .why-icon-layers::before { content: "◇"; }
 html[lang="es"] .why-grid h3 {
     margin: 0 0 14px;
     color: #57e4e0;
@@ -833,7 +833,7 @@ html[lang="es"] .world-note span {
     position: relative;
 }
 html[lang="es"] .world-note span::before {
-    content: "?";
+    content: "◉";
     position: absolute;
     inset: 0;
     display: grid;
@@ -1834,4 +1834,103 @@ html[lang="es"] .home-news-stage .news-card:nth-child(2) .news-thumb {
 html[lang="es"] .home-news-stage .news-card:nth-child(3) .news-thumb {
     background-size: cover !important;
     background-position: center center !important;
+}
+
+/* Spanish live parity lock: final local-only corrections before deployment. */
+html[lang="es"] .hero-panel-home {
+    background: #fff url("../figma/hero-full-stage.png") center top / 1924px 647px no-repeat !important;
+}
+
+html[lang="es"] .hero-home-image {
+    display: none !important;
+}
+
+html[lang="es"] .service-overview .home-services-head {
+    grid-template-columns: 520px 650px;
+    gap: 198px;
+}
+
+html[lang="es"] .service-overview .home-services-head p {
+    margin-top: 38px;
+    max-width: 650px;
+    padding-left: 92px;
+    line-height: 1.45;
+}
+
+html[lang="es"] .home-service-row {
+    grid-template-columns: 646px 690px;
+    gap: 66px;
+}
+
+html[lang="es"] .home-service-visual {
+    width: 690px;
+    height: 272px;
+    min-height: 272px;
+    margin-top: 84px;
+    transform: none;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+html[lang="es"] .home-service-row:nth-child(1) .home-service-visual {
+    background-image: url("../figma/service-1-stage.png") !important;
+}
+
+html[lang="es"] .home-service-row:nth-child(2) .home-service-visual {
+    background-image: url("../figma/service-2-stage.png") !important;
+}
+
+html[lang="es"] .home-service-row:nth-child(3) .home-service-visual {
+    background-image: url("../figma/service-3-stage.png") !important;
+}
+
+html[lang="es"] .home-service-row:nth-child(4) .home-service-visual {
+    background-image: url("../figma/service-4-stage.png") !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+html[lang="es"] .why-grid span::before {
+    content: "";
+    position: absolute;
+    inset: 7px;
+    background: #fff;
+    border: 0;
+    border-radius: 0;
+    -webkit-mask: var(--why-icon-mask) center / contain no-repeat;
+    mask: var(--why-icon-mask) center / contain no-repeat;
+}
+
+html[lang="es"] .world-map-card {
+    padding-top: 104px;
+}
+
+html[lang="es"] .world-map {
+    width: 930px;
+    min-height: 430px;
+    margin-left: -66px;
+    background-image: url("../figma/world-map-noedge.png") !important;
+    background-size: 930px auto !important;
+    background-position: center top !important;
+}
+
+html[lang="es"] .world-map-card .stats-row {
+    margin-top: 34px;
+}
+
+html[lang="es"] .partner-strip {
+    gap: 18px;
+}
+
+html[lang="es"] .partner-strip span {
+    width: 150px;
+    min-width: 150px;
+    height: 52px;
+    min-height: 52px;
+    padding: 10px 18px;
+}
+
+html[lang="es"] .partner-strip img {
+    max-width: 118px;
+    max-height: 30px;
 }

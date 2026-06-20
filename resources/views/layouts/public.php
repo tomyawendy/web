@@ -25,12 +25,15 @@
         <meta property="og:image" content="<?= e(media_url((string) $resolvedMetaImage)) ?>">
     <?php endif; ?>
     <link rel="stylesheet" href="<?= e(asset_url('css/design-tokens.css') . '?v=20260617b') ?>">
-    <link rel="stylesheet" href="<?= e(asset_url('css/site-main.css') . '?v=20260620a') ?>">
+    <link rel="stylesheet" href="<?= e(asset_url('css/site-main.css') . '?v=20260621b') ?>">
     <link rel="preload" href="<?= e(asset_url('figma/world-map-noedge.png')) ?>" as="image">
     <link rel="preload" href="<?= e(asset_url('figma/news-1.png')) ?>" as="image">
     <link rel="preload" href="<?= e(asset_url('figma/news-2-noedge.png')) ?>" as="image">
     <link rel="preload" href="<?= e(asset_url('figma/news-3-noedge.png')) ?>" as="image">
-    <link rel="preload" href="<?= e(asset_url('figma/service-4-clean.png')) ?>" as="image">
+    <link rel="preload" href="<?= e(asset_url('figma/service-1-stage.png')) ?>" as="image">
+    <link rel="preload" href="<?= e(asset_url('figma/service-2-stage.png')) ?>" as="image">
+    <link rel="preload" href="<?= e(asset_url('figma/service-3-stage.png')) ?>" as="image">
+    <link rel="preload" href="<?= e(asset_url('figma/service-4-stage.png')) ?>" as="image">
     <link rel="preload" href="<?= e(asset_url('figma/contact-photo.png')) ?>" as="image">
     <link rel="preload" href="<?= e(asset_url('figma/newsletter-bg.png')) ?>" as="image">
 </head>
