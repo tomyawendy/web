@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="<?= e(asset_url('css/design-tokens.css') . '?v=20260617b') ?>">
     <link rel="stylesheet" href="<?= e(asset_url('css/site-main.css') . '?v=20260620a') ?>">
     <link rel="preload" href="<?= e(asset_url('figma/world-map-noedge.png')) ?>" as="image">
+    <link rel="preload" href="<?= e(asset_url('figma/news-1.png')) ?>" as="image">
     <link rel="preload" href="<?= e(asset_url('figma/news-2-noedge.png')) ?>" as="image">
     <link rel="preload" href="<?= e(asset_url('figma/news-3-noedge.png')) ?>" as="image">
     <link rel="preload" href="<?= e(asset_url('figma/service-4-clean.png')) ?>" as="image">
