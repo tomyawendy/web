@@ -2095,7 +2095,7 @@ html[lang="es"] .home-service-visual {
 }
 
 html[lang="es"] .home-service-row:nth-child(4) .home-service-visual {
-    background-image: url("../figma/service-4-clean.png") !important;
+    background-image: url("../figma/service-4-stage.png") !important;
     background-size: 690px 248px !important;
 }
 
