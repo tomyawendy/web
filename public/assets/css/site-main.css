@@ -1611,6 +1611,11 @@ html[lang="es"] .home-newsletter-stage .newsletter-shell {
 html[lang="es"] .home-newsletter-stage .newsletter-copy {
     width: 520px;
 }
+html[lang="es"] .newsletter-block.home-newsletter-stage > .container,
+html[lang="es"] .newsletter-block.home-newsletter-stage .newsletter-shell,
+html[lang="es"] .newsletter-block.home-newsletter-stage .newsletter-shell * {
+    visibility: hidden !important;
+}
 html[lang="es"] .site-footer > * {
     visibility: visible !important;
 }
