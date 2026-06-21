@@ -28,12 +28,28 @@ $homeAboutBody = setting_value($settings, 'home_about_body', $homeAboutBodyDefau
 $servicesIntro = setting_value($settings, 'services_intro', 'Planet Aviation offers a comprehensive portfolio of air cargo products and services. Every shipment is handled with precision, care, and professionalism, ensuring reliability at every stage of the logistics chain.');
 $whyHeading = setting_value($settings, 'why_heading', 'Why Partners Choose Us');
 $whyCards = array_map(static fn (string $item): array => ['icon' => '', 'title' => $item, 'body' => ''], array_slice(setting_lines($settings, 'why_items'), 0, 6));
+$whyDescriptions = array_slice(setting_lines($settings, 'why_descriptions'), 0, 6);
+foreach ($whyDescriptions as $index => $description) {
+    if (isset($whyCards[$index])) {
+        $whyCards[$index]['body'] = $description;
+    }
+}
 $worldKicker = setting_value($settings, 'world_kicker_label', 'GLOBAL MANAGEMENT. LOCAL EXPERTISE.');
 $worldHeading = setting_value($settings, 'world_heading', 'One World');
 $worldIntro = setting_value($settings, 'world_intro', 'Local expertise, global cargo reach, and responsive support.');
+$worldRegionGroups = [];
 $worldNote = current_locale() === 'es'
     ? 'Experiencia local, alcance global: su puerta estratégica hacia Sudamérica y África.'
     : 'Local Expertise, Global Reach: Your Strategic Gateway to South America & Africa.';
+if ($isSpanishHome) {
+    $worldRegionGroups = [
+        ['title' => 'Américas', 'items' => ['Estados Unidos', 'Canadá', 'México', 'Colombia', 'Ecuador', 'Perú', 'Bolivia', 'Brasil', 'Uruguay', 'Paraguay', 'Argentina', 'Chile', 'Panamá', 'Costa Rica', 'Nicaragua']],
+        ['title' => 'Europa', 'items' => ['Alemania', 'Suiza', 'España', 'Portugal', 'Austria']],
+        ['title' => 'Oriente Medio', 'items' => ['Turquía', 'EAU']],
+        ['title' => 'África', 'items' => ['Sudáfrica', 'Mozambique']],
+        ['title' => 'Asia-Pacífico', 'items' => ['China', 'India']],
+    ];
+}
 
 if (strpos($heroTitle, "\n") === false && preg_match('/^Premium Choice for Air Logistics Solution!?$/i', trim($heroTitle))) {
     $heroTitle = "Premium Choice\nFor Air Logistics\nSolution!";
@@ -136,7 +152,12 @@ if (strpos($heroTitle, "\n") === false && preg_match('/^Premium Choice for Air L
                 <?php foreach ($whyCards as $card): ?>
                     <article>
                         <span class="why-icon why-icon-<?= e($card['icon']) ?>"></span>
-                        <p><?= e($card['title']) ?></p>
+                        <?php if (($card['body'] ?? '') !== ''): ?>
+                            <p class="why-card-title"><?= e($card['title']) ?></p>
+                            <p><?= e($card['body']) ?></p>
+                        <?php else: ?>
+                            <p><?= e($card['title']) ?></p>
+                        <?php endif; ?>
                     </article>
                 <?php endforeach; ?>
             </div>
@@ -151,9 +172,20 @@ if (strpos($heroTitle, "\n") === false && preg_match('/^Premium Choice for Air L
             <h2><?= e($worldHeading) ?></h2>
             <p><?= e($worldIntro) ?></p>
             <div class="region-list">
-                <?php foreach ($regions as $region): ?>
-                    <span><?= e($region) ?></span>
-                <?php endforeach; ?>
+                <?php if ($worldRegionGroups !== []): ?>
+                    <?php foreach ($worldRegionGroups as $group): ?>
+                        <article class="region-group">
+                            <strong><?= e($group['title']) ?></strong>
+                            <?php foreach ($group['items'] as $region): ?>
+                                <span><?= e($region) ?></span>
+                            <?php endforeach; ?>
+                        </article>
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    <?php foreach ($regions as $region): ?>
+                        <span><?= e($region) ?></span>
+                    <?php endforeach; ?>
+                <?php endif; ?>
             </div>
         </div>
         <div class="world-map-card">

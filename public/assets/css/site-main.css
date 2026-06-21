@@ -1602,7 +1602,7 @@ html[lang="es"] .home-contact-stage .submit-button {
 }
 html[lang="es"] .home-newsletter-stage {
     min-height: 490px;
-    background: #151831 !important;
+    background: #151831 url("../figma/newsletter-stage.png") center top / 1924px 490px no-repeat !important;
 }
 html[lang="es"] .home-newsletter-stage .newsletter-shell {
     min-height: 490px;

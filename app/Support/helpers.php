@@ -412,6 +412,7 @@ function public_settings_for_display(array $settings, ?string $locale = null): a
         'services_filter_label' => 'Productos y servicios',
         'why_heading' => 'Por qué nos eligen',
         'why_items' => "GSSA independiente\nSólida base financiera\nMarketing digital\nEquipos motivados y experimentados\nInteligencia comercial\nServicio integral: de ventas a facturación",
+        'why_descriptions' => "Representación neutral y flexible para múltiples aerolíneas. Equipos comerciales con sólido conocimiento local y estrategias a medida.\nEquipos dedicados de revenue accounting en todo el mundo. Facturación controlada y participación completa en IATA CASS.\nEstrategias dinámicas para promover la marca de la aerolínea, con promociones, reportes de mercado y asistencia en eventos clave.\nFormación completa en sistemas de handling especial y aerolíneas, con actualizaciones de horarios, capacidad e ingresos.\nAnálisis de datos recogidos en plataformas de cotización y supervisión, apoyado por herramientas de business intelligence.\nVentas, reservas y documentación de carga de extremo a extremo, con soporte de reclamaciones y conciliación financiera.",
         'world_kicker_label' => 'GESTIÓN GLOBAL. EXPERIENCIA LOCAL.',
         'world_heading' => 'Un solo mundo',
         'world_intro' => 'Gestión global con experiencia local en América, Europa, Oriente Medio, África y Asia-Pacífico.',
