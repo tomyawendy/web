@@ -410,6 +410,7 @@ function public_settings_for_display(array $settings, ?string $locale = null): a
         'services_impact_label' => 'Nuestro impacto',
         'services_kicker_label' => 'Ver todo',
         'services_filter_label' => 'Productos y servicios',
+        'why_heading' => 'Por qué nos eligen',
         'why_items' => "GSSA independiente\nSólida base financiera\nMarketing digital\nEquipos motivados y experimentados\nInteligencia comercial\nServicio integral: de ventas a facturación",
         'world_kicker_label' => 'GESTIÓN GLOBAL. EXPERIENCIA LOCAL.',
         'world_heading' => 'Un solo mundo',

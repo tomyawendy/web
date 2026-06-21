@@ -22,6 +22,7 @@ INSERT INTO site_settings (locale, setting_key, setting_value, updated_at) VALUE
 ('es', 'services_impact_label', 'Nuestro impacto', NOW()),
 ('es', 'services_kicker_label', 'Ver todo', NOW()),
 ('es', 'services_filter_label', 'Productos y servicios', NOW()),
+('es', 'why_heading', 'Por qué nos eligen', NOW()),
 ('es', 'why_items', 'GSSA independiente\nSólida base financiera\nMarketing digital\nEquipos motivados y experimentados\nInteligencia comercial\nServicio integral: de ventas a facturación', NOW()),
 ('es', 'world_kicker_label', 'GESTIÓN GLOBAL. EXPERIENCIA LOCAL.', NOW()),
 ('es', 'world_heading', 'Un solo mundo', NOW()),
