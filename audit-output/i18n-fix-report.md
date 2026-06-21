@@ -47,20 +47,22 @@ The rendered audit checked 12 English/Spanish page pairs and found 62 issues:
 - Added CSS for `.why-card-title` to preserve the existing visual style.
 - Updated the audit script so language-switch links to another locale are not incorrectly reported as Spanish-link failures.
 - Updated the audit script so decorative `aria-hidden="true"` images are not incorrectly reported as missing alt text.
+- Updated Insights listing image overrides to use the cleaned `news-2-noedge.png` and `news-3-noedge.png` assets, removing the visible vertical edge artifacts from the news cards.
 
-## Verification Completed Locally
+## Verification Completed
 
 - `scripts/check-required-files.mjs` passed.
 - Public templates no longer contain direct `app_url()` calls.
+- GitHub Actions deployment to InfinityFree completed successfully on run `27891012495`.
+- Live CSS returned HTTP 200 and included the new Why-card title styles.
+- Live rendered audit checked 12 English/Spanish page pairs and found 0 issues.
+- `scripts/check-i18n-links.mjs` passed against the live generated audit output.
+- `scripts/check-required-files.mjs` passed after deployment.
 
-## Deployment Verification Still Required
+## Latest Live Audit Result
 
-Because the i18n audit checks the live rendered site, the final proof requires deployment and then rerunning:
+The latest generated report is `audit-output/i18n-diff.json`:
 
-```bash
-npm run audit:i18n
-npm run check:i18n-links
-npm run build
-```
-
-Current environment note: the active shell cannot find `git` or `gh`, so deployment was not performed in this continuation turn.
+- Base URL: `https://tanshan.lovestoblog.com`
+- Pages checked: 12
+- Issue count: 0

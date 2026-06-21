@@ -535,10 +535,10 @@ html[lang="es"] .home-about-section .home-about-shell {
     background-image: url("../figma/news-1.png") !important;
 }
 .insights-entry-stage .news-card:nth-child(2) .news-thumb {
-    background-image: url("../figma/news-2.png") !important;
+    background-image: url("../figma/news-2-noedge.png") !important;
 }
 .insights-entry-stage .news-card:nth-child(3) .news-thumb {
-    background-image: url("../figma/news-3.png") !important;
+    background-image: url("../figma/news-3-noedge.png") !important;
 }
 .documents-entry-stage {
     background: #f1f1f1;
