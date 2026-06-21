@@ -39,7 +39,7 @@
         <?php endif; ?>
     </div>
     <?php if ($services): ?>
-        <nav class="service-hotspots" aria-label="Service quick links">
+        <nav class="service-hotspots" aria-label="<?= e(current_locale() === 'es' ? 'Enlaces rápidos de servicios' : 'Service quick links') ?>">
             <a class="service-hotspot-all" href="<?= e(localized_url('services')) ?>"><?= e(setting_value($settings, 'services_kicker_label', 'View all')) ?></a>
             <a class="service-hotspot-filter" href="<?= e(localized_url('services')) ?>"><?= e(setting_value($settings, 'services_filter_label', 'Products & Services')) ?></a>
             <?php foreach (array_slice($services, 0, 4) as $index => $service): ?>

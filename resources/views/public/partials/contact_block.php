@@ -6,8 +6,10 @@ $contactDetails = array_filter([
     setting_value($settings ?? [], 'contact_email'),
     setting_value($settings ?? [], 'office_address'),
 ], static fn (string $value): bool => trim($value) !== '');
-$contactSubject = trim(site_name($settings ?? []) . ' Website Inquiry');
-$returnTo = normalize_return_path(request_path() . '#contact', '/contact#contact');
+$contactSubject = current_locale() === 'es'
+    ? 'Consulta desde el sitio web de Planet Aviation'
+    : trim(site_name($settings ?? []) . ' Website Inquiry');
+$returnTo = normalize_return_path(request_path() . '?lang=' . current_locale() . '#contact', '/contact#contact');
 ?>
 <section id="contact" class="contact-block<?= !empty($homeContactStage) ? ' home-contact-stage' : '' ?>">
     <div class="container contact-shell">

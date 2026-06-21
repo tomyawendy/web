@@ -12,7 +12,7 @@ class ContactController extends Controller
 {
     public function submit(): void
     {
-        $settings = (new SettingRepository($this->db))->allGrouped()[current_locale()] ?? [];
+        $settings = public_settings_for_display((new SettingRepository($this->db))->allGrouped()[current_locale()] ?? []);
         $returnTo = normalize_return_path((string) $this->request->input('return_to'), '/contact#contact');
 
         if (!verify_csrf($this->request->input('_csrf'))) {
@@ -28,7 +28,7 @@ class ContactController extends Controller
             'company' => trim((string) $this->request->input('company')),
             'email' => trim((string) $this->request->input('email')),
             'phone' => trim((string) $this->request->input('phone')),
-            'subject' => trim((string) $this->request->input('subject')) ?: trim(site_name($settings) . ' Website Inquiry'),
+            'subject' => trim((string) $this->request->input('subject')) ?: (current_locale() === 'es' ? 'Consulta desde el sitio web de Planet Aviation' : trim(site_name($settings) . ' Website Inquiry')),
             'message' => trim((string) $this->request->input('message')),
             'locale' => current_locale(),
         ];

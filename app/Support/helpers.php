@@ -382,6 +382,168 @@ function site_meta_title(array $settings, string $pageTitle = '', string $defaul
     return $pageTitle === '' ? $name : $pageTitle . ' | ' . $name;
 }
 
+function public_settings_for_display(array $settings, ?string $locale = null): array
+{
+    $locale ??= current_locale();
+    if ($locale !== 'es') {
+        return $settings;
+    }
+
+    return array_merge($settings, [
+        'site_meta_keywords' => 'aviación, carga aérea, logística, GSSA',
+        'site_meta_description' => 'Planet Aviation ofrece soluciones de carga aérea, GSSA, logística, handling, transporte terrestre y seguros.',
+        'homepage_meta_title' => 'Soluciones premium para logística aérea',
+        'homepage_meta_keywords' => 'logística aérea, carga aérea, GSSA, transitarios',
+        'homepage_meta_description' => 'Especialistas en operaciones de carga aérea en Europa, Asia, Oriente Medio y América Latina.',
+        'nav_quote_label' => 'PEDIR COTIZACIÓN',
+        'homepage_title' => "Soluciones premium\npara logística aérea",
+        'homepage_subtitle' => 'Especialistas en operaciones de carga aérea en Europa, Asia, Oriente Medio y América Latina.',
+        'hero_button_text' => 'SABER MÁS',
+        'lookup_label' => 'Estoy buscando',
+        'lookup_insurance_label' => 'Seguros',
+        'home_about_heading' => 'Su socio líder en ventas y servicios de carga aérea',
+        'home_about_body' => 'PLANET AVIATION, S.L. es un Agente General de Ventas y Servicios (GSSA) reconocido a nivel global, con sede en Europa. Conectamos necesidades logísticas complejas con una ejecución ágil y eficiente, mediante un modelo de servicio basado en comercialización, tecnología, soluciones y sostenibilidad.',
+        'home_about_button' => 'SABER MÁS',
+        'services_heading' => 'Excelencia en cada servicio',
+        'services_intro' => 'Planet Aviation ofrece una cartera integral de productos y servicios de carga aérea. Cada envío se gestiona con precisión, cuidado y profesionalidad, garantizando fiabilidad en cada etapa de la cadena logística.',
+        'services_learn_more_label' => 'SABER MÁS',
+        'services_impact_label' => 'Nuestro impacto',
+        'services_kicker_label' => 'Ver todo',
+        'services_filter_label' => 'Productos y servicios',
+        'why_items' => "GSSA independiente\nSólida base financiera\nMarketing digital\nEquipos motivados y experimentados\nInteligencia comercial\nServicio integral: de ventas a facturación",
+        'world_kicker_label' => 'GESTIÓN GLOBAL. EXPERIENCIA LOCAL.',
+        'world_heading' => 'Un solo mundo',
+        'world_intro' => 'Gestión global con experiencia local en América, Europa, Oriente Medio, África y Asia-Pacífico.',
+        'world_regions' => "Américas\nEuropa\nOriente Medio\nÁfrica\nAsia-Pacífico",
+        'world_map_image' => 'assets/figma/world-map.png',
+        'stats_offices_label' => 'Socios globales',
+        'stats_support_label' => 'Equipo de respuesta rápida',
+        'stats_shipments_label' => 'Transitarios',
+        'partners_heading' => 'Nuestros socios',
+        'partners_subtitle' => 'Estos son nuestros colaboradores',
+        'news_kicker_label' => 'NOTICIAS',
+        'news_heading' => 'Últimas noticias',
+        'news_view_all_label' => 'VER TODOS',
+        'read_more_label' => 'LEER MÁS',
+        'contact_visual_image' => 'assets/figma/contact-photo.png',
+        'contact_phone' => '+34 000 000 000',
+        'contact_email' => 'ops@planetaviation.com',
+        'office_address' => 'Madrid, España',
+        'contact_kicker_label' => 'CONTACTO',
+        'contact_heading' => 'Contacto',
+        'contact_intro' => 'Si necesita más información sobre nuestros servicios, complete el formulario. Nuestro equipo se pondrá en contacto con usted lo antes posible.',
+        'contact_name_label' => 'Nombre completo',
+        'contact_phone_label' => 'Teléfono',
+        'contact_email_label' => 'Correo electrónico',
+        'contact_company_label' => 'Empresa',
+        'contact_message_label' => 'Mensaje',
+        'contact_submit_text' => 'ENVIAR',
+        'newsletter_kicker_label' => 'BOLETÍN',
+        'newsletter_title' => 'Suscríbase al boletín Logistics Pulse',
+        'newsletter_body' => 'Reciba nuestros insights directamente en su correo al suscribirse a este formulario y entre en un mundo de logística verdaderamente integrada. Inspírese con nuestra selección de artículos, que le ayudan a navegar las cadenas de suministro, comprender las tendencias del sector y definir su estrategia logística.',
+        'newsletter_placeholder' => 'Introduzca su correo electrónico',
+        'newsletter_submit_text' => 'ENVIAR',
+        'footer_certification_label' => 'Obtener certificación IATA',
+        'footer_copyright' => 'Copyright (c) Planet Aviation. Todos los derechos reservados.',
+        'back_to_insights_label' => 'VOLVER A NOTICIAS',
+        'back_to_documents_label' => 'VOLVER A DOCUMENTOS',
+    ]);
+}
+
+function public_services_for_display(array $services, ?string $locale = null): array
+{
+    return array_map(static fn (array $service): array => public_service_for_display($service, $locale), $services);
+}
+
+function public_service_for_display(array $service, ?string $locale = null): array
+{
+    $locale ??= current_locale();
+    if ($locale !== 'es') {
+        return $service;
+    }
+
+    $overrides = [
+        'general-sales-service-agent' => [
+            'title' => 'Agente General de Ventas y Servicios',
+            'summary' => 'Especialistas en operaciones de carga aérea en Europa, Asia, Oriente Medio y América Latina.',
+            'content' => '<ul><li>Representación comercial integral para aerolíneas asociadas</li><li>Asignación dinámica de capacidad para optimizar rendimiento e ingresos</li><li>Seguimiento comercial orientado a superar objetivos de venta</li></ul>',
+            'seo_title' => 'Agente General de Ventas y Servicios',
+            'seo_keywords' => 'GSSA, ventas de carga, carga aérea',
+            'seo_description' => 'Representación GSSA completa para aerolíneas y socios de carga aérea.',
+        ],
+        'air-cargo-consolidation-experts' => [
+            'title' => 'Expertos en consolidación de carga aérea',
+            'summary' => 'Optimización estratégica de capacidad y soluciones rápidas de consolidación.',
+            'content' => '<ul><li>Optimización estratégica de capacidad para maximizar el rendimiento cúbico</li><li>Gestión precisa de rutas y utilización de espacios</li><li>Ajustes dinámicos de carga según la demanda operativa</li><li>Soluciones ágiles de consolidación aérea</li></ul>',
+            'seo_title' => 'Consolidación de carga aérea',
+            'seo_keywords' => 'carga aérea, consolidación, capacidad',
+            'seo_description' => 'Soluciones de consolidación y gestión de capacidad para operaciones de carga aérea.',
+        ],
+        'handling-trucking' => [
+            'title' => 'Handling y transporte terrestre',
+            'summary' => 'Soluciones coordinadas para handling aeroportuario, transporte terrestre y soporte operativo.',
+            'content' => '<ul><li>Handling aeroportuario con alto nivel de servicio</li><li>Soluciones competitivas de transporte terrestre</li><li>Soporte administrativo para importaciones y coordinación operativa</li></ul>',
+            'seo_title' => 'Handling y transporte terrestre',
+            'seo_keywords' => 'handling, transporte terrestre, logística aérea',
+            'seo_description' => 'Servicios de handling y transporte terrestre para operaciones logísticas aéreas.',
+        ],
+        'insurance-solutions' => [
+            'title' => 'Soluciones de seguro',
+            'summary' => 'Coberturas de seguro de carga para socios logísticos y operaciones aéreas.',
+            'content' => '<ul><li>Cobertura global para distintos tipos de envío</li><li>Opciones flexibles adaptadas a cada operación</li><li>Gestión ágil de reclamaciones y prevención de riesgos</li></ul>',
+            'seo_title' => 'Soluciones de seguro',
+            'seo_keywords' => 'seguro de carga, logística, cobertura',
+            'seo_description' => 'Soluciones de seguro para carga aérea y operaciones logísticas.',
+        ],
+    ];
+
+    $slug = (string) ($service['slug'] ?? '');
+    return isset($overrides[$slug]) ? array_merge($service, $overrides[$slug]) : $service;
+}
+
+function public_posts_for_display(array $posts, ?string $locale = null): array
+{
+    return array_map(static fn (array $post): array => public_post_for_display($post, $locale), $posts);
+}
+
+function public_post_for_display(array $post, ?string $locale = null): array
+{
+    $locale ??= current_locale();
+    if ($locale !== 'es') {
+        return $post;
+    }
+
+    $overrides = [
+        'planet-aviation-expands-regional-network' => [
+            'title' => 'Planet Aviation amplía su soporte regional',
+            'excerpt' => 'Un nuevo marco operativo mejora la coordinación y la velocidad de respuesta para socios.',
+            'content' => '<p>Planet Aviation ha ampliado su red operativa regional para agilizar solicitudes de soporte y mejorar la visibilidad de sus socios durante operaciones activas.</p>',
+            'seo_title' => 'Planet Aviation amplía soporte regional',
+            'seo_keywords' => 'Planet Aviation, red regional, carga aérea',
+            'seo_description' => 'Actualización sobre la ampliación del soporte regional de Planet Aviation.',
+        ],
+        'transport-logistic-air-cargo-europe' => [
+            'title' => 'Transport Logistic & Air Cargo Europe 2025',
+            'excerpt' => 'Puntos clave de uno de los principales eventos europeos de logística y carga aérea.',
+            'content' => '<p>La feria reunió a operadores, aerolíneas y socios logísticos para debatir capacidad, digitalización, servicio y nuevas oportunidades para el transporte aéreo de carga.</p>',
+            'seo_title' => 'Transport Logistic & Air Cargo Europe 2025',
+            'seo_keywords' => 'Transport Logistic, carga aérea, Europa',
+            'seo_description' => 'Puntos destacados del evento europeo de logística y carga aérea.',
+        ],
+        'air-cargo-market-analysis' => [
+            'title' => 'Análisis del mercado de carga aérea 2026: la transformación',
+            'excerpt' => 'Un análisis reciente muestra cambios de rutas y demanda en el mercado de carga aérea.',
+            'content' => '<p>Los nuevos datos del mercado muestran movimientos más marcados en corredores regionales de carga, impulsando estrategias más dinámicas de consolidación, capacidad y precios.</p>',
+            'seo_title' => 'Análisis del mercado de carga aérea',
+            'seo_keywords' => 'mercado de carga aérea, análisis, logística',
+            'seo_description' => 'Análisis sobre tendencias y cambios de demanda en el mercado de carga aérea.',
+        ],
+    ];
+
+    $slug = (string) ($post['slug'] ?? '');
+    return isset($overrides[$slug]) ? array_merge($post, $overrides[$slug]) : $post;
+}
+
 function truncate_text(string $value, int $limit = 120, string $suffix = '...'): string
 {
     if ($limit <= 0 || $value === '') {

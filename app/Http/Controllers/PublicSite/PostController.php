@@ -35,7 +35,7 @@ class PostController extends Controller
     {
         $repo = new PostRepository($this->db);
         $locale = current_locale();
-        $settings = (new SettingRepository($this->db))->allGrouped()[$locale] ?? [];
+        $settings = public_settings_for_display((new SettingRepository($this->db))->allGrouped()[$locale] ?? [], $locale);
         $resolvedTitle = $type === 'news'
             ? ($settings['nav_insights_label'] ?? $title)
             : ($settings['nav_documents_label'] ?? $title);
@@ -43,7 +43,7 @@ class PostController extends Controller
         $this->view('public/posts/index', [
             'type' => $type,
             'title' => $resolvedTitle,
-            'posts' => $repo->allByType($type, true),
+            'posts' => public_posts_for_display($repo->allByType($type, true), $locale),
             'categories' => $repo->categories($type),
             'settings' => $settings,
             'contactPage' => (new PageRepository($this->db))->findBySlug('contact'),
@@ -57,7 +57,7 @@ class PostController extends Controller
         $repo = new PostRepository($this->db);
         $post = $repo->findBySlug($slug, $type);
         $locale = current_locale();
-        $settings = (new SettingRepository($this->db))->allGrouped()[$locale] ?? [];
+        $settings = public_settings_for_display((new SettingRepository($this->db))->allGrouped()[$locale] ?? [], $locale);
 
         if (!$post) {
             http_response_code(404);
@@ -74,7 +74,8 @@ class PostController extends Controller
             return;
         }
 
-        $active = resolved_translation($post, $locale);
+        $post = public_post_for_display($post, $locale);
+        $active = public_post_for_display(array_merge(resolved_translation($post, $locale), ['slug' => $post['slug']]), $locale);
 
         $this->view('public/posts/show', [
             'post' => $post,

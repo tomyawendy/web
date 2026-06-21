@@ -267,7 +267,7 @@ html[lang="es"] .home-about-section .home-about-shell {
     bottom: -8px;
     width: 228px;
     height: 132px;
-    background: url("../figma/hero-plane.png") right center / cover no-repeat;
+    background: url("../figma/hero-plane-clean.png") right center / cover no-repeat;
     opacity: 0.42;
     transform: scale(0.84);
     transform-origin: right bottom;
@@ -687,7 +687,7 @@ html[lang="es"] .home-service-row:nth-child(4) .home-service-visual::after {
     top: 42px;
     width: 360px;
     height: 190px;
-    background: url("../figma/hero-plane.png") right center / cover no-repeat;
+    background: url("../figma/hero-plane-clean.png") right center / cover no-repeat;
     opacity: 0.58;
     filter: saturate(0.9) contrast(0.96);
 }
@@ -1427,7 +1427,7 @@ html[lang="es"] .home-service-row:nth-child(4) .home-service-visual::after {
     width: 355px;
     height: 190px;
     opacity: 0.54;
-    background-image: url("../figma/hero-plane.png");
+    background-image: url("../figma/hero-plane-clean.png");
     background-size: contain;
     background-repeat: no-repeat;
 }

@@ -32,7 +32,7 @@
     <link rel="alternate" hreflang="es" href="<?= e(localized_current_url('es')) ?>">
     <link rel="alternate" hreflang="x-default" href="<?= e(localized_current_url('en')) ?>">
     <link rel="stylesheet" href="<?= e(asset_url('css/design-tokens.css') . '?v=20260617b') ?>">
-    <link rel="stylesheet" href="<?= e(asset_url('css/site-main.css') . '?v=20260621d') ?>">
+    <link rel="stylesheet" href="<?= e(asset_url('css/site-main.css') . '?v=20260621e') ?>">
     <link rel="preload" href="<?= e(asset_url('figma/world-map-noedge.png')) ?>" as="image">
     <link rel="preload" href="<?= e(asset_url('figma/news-1.png')) ?>" as="image">
     <link rel="preload" href="<?= e(asset_url('figma/news-2-noedge.png')) ?>" as="image">

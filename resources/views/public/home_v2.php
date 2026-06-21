@@ -5,19 +5,24 @@ $partners = setting_media_pairs($settings, 'partners_logos');
 if ($partners === []) {
     $partners = array_map(static fn (string $partner): array => ['label' => $partner, 'path' => ''], setting_lines($settings, 'partners_list'));
 }
+
 $heroButtonText = $heroBanner['button_text'] ?? setting_value($settings, 'hero_button_text', 'LEARN MORE');
 $heroTitle = $heroBanner['title'] ?? setting_value($settings, 'homepage_title', "Premium Choice\nfor Air Logistics Solution!");
 $heroSubtitle = $heroBanner['subtitle'] ?? setting_value($settings, 'homepage_subtitle', '');
-$servicesHeading = setting_value($settings, 'services_heading', "Delivering Service\nExcellence");
-$homeAboutBodyDefault = "PLANET AVIATION, S.L., is a globally recognized Europe General Sales & Service Agent (GSSA). We utilize our wide range of highlyspecialized services to design and deliver tailor-made solutions for ultimate customer by applying our extensive local knowledgeto maximize the results of customer forwarders.\n\nWe are defning the GSSA expertise by our strategy with Commercialization, Technology, Solution and Sustainability. Facing the apid upgrading of dicital transformation invest in our own market dicitalisation team to connect with the e-CARCOWARE,strengthening user-friendly interface on online booking,revenue accounting,truckking management,online tracking,etc.";
-$servicesHeadingParts = preg_split("/\R+/", $servicesHeading, 2) ?: [$servicesHeading];
 $isSpanishHome = current_locale() === 'es';
-if (strpos($heroTitle, "\n") === false && preg_match('/^Premium Choice for Air Logistics Solution!?$/i', trim($heroTitle))) {
-    $heroTitle = "Premium Choice\nFor Air Logistics\nSolution!";
+if ($isSpanishHome) {
+    $heroButtonText = setting_value($settings, 'hero_button_text', $heroButtonText);
+    $heroTitle = setting_value($settings, 'homepage_title', $heroTitle);
+    $heroSubtitle = setting_value($settings, 'homepage_subtitle', $heroSubtitle);
 }
-if ($isSpanishHome && !preg_match('/[!?]$/', trim($heroTitle))) {
-    $heroTitle .= '!';
+$heroImage = (string) ($heroBanner['image'] ?? '');
+if ($heroImage === 'assets/figma/hero-plane.png') {
+    $heroImage = 'assets/figma/hero-plane-clean.png';
 }
+
+$servicesHeading = setting_value($settings, 'services_heading', "Delivering Service\nExcellence");
+$servicesHeadingParts = preg_split("/\R+/", $servicesHeading, 2) ?: [$servicesHeading];
+$homeAboutBodyDefault = "PLANET AVIATION, S.L., is a globally recognized Europe General Sales & Service Agent (GSSA). We utilize our wide range of highlyspecialized services to design and deliver tailor-made solutions for ultimate customer by applying our extensive local knowledgeto maximize the results of customer forwarders.\n\nWe are defning the GSSA expertise by our strategy with Commercialization, Technology, Solution and Sustainability. Facing the apid upgrading of dicital transformation invest in our own market dicitalisation team to connect with the e-CARCOWARE,strengthening user-friendly interface on online booking,revenue accounting,truckking management,online tracking,etc.";
 $homeAboutHeading = setting_value($settings, 'home_about_heading', 'Your Leading Air Cargo Sales & Service Provider');
 $homeAboutBody = setting_value($settings, 'home_about_body', $homeAboutBodyDefault);
 $servicesIntro = setting_value($settings, 'services_intro', 'Planet Aviation offers a comprehensive portfolio of air cargo products and services. Every shipment is handled with precision, care, and professionalism, ensuring reliability at every stage of the logistics chain.');
@@ -26,33 +31,12 @@ $whyCards = array_map(static fn (string $item): array => ['icon' => '', 'title' 
 $worldKicker = setting_value($settings, 'world_kicker_label', 'GLOBAL MANAGEMENT. LOCAL EXPERTISE.');
 $worldHeading = setting_value($settings, 'world_heading', 'One World');
 $worldIntro = setting_value($settings, 'world_intro', 'Local expertise, global cargo reach, and responsive support.');
-$worldRegionGroups = [];
-$worldNote = 'Local Expertise, Global Reach: Your Strategic Gateway to South America & Africa.';
+$worldNote = current_locale() === 'es'
+    ? 'Experiencia local, alcance global: su puerta estratégica hacia Sudamérica y África.'
+    : 'Local Expertise, Global Reach: Your Strategic Gateway to South America & Africa.';
 
-if ($isSpanishHome) {
-    $homeAboutHeading = 'Su socio líder en ventas y servicios de carga aérea';
-    $homeAboutBody = "PLANET AVIATION, S.L. es un Agente General de Ventas y Servicios (GSSA) europeo reconocido a nivel global. Utilizamos una amplia gama de servicios altamente especializados para diseñar y entregar soluciones a medida, aplicando nuestro profundo conocimiento local para maximizar los resultados de los transitarios.\nDefinimos nuestra experiencia GSSA mediante una estrategia basada en comercialización, tecnología, soluciones y sostenibilidad. Ante la rápida evolución de la transformación digital, invertimos en nuestro propio equipo de digitalización de mercado para conectar con e-CARGOWARE, fortaleciendo interfaces fáciles de usar para reservas en línea, contabilidad de ingresos, gestión de transporte terrestre y seguimiento en línea.";
-    $servicesIntro = 'Planet Aviation ofrece una cartera integral de productos y servicios de carga aérea. Cada envío se gestiona con precisión, cuidado y profesionalidad, garantizando fiabilidad en cada etapa de la cadena logística.';
-    $whyHeading = 'Por qué nos eligen';
-    $whyCards = [
-        ['icon' => 'shield', 'title' => 'GSSA independiente', 'body' => 'Representación neutral y flexible para múltiples aerolíneas. Equipos comerciales con sólido conocimiento local. Rendimiento orientado por datos y estrategias a medida.'],
-        ['icon' => 'bank', 'title' => 'Sólida base financiera', 'body' => 'Equipos dedicados de revenue accounting en todo el mundo. Facturación controlada y participación completa en IATA CASS. Captura y verificación de datos con soporte back-office.'],
-        ['icon' => 'megaphone', 'title' => 'Marketing digital', 'body' => 'Estrategias dinámicas para promover la marca de la aerolínea. Promociones creativas, reportes de mercado y asistencia a eventos clave de carga aérea.'],
-        ['icon' => 'team', 'title' => 'Equipos motivados y experimentados', 'body' => 'Formación completa en sistemas de handling especial y aerolíneas. Actualizaciones en tiempo real de horarios, capacidad e ingresos. Interfaces de reserva integradas con plataformas aéreas.'],
-        ['icon' => 'chart', 'title' => 'Inteligencia comercial', 'body' => 'Análisis de datos recogidos en plataformas de cotización y supervisión. Uso de herramientas de business intelligence para la gestión. Inversión continua en infraestructura IT y digitalización.'],
-        ['icon' => 'layers', 'title' => 'Servicio integral: de ventas a facturación', 'body' => 'Ventas, reservas y documentación de carga de extremo a extremo. Cumplimiento, soporte de reclamaciones y conciliación financiera. Solución integral que asegura consistencia y eficiencia.'],
-    ];
-    $worldKicker = 'GESTIÓN GLOBAL. EXPERIENCIA LOCAL.';
-    $worldHeading = 'Un solo mundo';
-    $worldIntro = 'Experiencia local, alcance global de carga aérea y soporte ágil para cada mercado.';
-    $worldRegionGroups = [
-        ['title' => 'Américas', 'items' => ['Estados Unidos', 'Canadá', 'México', 'Colombia', 'Ecuador', 'Perú', 'Bolivia', 'Brasil', 'Uruguay', 'Paraguay', 'Argentina', 'Chile', 'Panamá', 'Costa Rica', 'Nicaragua']],
-        ['title' => 'Europa', 'items' => ['Alemania', 'Suiza', 'España', 'Portugal', 'Austria']],
-        ['title' => 'Oriente Medio', 'items' => ['Turquía', 'EAU']],
-        ['title' => 'África', 'items' => ['Sudáfrica', 'Mozambique']],
-        ['title' => 'Asia-Pacífico', 'items' => ['China', 'India']],
-    ];
-    $worldNote = 'Experiencia local, alcance global: su puerta estratégica hacia Sudamérica y África.';
+if (strpos($heroTitle, "\n") === false && preg_match('/^Premium Choice for Air Logistics Solution!?$/i', trim($heroTitle))) {
+    $heroTitle = "Premium Choice\nFor Air Logistics\nSolution!";
 }
 ?>
 <section class="hero-panel-home">
@@ -66,8 +50,8 @@ if ($isSpanishHome) {
             <a class="hero-button" href="<?= e(localized_url('#about')) ?>"><?= e($heroButtonText) ?></a>
         </div>
         <div class="hero-home-image">
-            <?php if (($heroBanner['image'] ?? '') !== ''): ?>
-                <img class="hero-home-art" src="<?= e(media_url($heroBanner['image'])) ?>" alt="" aria-hidden="true">
+            <?php if ($heroImage !== ''): ?>
+                <img class="hero-home-art" src="<?= e(media_url($heroImage)) ?>" alt="" aria-hidden="true">
             <?php endif; ?>
         </div>
     </div>
@@ -135,7 +119,7 @@ if ($isSpanishHome) {
             <?php endforeach; ?>
         </div>
     </div>
-    <nav class="service-hotspots" aria-label="Service quick links">
+    <nav class="service-hotspots" aria-label="<?= e(current_locale() === 'es' ? 'Enlaces rápidos de servicios' : 'Service quick links') ?>">
         <a class="service-hotspot-all" href="<?= e(localized_url('services')) ?>"><?= e(setting_value($settings, 'services_kicker_label', 'View all')) ?></a>
         <a class="service-hotspot-filter" href="<?= e(localized_url('services')) ?>"><?= e(setting_value($settings, 'services_filter_label', 'Products & Services')) ?></a>
         <?php foreach (array_slice($services, 0, 4) as $index => $service): ?>
@@ -152,12 +136,7 @@ if ($isSpanishHome) {
                 <?php foreach ($whyCards as $card): ?>
                     <article>
                         <span class="why-icon why-icon-<?= e($card['icon']) ?>"></span>
-                        <?php if (($card['body'] ?? '') !== ''): ?>
-                            <p class="why-card-title"><?= e($card['title']) ?></p>
-                            <p><?= e($card['body']) ?></p>
-                        <?php else: ?>
-                            <p><?= e($card['title']) ?></p>
-                        <?php endif; ?>
+                        <p><?= e($card['title']) ?></p>
                     </article>
                 <?php endforeach; ?>
             </div>
@@ -172,20 +151,9 @@ if ($isSpanishHome) {
             <h2><?= e($worldHeading) ?></h2>
             <p><?= e($worldIntro) ?></p>
             <div class="region-list">
-                <?php if ($worldRegionGroups !== []): ?>
-                    <?php foreach ($worldRegionGroups as $group): ?>
-                        <article class="region-group">
-                            <strong><?= e($group['title']) ?></strong>
-                            <?php foreach ($group['items'] as $region): ?>
-                                <span><?= e($region) ?></span>
-                            <?php endforeach; ?>
-                        </article>
-                    <?php endforeach; ?>
-                <?php else: ?>
-                    <?php foreach ($regions as $region): ?>
-                        <span><?= e($region) ?></span>
-                    <?php endforeach; ?>
-                <?php endif; ?>
+                <?php foreach ($regions as $region): ?>
+                    <span><?= e($region) ?></span>
+                <?php endforeach; ?>
             </div>
         </div>
         <div class="world-map-card">

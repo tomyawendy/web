@@ -16,10 +16,10 @@ class ServiceController extends Controller
     {
         $repo = new ServiceRepository($this->db);
         $locale = current_locale();
-        $settings = (new SettingRepository($this->db))->allGrouped()[$locale] ?? [];
+        $settings = public_settings_for_display((new SettingRepository($this->db))->allGrouped()[$locale] ?? [], $locale);
 
         $this->view('public/services/index', [
-            'services' => $repo->allPublished(),
+            'services' => public_services_for_display($repo->allPublished(), $locale),
             'settings' => $settings,
             'contactPage' => (new PageRepository($this->db))->findBySlug('contact'),
             'metaTitle' => site_meta_title($settings, $settings['nav_services_label'] ?? 'Our Services'),
@@ -32,7 +32,7 @@ class ServiceController extends Controller
         $repo = new ServiceRepository($this->db);
         $service = $repo->findBySlug($slug);
         $locale = current_locale();
-        $settings = (new SettingRepository($this->db))->allGrouped()[$locale] ?? [];
+        $settings = public_settings_for_display((new SettingRepository($this->db))->allGrouped()[$locale] ?? [], $locale);
 
         if (!$service) {
             http_response_code(404);
@@ -45,13 +45,14 @@ class ServiceController extends Controller
             return;
         }
 
-        $active = resolved_translation($service, $locale);
+        $service = public_service_for_display($service, $locale);
+        $active = public_service_for_display(array_merge(resolved_translation($service, $locale), ['slug' => $service['slug']]), $locale);
 
         $this->view('public/services/show', [
             'service' => $service,
             'content' => $active,
             'settings' => $settings,
-            'news' => array_slice((new PostRepository($this->db))->allByType('news', true), 0, 3),
+            'news' => public_posts_for_display(array_slice((new PostRepository($this->db))->allByType('news', true), 0, 3), $locale),
             'contactPage' => (new PageRepository($this->db))->findBySlug('contact'),
             'metaTitle' => site_meta_title($settings, $active['seo_title'] ?: $active['title']),
             'metaDescription' => $active['seo_description'] ?? $active['summary'] ?? '',

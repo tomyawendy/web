@@ -23,15 +23,17 @@ class HomeController extends Controller
 
         $settings = $settingsRepo->allGrouped();
         $locale = current_locale();
-        $activeSettings = $settings[$locale] ?? [];
+        $activeSettings = public_settings_for_display($settings[$locale] ?? [], $locale);
+        $services = public_services_for_display($serviceRepo->allPublished(), $locale);
+        $news = public_posts_for_display(array_slice($postRepo->allByType('news', true), 0, 3), $locale);
 
         $this->view('public/home_v2', [
             'settings' => $activeSettings,
             'heroBanner' => $bannerRepo->active()[0] ?? null,
             'aboutPage' => $pageRepo->findBySlug('about'),
             'contactPage' => $pageRepo->findBySlug('contact'),
-            'services' => $serviceRepo->allPublished(),
-            'news' => array_slice($postRepo->allByType('news', true), 0, 3),
+            'services' => $services,
+            'news' => $news,
             'metaTitle' => site_meta_title($activeSettings, $activeSettings['homepage_meta_title'] ?? ($activeSettings['homepage_title'] ?? 'Premium Choice For Air Logistics Solution!')),
             'metaDescription' => $activeSettings['homepage_meta_description'] ?? ($activeSettings['homepage_subtitle'] ?? ''),
             'metaKeywords' => $activeSettings['homepage_meta_keywords'] ?? '',

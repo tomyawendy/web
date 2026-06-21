@@ -12,7 +12,7 @@
             <form class="newsletter-form" method="post" action="<?= e(localized_url('newsletter')) ?>">
                 <?= csrf_field() ?>
                 <input type="email" name="email" value="<?= e((string) old('newsletter_email')) ?>" placeholder="<?= e(setting_value($settings ?? [], 'newsletter_placeholder', 'Enter your email address')) ?>" required>
-                <input type="hidden" name="return_to" value="<?= e(normalize_return_path(request_path() . '#newsletter', '/#newsletter')) ?>">
+                <input type="hidden" name="return_to" value="<?= e(normalize_return_path(request_path() . '?lang=' . current_locale() . '#newsletter', '/#newsletter')) ?>">
                 <button type="submit" class="newsletter-button"><?= e(setting_value($settings ?? [], 'newsletter_submit_text', 'SUBMIT')) ?></button>
             </form>
         </div>

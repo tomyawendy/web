@@ -28,7 +28,7 @@ class PageController extends Controller
         $settingsRepo = new SettingRepository($this->db);
         $page = $pageRepo->findBySlug($slug);
         $locale = current_locale();
-        $settings = $settingsRepo->allGrouped()[$locale] ?? [];
+        $settings = public_settings_for_display($settingsRepo->allGrouped()[$locale] ?? [], $locale);
 
         if (!$page) {
             http_response_code(404);
@@ -48,8 +48,8 @@ class PageController extends Controller
             'content' => $active,
             'settings' => $settings,
             'contactPage' => $pageRepo->findBySlug('contact'),
-            'services' => (new ServiceRepository($this->db))->allPublished(),
-            'news' => array_slice((new PostRepository($this->db))->allByType('news', true), 0, 3),
+            'services' => public_services_for_display((new ServiceRepository($this->db))->allPublished(), $locale),
+            'news' => public_posts_for_display(array_slice((new PostRepository($this->db))->allByType('news', true), 0, 3), $locale),
             'metaTitle' => site_meta_title($settings, $active['seo_title'] ?: $active['title']),
             'metaDescription' => $active['seo_description'] ?? $active['excerpt'] ?? '',
             'metaKeywords' => $active['seo_keywords'] ?? '',

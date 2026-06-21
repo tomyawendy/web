@@ -21,7 +21,7 @@
         </div>
         <div class="footer-cert">
             <span class="footer-title"><?= e(setting_value($settings ?? [], 'footer_certification_label', 'Obtain IATA certification')) ?></span>
-            <img class="footer-cert-mark" src="<?= e(asset_url('figma/cert-mark.png')) ?>" alt="IATA Certification">
+            <img class="footer-cert-mark" src="<?= e(asset_url(current_locale() === 'es' ? 'figma/cert-mark-es.svg' : 'figma/cert-mark.png')) ?>" alt="<?= e(current_locale() === 'es' ? 'Certificación IATA' : 'IATA Certification') ?>">
         </div>
     </div>
     <div class="footer-copy">

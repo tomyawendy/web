@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="112" viewBox="0 0 180 112" role="img" aria-label="Certificación IATA">
+  <rect width="180" height="112" rx="8" fill="#10142b"/>
+  <rect x="14" y="14" width="152" height="84" rx="5" fill="#171d3c" stroke="#2e3768"/>
+  <text x="90" y="37" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="10" font-weight="700" letter-spacing=".08em">OBTENER</text>
+  <text x="90" y="54" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="700">CERTIFICACIÓN IATA</text>
+  <path d="M74 74h32l-16 12-16-12Z" fill="#0b38ff"/>
+  <path d="M90 67l4.4 8.9 9.8 1.4-7.1 6.9 1.7 9.8L90 90.4 81.2 95l1.7-9.8-7.1-6.9 9.8-1.4L90 67Z" fill="#25d7dc"/>
+</svg>
