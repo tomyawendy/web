@@ -1,7 +1,7 @@
 <footer class="site-footer">
     <div class="container footer-shell">
         <div class="footer-brand">
-            <img class="footer-brand-logo" src="<?= e(asset_url('figma/logo-footer.png')) ?>" alt="<?= e(setting_value($settings ?? [], 'site_name', 'Planet Aviation')) ?>">
+            <img class="footer-brand-logo" src="<?= e(asset_url(current_locale() === 'es' ? 'figma/logo-footer-full.png' : 'figma/logo-footer.png')) ?>" alt="<?= e(setting_value($settings ?? [], 'site_name', 'Planet Aviation')) ?>">
         </div>
         <div class="footer-links footer-columns">
             <div class="footer-column">

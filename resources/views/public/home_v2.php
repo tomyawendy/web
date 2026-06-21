@@ -33,10 +33,14 @@ if ($isSpanishHome) {
 $whyHeading = setting_value($settings, 'why_heading', 'Why Partners Choose Us');
 $whyCards = array_map(static fn (string $item): array => ['icon' => '', 'title' => $item, 'body' => ''], array_slice(setting_lines($settings, 'why_items'), 0, 6));
 $whyDescriptions = array_slice(setting_lines($settings, 'why_descriptions'), 0, 6);
+$whyDefaultIcons = ['shield', 'bank', 'megaphone', 'team', 'chart', 'layers'];
 foreach ($whyDescriptions as $index => $description) {
     if (isset($whyCards[$index])) {
         $whyCards[$index]['body'] = $description;
     }
+}
+foreach ($whyCards as $index => $card) {
+    $whyCards[$index]['icon'] = $card['icon'] !== '' ? $card['icon'] : ($whyDefaultIcons[$index] ?? 'shield');
 }
 $worldKicker = setting_value($settings, 'world_kicker_label', 'GLOBAL MANAGEMENT. LOCAL EXPERTISE.');
 $worldHeading = setting_value($settings, 'world_heading', 'One World');
