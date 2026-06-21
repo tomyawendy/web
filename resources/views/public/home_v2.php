@@ -12,7 +12,7 @@ $heroSubtitle = $heroBanner['subtitle'] ?? setting_value($settings, 'homepage_su
 $isSpanishHome = current_locale() === 'es';
 if ($isSpanishHome) {
     $heroButtonText = setting_value($settings, 'hero_button_text', $heroButtonText);
-    $heroTitle = setting_value($settings, 'homepage_title', $heroTitle);
+    $heroTitle = "Soluciones premium\npara logística\naérea!";
     $heroSubtitle = setting_value($settings, 'homepage_subtitle', $heroSubtitle);
 }
 $heroImage = (string) ($heroBanner['image'] ?? '');
@@ -26,6 +26,10 @@ $homeAboutBodyDefault = "PLANET AVIATION, S.L., is a globally recognized Europe 
 $homeAboutHeading = setting_value($settings, 'home_about_heading', 'Your Leading Air Cargo Sales & Service Provider');
 $homeAboutBody = setting_value($settings, 'home_about_body', $homeAboutBodyDefault);
 $servicesIntro = setting_value($settings, 'services_intro', 'Planet Aviation offers a comprehensive portfolio of air cargo products and services. Every shipment is handled with precision, care, and professionalism, ensuring reliability at every stage of the logistics chain.');
+if ($isSpanishHome) {
+    $homeAboutBody = "PLANET AVIATION, S.L. es un Agente General de Ventas y Servicios (GSSA) reconocido a nivel global, con sede en Europa. Conectamos necesidades logísticas complejas con una ejecución ágil y eficiente mediante un modelo de servicio basado en comercialización, tecnología, soluciones y sostenibilidad.\n\nDefinimos nuestra experiencia GSSA mediante estrategia comercial, digitalización y soporte operativo para reservas en línea, contabilidad de ingresos, gestión terrestre y seguimiento.";
+    $servicesIntro = 'Planet Aviation ofrece una cartera integral de productos y servicios de carga aérea. Cada envío se gestiona con precisión, cuidado y profesionalidad, garantizando fiabilidad en cada etapa logística.';
+}
 $whyHeading = setting_value($settings, 'why_heading', 'Why Partners Choose Us');
 $whyCards = array_map(static fn (string $item): array => ['icon' => '', 'title' => $item, 'body' => ''], array_slice(setting_lines($settings, 'why_items'), 0, 6));
 $whyDescriptions = array_slice(setting_lines($settings, 'why_descriptions'), 0, 6);

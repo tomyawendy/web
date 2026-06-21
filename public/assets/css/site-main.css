@@ -1963,3 +1963,389 @@ html[lang="es"] .why-grid .why-card-title {
     font-size: 18px;
     line-height: 1.28;
 }
+
+/* Spanish 1:1 homepage lock: English remains the visual baseline; only Spanish text differs. */
+html[lang="es"] .quote-button {
+    flex-basis: 150px;
+    min-width: 150px;
+    min-height: 40px;
+    padding: 0 14px;
+    font-size: 14px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+}
+
+html[lang="es"] .hero-panel-home::before {
+    left: calc(50% - 704px);
+    top: 36px;
+    width: 900px;
+    height: 376px;
+    background: linear-gradient(90deg, rgba(239, 249, 253, 1) 0%, rgba(239, 249, 253, 1) 72%, rgba(239, 249, 253, 0.82) 88%, rgba(239, 249, 253, 0) 100%);
+}
+
+html[lang="es"] .hero-home-card {
+    left: 0;
+    top: 70px;
+    width: 620px;
+    min-height: 300px;
+    padding: 0;
+}
+
+html[lang="es"] .hero-kicker {
+    width: 640px;
+    max-width: 640px;
+    margin-bottom: 18px;
+    font-size: 48px;
+    line-height: 1.02;
+}
+
+html[lang="es"] .hero-home-card h1 {
+    width: 500px;
+    max-width: 500px;
+    font-size: 42px;
+    line-height: 1.18;
+    font-weight: 400;
+    letter-spacing: -0.045em;
+}
+
+html[lang="es"] .hero-button {
+    margin-top: 30px;
+}
+
+html[lang="es"] .lookup-pills {
+    flex-wrap: nowrap;
+}
+
+html[lang="es"] .lookup-pills a {
+    padding: 0 24px;
+    font-size: 14px;
+}
+
+html[lang="es"] .lookup-pills a:nth-child(1) { min-width: 325px; }
+html[lang="es"] .lookup-pills a:nth-child(2) { min-width: 338px; }
+html[lang="es"] .lookup-pills a:nth-child(3) { min-width: 248px; }
+html[lang="es"] .lookup-pills a:nth-child(4) { min-width: 160px; }
+
+html[lang="es"] .home-about-section {
+    height: 581px;
+    min-height: 581px;
+    padding: 112px 0 0;
+}
+
+html[lang="es"] .home-about-copy {
+    max-width: 1240px;
+}
+
+html[lang="es"] .home-about-copy h2 {
+    max-width: 690px;
+    margin-bottom: 24px;
+    font-size: 40px;
+    line-height: 1.22;
+}
+
+html[lang="es"] .home-about-copy p {
+    max-width: 1110px;
+    min-height: 128px;
+    margin-bottom: 34px;
+    font-size: 16px;
+    line-height: 1.55;
+    letter-spacing: -0.01em;
+}
+
+html[lang="es"] .service-overview .home-services-head {
+    grid-template-columns: 520px 650px;
+    align-items: start;
+    gap: 198px;
+    margin-bottom: 70px;
+}
+
+html[lang="es"] .service-overview .home-services-head p {
+    max-width: 650px;
+    min-height: 82px;
+    margin-top: 44px;
+    padding-left: 92px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+html[lang="es"] .home-service-row {
+    grid-template-columns: 646px 690px;
+    gap: 66px;
+    min-height: 420px;
+    padding-top: 36px;
+    padding-bottom: 82px;
+}
+
+html[lang="es"] .home-service-copy h3 {
+    max-width: 560px;
+    font-size: 27px;
+    line-height: 1.22;
+}
+
+html[lang="es"] .home-service-row:not(:first-child) .home-service-bullets {
+    margin-top: 92px;
+}
+
+html[lang="es"] .home-service-visual {
+    width: 690px;
+    height: 248px;
+    min-height: 248px;
+    margin-top: 84px;
+    border-radius: 16px;
+}
+
+html[lang="es"] .home-service-row:nth-child(4) .home-service-visual {
+    background-image: url("../figma/service-4-clean.png") !important;
+    background-size: 690px 248px !important;
+}
+
+html[lang="es"] .why-section {
+    height: 709px;
+    background:
+        linear-gradient(180deg, rgba(7, 39, 88, 0.88), rgba(7, 39, 88, 0.92)),
+        #0c2a5d url("../figma/why-bg-clean.png") center top / 1924px 709px no-repeat !important;
+}
+
+html[lang="es"] .why-shell {
+    display: block;
+    padding-top: 104px;
+}
+
+html[lang="es"] .why-shell h2 {
+    margin-bottom: 62px;
+    font-size: 40px;
+}
+
+html[lang="es"] .why-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 48px 72px;
+}
+
+html[lang="es"] .why-grid article {
+    min-height: 154px;
+    padding: 0 18px;
+    overflow: hidden;
+}
+
+html[lang="es"] .why-grid span {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 16px;
+}
+
+html[lang="es"] .why-grid .why-card-title {
+    max-width: 330px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.18;
+}
+
+html[lang="es"] .why-grid article > p:not(.why-card-title) {
+    max-width: 330px;
+    font-size: 13px;
+    line-height: 1.55;
+}
+
+html[lang="es"] .world-section {
+    height: 1087px;
+    padding-top: 92px;
+}
+
+html[lang="es"] .world-shell {
+    grid-template-columns: 360px 1fr;
+    gap: 88px;
+    align-items: start;
+}
+
+html[lang="es"] .region-list {
+    margin-top: 62px;
+    gap: 16px 40px;
+}
+
+html[lang="es"] .region-group {
+    gap: 7px;
+}
+
+html[lang="es"] .world-map-card {
+    position: relative;
+    padding-top: 84px;
+}
+
+html[lang="es"] .world-note {
+    right: 78px;
+    top: 0;
+}
+
+html[lang="es"] .world-map {
+    width: 930px;
+    min-height: 430px;
+    margin-left: -66px;
+    background-size: 930px auto !important;
+}
+
+html[lang="es"] .world-map-card .stats-row {
+    width: 920px;
+    margin-top: 50px;
+    margin-left: -36px;
+}
+
+html[lang="es"] .partners-section {
+    height: 433px;
+}
+
+html[lang="es"] .partners-section > .container {
+    visibility: visible !important;
+    padding-top: 112px;
+}
+
+html[lang="es"] .partner-strip {
+    gap: 44px;
+    margin-top: 28px;
+}
+
+html[lang="es"] .partner-strip span {
+    width: 177px;
+    min-width: 177px;
+    height: 66px;
+    min-height: 66px;
+    padding: 12px 22px;
+}
+
+html[lang="es"] .partner-strip img {
+    max-width: 140px;
+    max-height: 42px;
+}
+
+html[lang="es"] .home-news-stage .news-card {
+    grid-template-rows: 218px 14px 48px 58px 20px;
+    align-content: start;
+    overflow: hidden;
+}
+
+html[lang="es"] .home-news-stage .news-card h3 {
+    display: -webkit-box;
+    min-height: 44px;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+html[lang="es"] .home-news-stage .news-card p {
+    display: -webkit-box;
+    min-height: 56px;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+html[lang="es"] .home-news-stage .news-card .news-link {
+    align-self: end;
+}
+
+html[lang="es"] .contact-block.home-contact-stage {
+    height: 821px;
+    background: var(--lookup-strip-bg) !important;
+    overflow: hidden;
+}
+
+html[lang="es"] .home-contact-stage .contact-shell {
+    grid-template-columns: 460px 850px;
+    gap: 68px;
+    min-height: 821px;
+    align-items: center;
+}
+
+html[lang="es"] .home-contact-stage .contact-visual {
+    width: 460px;
+    height: 520px;
+    min-height: 520px;
+    overflow: hidden;
+    background: url("../figma/contact-photo.png") center top / cover no-repeat !important;
+}
+
+html[lang="es"] .home-contact-stage .contact-copy {
+    max-width: 850px;
+}
+
+html[lang="es"] .home-contact-stage .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px 26px;
+    margin-top: 28px;
+}
+
+html[lang="es"] .home-contact-stage .contact-grid input {
+    min-height: 42px;
+}
+
+html[lang="es"] .home-contact-stage .contact-grid textarea {
+    min-height: 58px;
+}
+
+html[lang="es"] .home-contact-stage .submit-wrap {
+    justify-content: center;
+}
+
+html[lang="es"] .home-newsletter-stage::before {
+    background: linear-gradient(90deg, rgba(25, 29, 48, 1) 0%, rgba(25, 29, 48, 1) 52%, rgba(25, 29, 48, 0.84) 62%, rgba(25, 29, 48, 0.34) 73%, rgba(25, 29, 48, 0) 84%);
+}
+
+html[lang="es"] .home-newsletter-stage .newsletter-copy {
+    width: 560px;
+}
+
+html[lang="es"] .home-newsletter-stage .newsletter-copy h2 {
+    font-size: 30px;
+    line-height: 1.16;
+}
+
+html[lang="es"] .home-newsletter-stage .newsletter-copy p {
+    max-width: 540px;
+    font-size: 16px;
+    line-height: 1.65;
+}
+
+html[lang="es"] .home-newsletter-stage .newsletter-form input {
+    max-width: 420px;
+}
+
+html[lang="es"] .site-footer {
+    height: 661px;
+    background: var(--color-footer) !important;
+}
+
+html[lang="es"] .site-footer > * {
+    visibility: visible !important;
+}
+
+html[lang="es"] .footer-shell {
+    min-height: 302px;
+    grid-template-columns: 240px 1fr 300px;
+    gap: 74px;
+    align-items: center;
+}
+
+html[lang="es"] .footer-brand-logo {
+    width: 150px;
+}
+
+html[lang="es"] .footer-columns {
+    grid-template-columns: repeat(3, 170px);
+    gap: 70px;
+}
+
+html[lang="es"] .footer-column {
+    gap: 18px;
+}
+
+html[lang="es"] .footer-cert {
+    text-align: center;
+}
+
+html[lang="es"] .footer-cert-mark {
+    width: 112px;
+    margin: 28px auto 0;
+}
+
+html[lang="es"] .footer-copy .container {
+    text-align: center;
+}
