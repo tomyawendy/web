@@ -1611,7 +1611,7 @@ html[lang="es"] .home-newsletter-stage::before {
     position: absolute;
     inset: 0;
     z-index: 0;
-    background: linear-gradient(90deg, rgba(25, 29, 48, 0.96) 0%, rgba(25, 29, 48, 0.92) 36%, rgba(25, 29, 48, 0.74) 49%, rgba(25, 29, 48, 0.18) 65%, rgba(25, 29, 48, 0) 100%);
+    background: linear-gradient(90deg, rgba(25, 29, 48, 1) 0%, rgba(25, 29, 48, 1) 45%, rgba(25, 29, 48, 0.96) 54%, rgba(25, 29, 48, 0.42) 67%, rgba(25, 29, 48, 0) 100%);
     pointer-events: none;
 }
 html[lang="es"] .home-newsletter-stage > .container {
