@@ -16,7 +16,7 @@
                 <?php foreach (array_slice(setting_lines($settings, 'why_items'), 0, 6) as $item): ?>
                     <article>
                         <span></span>
-                        <h3><?= e($item) ?></h3>
+                        <p class="why-card-title"><?= e($item) ?></p>
                         <p><?= e($whyDescriptions[$item] ?? '') ?></p>
                     </article>
                 <?php endforeach; ?>

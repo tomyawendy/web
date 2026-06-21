@@ -1934,3 +1934,18 @@ html[lang="es"] .partner-strip img {
     max-width: 118px;
     max-height: 30px;
 }
+
+.why-grid .why-card-title {
+    margin: 0 0 12px;
+    color: #57e4e0;
+    font-family: var(--font-display);
+    font-size: 18px;
+    line-height: 1.28;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+html[lang="es"] .why-grid .why-card-title {
+    font-size: 18px;
+    line-height: 1.28;
+}

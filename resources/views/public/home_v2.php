@@ -63,7 +63,7 @@ if ($isSpanishHome) {
             <?php if ($heroSubtitle !== ''): ?>
                 <p class="hero-subtitle"><?= e($heroSubtitle) ?></p>
             <?php endif; ?>
-            <a class="hero-button" href="<?= e(app_url() . '#about') ?>"><?= e($heroButtonText) ?></a>
+            <a class="hero-button" href="<?= e(localized_url('#about')) ?>"><?= e($heroButtonText) ?></a>
         </div>
         <div class="hero-home-image">
             <?php if (($heroBanner['image'] ?? '') !== ''): ?>
@@ -79,7 +79,7 @@ if ($isSpanishHome) {
         <div class="lookup-pills">
             <?php foreach (array_slice($services, 0, 4) as $index => $service): ?>
                 <?php $lookupTitle = $index === 3 ? setting_value($settings, 'lookup_insurance_label', 'Insurance') : $service['title']; ?>
-                <a href="<?= e(app_url('services/' . $service['slug'])) ?>"><?= e($lookupTitle) ?></a>
+                <a href="<?= e(localized_url('services/' . $service['slug'])) ?>"><?= e($lookupTitle) ?></a>
             <?php endforeach; ?>
         </div>
     </div>
@@ -90,11 +90,11 @@ if ($isSpanishHome) {
         <div class="home-about-copy">
             <h2><?= e($homeAboutHeading) ?></h2>
             <p><?= nl2br(e($homeAboutBody)) ?></p>
-            <a class="hero-button mini" href="<?= e(app_url('about')) ?>"><?= e(setting_value($settings, 'home_about_button', 'LEARN MORE')) ?></a>
+            <a class="hero-button mini" href="<?= e(localized_url('about')) ?>"><?= e(setting_value($settings, 'home_about_button', 'LEARN MORE')) ?></a>
         </div>
         <div class="home-about-visual"<?= background_style($aboutPage['seo_image'] ?? '') ?>></div>
     </div>
-    <a class="about-hotspot" href="<?= e(app_url('about')) ?>"><?= e(setting_value($settings, 'home_about_button', 'LEARN MORE')) ?></a>
+    <a class="about-hotspot" href="<?= e(localized_url('about')) ?>"><?= e(setting_value($settings, 'home_about_button', 'LEARN MORE')) ?></a>
 </section>
 
 <section class="service-overview">
@@ -102,7 +102,7 @@ if ($isSpanishHome) {
         <div class="service-head services-page-head home-services-head">
             <div>
                 <span class="tiny-link"><?= e(setting_value($settings, 'services_kicker_label', 'View all')) ?></span>
-                <a class="services-filter-link" href="<?= e(app_url('services')) ?>"><?= e(setting_value($settings, 'services_filter_label', 'Products & Services')) ?></a>
+                <a class="services-filter-link" href="<?= e(localized_url('services')) ?>"><?= e(setting_value($settings, 'services_filter_label', 'Products & Services')) ?></a>
                 <h2><span class="home-services-nowrap"><?= e($servicesHeadingParts[0] ?? $servicesHeading) ?></span><?php if (!empty($servicesHeadingParts[1])): ?><br><?= e($servicesHeadingParts[1]) ?><?php endif; ?></h2>
             </div>
             <p><?= e($servicesIntro) ?></p>
@@ -128,7 +128,7 @@ if ($isSpanishHome) {
                                 <?php endforeach; ?>
                             </ul>
                         <?php endif; ?>
-                        <a class="hero-button mini" href="<?= e(app_url('services/' . $service['slug'])) ?>"><?= e(setting_value($settings, 'services_learn_more_label', 'LEARN MORE')) ?></a>
+                        <a class="hero-button mini" href="<?= e(localized_url('services/' . $service['slug'])) ?>"><?= e(setting_value($settings, 'services_learn_more_label', 'LEARN MORE')) ?></a>
                     </div>
                     <div class="home-service-visual"<?= $serviceVisualStyle ?>></div>
                 </article>
@@ -136,10 +136,10 @@ if ($isSpanishHome) {
         </div>
     </div>
     <nav class="service-hotspots" aria-label="Service quick links">
-        <a class="service-hotspot-all" href="<?= e(app_url('services')) ?>"><?= e(setting_value($settings, 'services_kicker_label', 'View all')) ?></a>
-        <a class="service-hotspot-filter" href="<?= e(app_url('services')) ?>"><?= e(setting_value($settings, 'services_filter_label', 'Products & Services')) ?></a>
+        <a class="service-hotspot-all" href="<?= e(localized_url('services')) ?>"><?= e(setting_value($settings, 'services_kicker_label', 'View all')) ?></a>
+        <a class="service-hotspot-filter" href="<?= e(localized_url('services')) ?>"><?= e(setting_value($settings, 'services_filter_label', 'Products & Services')) ?></a>
         <?php foreach (array_slice($services, 0, 4) as $index => $service): ?>
-            <a class="service-hotspot-<?= e((string) ($index + 1)) ?>" href="<?= e(app_url('services/' . $service['slug'])) ?>"><?= e($service['title']) ?></a>
+            <a class="service-hotspot-<?= e((string) ($index + 1)) ?>" href="<?= e(localized_url('services/' . $service['slug'])) ?>"><?= e($service['title']) ?></a>
         <?php endforeach; ?>
     </nav>
 </section>
@@ -153,7 +153,7 @@ if ($isSpanishHome) {
                     <article>
                         <span class="why-icon why-icon-<?= e($card['icon']) ?>"></span>
                         <?php if (($card['body'] ?? '') !== ''): ?>
-                            <h3><?= e($card['title']) ?></h3>
+                            <p class="why-card-title"><?= e($card['title']) ?></p>
                             <p><?= e($card['body']) ?></p>
                         <?php else: ?>
                             <p><?= e($card['title']) ?></p>
@@ -225,7 +225,7 @@ if ($isSpanishHome) {
                 <span class="tiny-link"><?= e(setting_value($settings, 'news_kicker_label', 'INSIGHT')) ?></span>
                 <h2><?= e(setting_value($settings, 'news_heading', 'Latest News')) ?></h2>
             </div>
-            <a class="news-link" href="<?= e(app_url('insights')) ?>"><?= e(setting_value($settings, 'news_view_all_label', 'VIEW ALL ARTICLES')) ?></a>
+            <a class="news-link" href="<?= e(localized_url('insights')) ?>"><?= e(setting_value($settings, 'news_view_all_label', 'VIEW ALL ARTICLES')) ?></a>
         </div>
         <div class="news-grid">
             <?php foreach ($news as $item): ?>
@@ -234,7 +234,7 @@ if ($isSpanishHome) {
                     <span><?= e(format_datetime($item['published_at'])) ?></span>
                     <h3><?= e($item['title']) ?></h3>
                     <p><?= e($item['excerpt']) ?></p>
-                    <a class="news-link" href="<?= e(app_url('insights/' . $item['slug'])) ?>"><?= e(setting_value($settings, 'read_more_label', 'READ MORE')) ?></a>
+                    <a class="news-link" href="<?= e(localized_url('insights/' . $item['slug'])) ?>"><?= e(setting_value($settings, 'read_more_label', 'READ MORE')) ?></a>
                 </article>
             <?php endforeach; ?>
         </div>

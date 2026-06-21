@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "audit:i18n": "node scripts/audit-i18n.mjs",
+    "check:i18n-links": "node scripts/check-i18n-links.mjs",
+    "build": "node scripts/check-required-files.mjs"
+  }
+}

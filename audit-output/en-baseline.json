@@ -1,0 +1,3628 @@
+{
+  "home": {
+    "path": "/",
+    "url": "https://tanshan.lovestoblog.com/?lang=en",
+    "status": 200,
+    "ok": true,
+    "finalUrl": "https://tanshan.lovestoblog.com/?lang=en",
+    "data": {
+      "requestedUrl": "https://tanshan.lovestoblog.com/?lang=en",
+      "lang": "en",
+      "title": "Premium Choice For Air Logistics Solution! | PLANET AVIATION",
+      "metaDescription": "Specializing in air freight operations across Europe, Asia, Middle East and Latin America.",
+      "ogTitle": "Premium Choice For Air Logistics Solution! | PLANET AVIATION",
+      "ogDescription": "Specializing in air freight operations across Europe, Asia, Middle East and Latin America.",
+      "headings": [
+        {
+          "index": 0,
+          "tag": "h1",
+          "text": "Premium Choice For Air Logistics Solution!"
+        },
+        {
+          "index": 1,
+          "tag": "h2",
+          "text": "Your Leading Air Cargo Sales & Service Provider"
+        },
+        {
+          "index": 2,
+          "tag": "h2",
+          "text": "Delivering Service Excellence"
+        },
+        {
+          "index": 3,
+          "tag": "h3",
+          "text": "General Sales & Service Agent"
+        },
+        {
+          "index": 4,
+          "tag": "h3",
+          "text": "Air Cargo Consolidation Experts"
+        },
+        {
+          "index": 5,
+          "tag": "h3",
+          "text": "Handling & Trucking"
+        },
+        {
+          "index": 6,
+          "tag": "h3",
+          "text": "General Sales & Service Agent"
+        },
+        {
+          "index": 7,
+          "tag": "h2",
+          "text": "Why Partners Choose Us"
+        },
+        {
+          "index": 8,
+          "tag": "h2",
+          "text": "One World"
+        },
+        {
+          "index": 9,
+          "tag": "h2",
+          "text": "Our Partners"
+        },
+        {
+          "index": 10,
+          "tag": "h2",
+          "text": "Latest News"
+        },
+        {
+          "index": 11,
+          "tag": "h3",
+          "text": "Planet Aviation expands regional network support"
+        },
+        {
+          "index": 12,
+          "tag": "h3",
+          "text": "Transport Logistic & Air Cargo Europe 2025"
+        },
+        {
+          "index": 13,
+          "tag": "h3",
+          "text": "Air Cargo Market Analysis 2026: The Shift"
+        },
+        {
+          "index": 14,
+          "tag": "h2",
+          "text": "Contact Us"
+        },
+        {
+          "index": 15,
+          "tag": "h2",
+          "text": "Sign Up To The Logistics Pulse Newsletter"
+        }
+      ],
+      "sections": [
+        {
+          "index": 0,
+          "tag": "header",
+          "id": "",
+          "className": "site-header",
+          "dataSection": ""
+        },
+        {
+          "index": 1,
+          "tag": "main",
+          "id": "",
+          "className": "",
+          "dataSection": ""
+        },
+        {
+          "index": 2,
+          "tag": "section",
+          "id": "",
+          "className": "hero-panel-home",
+          "dataSection": ""
+        },
+        {
+          "index": 3,
+          "tag": "section",
+          "id": "services",
+          "className": "lookup-strip",
+          "dataSection": ""
+        },
+        {
+          "index": 4,
+          "tag": "section",
+          "id": "about",
+          "className": "home-about-section",
+          "dataSection": ""
+        },
+        {
+          "index": 5,
+          "tag": "section",
+          "id": "",
+          "className": "service-overview",
+          "dataSection": ""
+        },
+        {
+          "index": 6,
+          "tag": "section",
+          "id": "",
+          "className": "why-section",
+          "dataSection": ""
+        },
+        {
+          "index": 7,
+          "tag": "section",
+          "id": "",
+          "className": "world-section",
+          "dataSection": ""
+        },
+        {
+          "index": 8,
+          "tag": "section",
+          "id": "",
+          "className": "partners-section",
+          "dataSection": ""
+        },
+        {
+          "index": 9,
+          "tag": "section",
+          "id": "insights",
+          "className": "news-section home-news-stage",
+          "dataSection": ""
+        },
+        {
+          "index": 10,
+          "tag": "section",
+          "id": "contact",
+          "className": "contact-block home-contact-stage",
+          "dataSection": ""
+        },
+        {
+          "index": 11,
+          "tag": "section",
+          "id": "newsletter",
+          "className": "newsletter-block home-newsletter-stage",
+          "dataSection": ""
+        },
+        {
+          "index": 12,
+          "tag": "footer",
+          "id": "",
+          "className": "site-footer",
+          "dataSection": ""
+        }
+      ],
+      "links": [
+        {
+          "index": 0,
+          "text": "",
+          "href": "https://tanshan.lovestoblog.com",
+          "normalized": "/",
+          "className": "brand",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 1,
+          "text": "Home",
+          "href": "https://tanshan.lovestoblog.com",
+          "normalized": "/",
+          "className": "active",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 2,
+          "text": "Who We Are",
+          "href": "https://tanshan.lovestoblog.com/about",
+          "normalized": "/about",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 3,
+          "text": "Our Services",
+          "href": "https://tanshan.lovestoblog.com/services",
+          "normalized": "/services",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 4,
+          "text": "Insights",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 5,
+          "text": "Contact",
+          "href": "https://tanshan.lovestoblog.com/contact",
+          "normalized": "/contact",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 6,
+          "text": "GET A QUOTE",
+          "href": "https://tanshan.lovestoblog.com/contact",
+          "normalized": "/contact",
+          "className": "quote-button",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 7,
+          "text": "English",
+          "href": "/?lang=en",
+          "normalized": "/",
+          "className": "active",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 8,
+          "text": "Español",
+          "href": "/?lang=es",
+          "normalized": "/",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": true
+        },
+        {
+          "index": 9,
+          "text": "LEARN MORE",
+          "href": "https://tanshan.lovestoblog.com#about",
+          "normalized": "/#about",
+          "className": "hero-button",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 10,
+          "text": "General Sales & Service Agent",
+          "href": "https://tanshan.lovestoblog.com/services/general-sales-service-agent",
+          "normalized": "/services/general-sales-service-agent",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 11,
+          "text": "Air Cargo Consolidation Experts",
+          "href": "https://tanshan.lovestoblog.com/services/air-cargo-consolidation-experts",
+          "normalized": "/services/air-cargo-consolidation-experts",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 12,
+          "text": "Handling & Trucking",
+          "href": "https://tanshan.lovestoblog.com/services/handling-trucking",
+          "normalized": "/services/handling-trucking",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 13,
+          "text": "Insurance",
+          "href": "https://tanshan.lovestoblog.com/services/insurance-solutions",
+          "normalized": "/services/insurance-solutions",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 14,
+          "text": "LEARN MORE",
+          "href": "https://tanshan.lovestoblog.com/about",
+          "normalized": "/about",
+          "className": "hero-button mini",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 15,
+          "text": "LEARN MORE",
+          "href": "https://tanshan.lovestoblog.com/about",
+          "normalized": "/about",
+          "className": "about-hotspot",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 16,
+          "text": "Products & Services",
+          "href": "https://tanshan.lovestoblog.com/services",
+          "normalized": "/services",
+          "className": "services-filter-link",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 17,
+          "text": "LEARN MORE",
+          "href": "https://tanshan.lovestoblog.com/services/general-sales-service-agent",
+          "normalized": "/services/general-sales-service-agent",
+          "className": "hero-button mini",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 18,
+          "text": "LEARN MORE",
+          "href": "https://tanshan.lovestoblog.com/services/air-cargo-consolidation-experts",
+          "normalized": "/services/air-cargo-consolidation-experts",
+          "className": "hero-button mini",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 19,
+          "text": "LEARN MORE",
+          "href": "https://tanshan.lovestoblog.com/services/handling-trucking",
+          "normalized": "/services/handling-trucking",
+          "className": "hero-button mini",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 20,
+          "text": "LEARN MORE",
+          "href": "https://tanshan.lovestoblog.com/services/insurance-solutions",
+          "normalized": "/services/insurance-solutions",
+          "className": "hero-button mini",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 21,
+          "text": "View all",
+          "href": "https://tanshan.lovestoblog.com/services",
+          "normalized": "/services",
+          "className": "service-hotspot-all",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 22,
+          "text": "Products & Services",
+          "href": "https://tanshan.lovestoblog.com/services",
+          "normalized": "/services",
+          "className": "service-hotspot-filter",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 23,
+          "text": "General Sales & Service Agent",
+          "href": "https://tanshan.lovestoblog.com/services/general-sales-service-agent",
+          "normalized": "/services/general-sales-service-agent",
+          "className": "service-hotspot-1",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 24,
+          "text": "Air Cargo Consolidation Experts",
+          "href": "https://tanshan.lovestoblog.com/services/air-cargo-consolidation-experts",
+          "normalized": "/services/air-cargo-consolidation-experts",
+          "className": "service-hotspot-2",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 25,
+          "text": "Handling & Trucking",
+          "href": "https://tanshan.lovestoblog.com/services/handling-trucking",
+          "normalized": "/services/handling-trucking",
+          "className": "service-hotspot-3",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 26,
+          "text": "Insurance Solutions",
+          "href": "https://tanshan.lovestoblog.com/services/insurance-solutions",
+          "normalized": "/services/insurance-solutions",
+          "className": "service-hotspot-4",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 27,
+          "text": "VIEW ALL ARTICLES",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "news-link",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 28,
+          "text": "READ MORE",
+          "href": "https://tanshan.lovestoblog.com/insights/planet-aviation-expands-regional-network",
+          "normalized": "/insights/planet-aviation-expands-regional-network",
+          "className": "news-link",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 29,
+          "text": "READ MORE",
+          "href": "https://tanshan.lovestoblog.com/insights/transport-logistic-air-cargo-europe",
+          "normalized": "/insights/transport-logistic-air-cargo-europe",
+          "className": "news-link",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 30,
+          "text": "READ MORE",
+          "href": "https://tanshan.lovestoblog.com/insights/air-cargo-market-analysis",
+          "normalized": "/insights/air-cargo-market-analysis",
+          "className": "news-link",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 31,
+          "text": "Events",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 32,
+          "text": "Our awards",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 33,
+          "text": "Contact",
+          "href": "https://tanshan.lovestoblog.com/contact",
+          "normalized": "/contact",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 34,
+          "text": "News",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 35,
+          "text": "Obtain IATA certification",
+          "href": "https://tanshan.lovestoblog.com/about",
+          "normalized": "/about",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        }
+      ],
+      "buttons": [
+        {
+          "index": 0,
+          "text": "English +",
+          "className": "locale-current",
+          "ariaLabel": ""
+        },
+        {
+          "index": 1,
+          "text": "SUBMIT",
+          "className": "submit-button",
+          "ariaLabel": ""
+        },
+        {
+          "index": 2,
+          "text": "SUBMIT",
+          "className": "newsletter-button",
+          "ariaLabel": ""
+        }
+      ],
+      "images": [
+        {
+          "index": 0,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/logo-header.png",
+          "alt": "PLANET AVIATION",
+          "className": "brand-logo"
+        },
+        {
+          "index": 1,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/hero-plane.png",
+          "alt": "",
+          "className": "hero-home-art"
+        },
+        {
+          "index": 2,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/partner-1.png",
+          "alt": "MNG Airlines",
+          "className": ""
+        },
+        {
+          "index": 3,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/partner-2.png",
+          "alt": "Hainan Airlines",
+          "className": ""
+        },
+        {
+          "index": 4,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/partner-3.png",
+          "alt": "Capital Airlines",
+          "className": ""
+        },
+        {
+          "index": 5,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/partner-4.png",
+          "alt": "China Southern",
+          "className": ""
+        },
+        {
+          "index": 6,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/partner-5.png",
+          "alt": "BAC",
+          "className": ""
+        },
+        {
+          "index": 7,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/logo-footer.png",
+          "alt": "PLANET AVIATION",
+          "className": "footer-brand-logo"
+        },
+        {
+          "index": 8,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/cert-mark.png",
+          "alt": "IATA Certification",
+          "className": "footer-cert-mark"
+        }
+      ],
+      "alternates": [],
+      "canonical": "",
+      "englishResidue": [
+        "View all",
+        "Products & Services",
+        "Latest News",
+        "Contact Us",
+        "Who We Are",
+        "Our Services",
+        "Insights"
+      ]
+    }
+  },
+  "about": {
+    "path": "/about",
+    "url": "https://tanshan.lovestoblog.com/about?lang=en",
+    "status": 200,
+    "ok": true,
+    "finalUrl": "https://tanshan.lovestoblog.com/about/?lang=en",
+    "data": {
+      "requestedUrl": "https://tanshan.lovestoblog.com/about?lang=en",
+      "lang": "en",
+      "title": "About Planet Aviation | PLANET AVIATION",
+      "metaDescription": "Learn more about Planet Aviation.",
+      "ogTitle": "About Planet Aviation | PLANET AVIATION",
+      "ogDescription": "Learn more about Planet Aviation.",
+      "headings": [
+        {
+          "index": 0,
+          "tag": "h2",
+          "text": "Your Leading Air Cargo Sales & Service Provider"
+        },
+        {
+          "index": 1,
+          "tag": "h2",
+          "text": "Contact Us"
+        },
+        {
+          "index": 2,
+          "tag": "h2",
+          "text": "Sign Up To The Logistics Pulse Newsletter"
+        }
+      ],
+      "sections": [
+        {
+          "index": 0,
+          "tag": "header",
+          "id": "",
+          "className": "site-header",
+          "dataSection": ""
+        },
+        {
+          "index": 1,
+          "tag": "main",
+          "id": "",
+          "className": "",
+          "dataSection": ""
+        },
+        {
+          "index": 2,
+          "tag": "section",
+          "id": "",
+          "className": "about-page-stage",
+          "dataSection": ""
+        },
+        {
+          "index": 3,
+          "tag": "section",
+          "id": "contact",
+          "className": "contact-block home-contact-stage",
+          "dataSection": ""
+        },
+        {
+          "index": 4,
+          "tag": "section",
+          "id": "newsletter",
+          "className": "newsletter-block home-newsletter-stage",
+          "dataSection": ""
+        },
+        {
+          "index": 5,
+          "tag": "footer",
+          "id": "",
+          "className": "site-footer",
+          "dataSection": ""
+        }
+      ],
+      "links": [
+        {
+          "index": 0,
+          "text": "",
+          "href": "https://tanshan.lovestoblog.com",
+          "normalized": "/",
+          "className": "brand",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 1,
+          "text": "Home",
+          "href": "https://tanshan.lovestoblog.com",
+          "normalized": "/",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 2,
+          "text": "Who We Are",
+          "href": "https://tanshan.lovestoblog.com/about",
+          "normalized": "/about",
+          "className": "active",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 3,
+          "text": "Our Services",
+          "href": "https://tanshan.lovestoblog.com/services",
+          "normalized": "/services",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 4,
+          "text": "Insights",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 5,
+          "text": "Contact",
+          "href": "https://tanshan.lovestoblog.com/contact",
+          "normalized": "/contact",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 6,
+          "text": "GET A QUOTE",
+          "href": "https://tanshan.lovestoblog.com/contact",
+          "normalized": "/contact",
+          "className": "quote-button",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 7,
+          "text": "English",
+          "href": "/about?lang=en",
+          "normalized": "/about",
+          "className": "active",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 8,
+          "text": "Español",
+          "href": "/about?lang=es",
+          "normalized": "/about",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": true
+        },
+        {
+          "index": 9,
+          "text": "Events",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 10,
+          "text": "Our awards",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 11,
+          "text": "Contact",
+          "href": "https://tanshan.lovestoblog.com/contact",
+          "normalized": "/contact",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 12,
+          "text": "News",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 13,
+          "text": "Obtain IATA certification",
+          "href": "https://tanshan.lovestoblog.com/about",
+          "normalized": "/about",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        }
+      ],
+      "buttons": [
+        {
+          "index": 0,
+          "text": "English +",
+          "className": "locale-current",
+          "ariaLabel": ""
+        },
+        {
+          "index": 1,
+          "text": "SUBMIT",
+          "className": "submit-button",
+          "ariaLabel": ""
+        },
+        {
+          "index": 2,
+          "text": "SUBMIT",
+          "className": "newsletter-button",
+          "ariaLabel": ""
+        }
+      ],
+      "images": [
+        {
+          "index": 0,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/logo-header.png",
+          "alt": "PLANET AVIATION",
+          "className": "brand-logo"
+        },
+        {
+          "index": 1,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/logo-footer.png",
+          "alt": "PLANET AVIATION",
+          "className": "footer-brand-logo"
+        },
+        {
+          "index": 2,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/cert-mark.png",
+          "alt": "IATA Certification",
+          "className": "footer-cert-mark"
+        }
+      ],
+      "alternates": [],
+      "canonical": "",
+      "englishResidue": [
+        "Contact Us",
+        "Who We Are",
+        "Our Services",
+        "Insights"
+      ]
+    }
+  },
+  "contact": {
+    "path": "/contact",
+    "url": "https://tanshan.lovestoblog.com/contact?lang=en",
+    "status": 200,
+    "ok": true,
+    "finalUrl": "https://tanshan.lovestoblog.com/contact/?lang=en",
+    "data": {
+      "requestedUrl": "https://tanshan.lovestoblog.com/contact?lang=en",
+      "lang": "en",
+      "title": "Contact Planet Aviation | PLANET AVIATION",
+      "metaDescription": "Reach the Planet Aviation team.",
+      "ogTitle": "Contact Planet Aviation | PLANET AVIATION",
+      "ogDescription": "Reach the Planet Aviation team.",
+      "headings": [
+        {
+          "index": 0,
+          "tag": "h2",
+          "text": "Contact Us"
+        },
+        {
+          "index": 1,
+          "tag": "h2",
+          "text": "Sign Up To The Logistics Pulse Newsletter"
+        }
+      ],
+      "sections": [
+        {
+          "index": 0,
+          "tag": "header",
+          "id": "",
+          "className": "site-header",
+          "dataSection": ""
+        },
+        {
+          "index": 1,
+          "tag": "main",
+          "id": "",
+          "className": "",
+          "dataSection": ""
+        },
+        {
+          "index": 2,
+          "tag": "section",
+          "id": "contact",
+          "className": "contact-block home-contact-stage",
+          "dataSection": ""
+        },
+        {
+          "index": 3,
+          "tag": "section",
+          "id": "newsletter",
+          "className": "newsletter-block home-newsletter-stage",
+          "dataSection": ""
+        },
+        {
+          "index": 4,
+          "tag": "footer",
+          "id": "",
+          "className": "site-footer",
+          "dataSection": ""
+        }
+      ],
+      "links": [
+        {
+          "index": 0,
+          "text": "",
+          "href": "https://tanshan.lovestoblog.com",
+          "normalized": "/",
+          "className": "brand",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 1,
+          "text": "Home",
+          "href": "https://tanshan.lovestoblog.com",
+          "normalized": "/",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 2,
+          "text": "Who We Are",
+          "href": "https://tanshan.lovestoblog.com/about",
+          "normalized": "/about",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 3,
+          "text": "Our Services",
+          "href": "https://tanshan.lovestoblog.com/services",
+          "normalized": "/services",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 4,
+          "text": "Insights",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 5,
+          "text": "Contact",
+          "href": "https://tanshan.lovestoblog.com/contact",
+          "normalized": "/contact",
+          "className": "active",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 6,
+          "text": "GET A QUOTE",
+          "href": "https://tanshan.lovestoblog.com/contact",
+          "normalized": "/contact",
+          "className": "quote-button",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 7,
+          "text": "English",
+          "href": "/contact?lang=en",
+          "normalized": "/contact",
+          "className": "active",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 8,
+          "text": "Español",
+          "href": "/contact?lang=es",
+          "normalized": "/contact",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": true
+        },
+        {
+          "index": 9,
+          "text": "Events",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 10,
+          "text": "Our awards",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 11,
+          "text": "Contact",
+          "href": "https://tanshan.lovestoblog.com/contact",
+          "normalized": "/contact",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 12,
+          "text": "News",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 13,
+          "text": "Obtain IATA certification",
+          "href": "https://tanshan.lovestoblog.com/about",
+          "normalized": "/about",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        }
+      ],
+      "buttons": [
+        {
+          "index": 0,
+          "text": "English +",
+          "className": "locale-current",
+          "ariaLabel": ""
+        },
+        {
+          "index": 1,
+          "text": "SUBMIT",
+          "className": "submit-button",
+          "ariaLabel": ""
+        },
+        {
+          "index": 2,
+          "text": "SUBMIT",
+          "className": "newsletter-button",
+          "ariaLabel": ""
+        }
+      ],
+      "images": [
+        {
+          "index": 0,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/logo-header.png",
+          "alt": "PLANET AVIATION",
+          "className": "brand-logo"
+        },
+        {
+          "index": 1,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/logo-footer.png",
+          "alt": "PLANET AVIATION",
+          "className": "footer-brand-logo"
+        },
+        {
+          "index": 2,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/cert-mark.png",
+          "alt": "IATA Certification",
+          "className": "footer-cert-mark"
+        }
+      ],
+      "alternates": [],
+      "canonical": "",
+      "englishResidue": [
+        "Contact Us",
+        "Who We Are",
+        "Our Services",
+        "Insights"
+      ]
+    }
+  },
+  "insights": {
+    "path": "/insights",
+    "url": "https://tanshan.lovestoblog.com/insights?lang=en",
+    "status": 200,
+    "ok": true,
+    "finalUrl": "https://tanshan.lovestoblog.com/insights/?lang=en",
+    "data": {
+      "requestedUrl": "https://tanshan.lovestoblog.com/insights?lang=en",
+      "lang": "en",
+      "title": "Insights | PLANET AVIATION",
+      "metaDescription": "The requested content is not available.",
+      "ogTitle": "Insights | PLANET AVIATION",
+      "ogDescription": "The requested content is not available.",
+      "headings": [
+        {
+          "index": 0,
+          "tag": "h2",
+          "text": "Latest News"
+        },
+        {
+          "index": 1,
+          "tag": "h3",
+          "text": "Planet Aviation expands regional network support"
+        },
+        {
+          "index": 2,
+          "tag": "h3",
+          "text": "Transport Logistic & Air Cargo Europe 2025"
+        },
+        {
+          "index": 3,
+          "tag": "h3",
+          "text": "Air Cargo Market Analysis 2026: The Shift"
+        },
+        {
+          "index": 4,
+          "tag": "h2",
+          "text": "Contact Us"
+        },
+        {
+          "index": 5,
+          "tag": "h2",
+          "text": "Sign Up To The Logistics Pulse Newsletter"
+        }
+      ],
+      "sections": [
+        {
+          "index": 0,
+          "tag": "header",
+          "id": "",
+          "className": "site-header",
+          "dataSection": ""
+        },
+        {
+          "index": 1,
+          "tag": "main",
+          "id": "",
+          "className": "",
+          "dataSection": ""
+        },
+        {
+          "index": 2,
+          "tag": "section",
+          "id": "",
+          "className": "news-section listing-page insights-entry-stage insights-figma-stage",
+          "dataSection": ""
+        },
+        {
+          "index": 3,
+          "tag": "section",
+          "id": "contact",
+          "className": "contact-block home-contact-stage",
+          "dataSection": ""
+        },
+        {
+          "index": 4,
+          "tag": "section",
+          "id": "newsletter",
+          "className": "newsletter-block home-newsletter-stage",
+          "dataSection": ""
+        },
+        {
+          "index": 5,
+          "tag": "footer",
+          "id": "",
+          "className": "site-footer",
+          "dataSection": ""
+        }
+      ],
+      "links": [
+        {
+          "index": 0,
+          "text": "",
+          "href": "https://tanshan.lovestoblog.com",
+          "normalized": "/",
+          "className": "brand",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 1,
+          "text": "Home",
+          "href": "https://tanshan.lovestoblog.com",
+          "normalized": "/",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 2,
+          "text": "Who We Are",
+          "href": "https://tanshan.lovestoblog.com/about",
+          "normalized": "/about",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 3,
+          "text": "Our Services",
+          "href": "https://tanshan.lovestoblog.com/services",
+          "normalized": "/services",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 4,
+          "text": "Insights",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "active",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 5,
+          "text": "Contact",
+          "href": "https://tanshan.lovestoblog.com/contact",
+          "normalized": "/contact",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 6,
+          "text": "GET A QUOTE",
+          "href": "https://tanshan.lovestoblog.com/contact",
+          "normalized": "/contact",
+          "className": "quote-button",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 7,
+          "text": "English",
+          "href": "/insights?lang=en",
+          "normalized": "/insights",
+          "className": "active",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 8,
+          "text": "Español",
+          "href": "/insights?lang=es",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": true
+        },
+        {
+          "index": 9,
+          "text": "VIEW ALL ARTICLES",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "insights-hotspot-all",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 10,
+          "text": "Planet Aviation expands regional network support",
+          "href": "https://tanshan.lovestoblog.com/insights/planet-aviation-expands-regional-network",
+          "normalized": "/insights/planet-aviation-expands-regional-network",
+          "className": "insights-hotspot-card insights-hotspot-card-1",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 11,
+          "text": "Transport Logistic & Air Cargo Europe 2025",
+          "href": "https://tanshan.lovestoblog.com/insights/transport-logistic-air-cargo-europe",
+          "normalized": "/insights/transport-logistic-air-cargo-europe",
+          "className": "insights-hotspot-card insights-hotspot-card-2",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 12,
+          "text": "Air Cargo Market Analysis 2026: The Shift",
+          "href": "https://tanshan.lovestoblog.com/insights/air-cargo-market-analysis",
+          "normalized": "/insights/air-cargo-market-analysis",
+          "className": "insights-hotspot-card insights-hotspot-card-3",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 13,
+          "text": "VIEW ALL ARTICLES",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "news-link listing-view-all",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 14,
+          "text": "2026-06-08 01:37 Planet Aviation expands regional network support A new operating framework improves coordination speed for partner operators.",
+          "href": "https://tanshan.lovestoblog.com/insights/planet-aviation-expands-regional-network",
+          "normalized": "/insights/planet-aviation-expands-regional-network",
+          "className": "news-card-link",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 15,
+          "text": "READ MORE",
+          "href": "https://tanshan.lovestoblog.com/insights/planet-aviation-expands-regional-network",
+          "normalized": "/insights/planet-aviation-expands-regional-network",
+          "className": "news-link",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 16,
+          "text": "2026-06-08 01:37 Transport Logistic & Air Cargo Europe 2025 Highlights from one of the leading logistics and air cargo trade events.",
+          "href": "https://tanshan.lovestoblog.com/insights/transport-logistic-air-cargo-europe",
+          "normalized": "/insights/transport-logistic-air-cargo-europe",
+          "className": "news-card-link",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 17,
+          "text": "READ MORE",
+          "href": "https://tanshan.lovestoblog.com/insights/transport-logistic-air-cargo-europe",
+          "normalized": "/insights/transport-logistic-air-cargo-europe",
+          "className": "news-link",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 18,
+          "text": "2026-06-08 01:37 Air Cargo Market Analysis 2026: The Shift A fresh market analysis highlights the lane shifts shaping current cargo demand.",
+          "href": "https://tanshan.lovestoblog.com/insights/air-cargo-market-analysis",
+          "normalized": "/insights/air-cargo-market-analysis",
+          "className": "news-card-link",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 19,
+          "text": "READ MORE",
+          "href": "https://tanshan.lovestoblog.com/insights/air-cargo-market-analysis",
+          "normalized": "/insights/air-cargo-market-analysis",
+          "className": "news-link",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 20,
+          "text": "Events",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 21,
+          "text": "Our awards",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 22,
+          "text": "Contact",
+          "href": "https://tanshan.lovestoblog.com/contact",
+          "normalized": "/contact",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 23,
+          "text": "News",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 24,
+          "text": "Obtain IATA certification",
+          "href": "https://tanshan.lovestoblog.com/about",
+          "normalized": "/about",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        }
+      ],
+      "buttons": [
+        {
+          "index": 0,
+          "text": "English +",
+          "className": "locale-current",
+          "ariaLabel": ""
+        },
+        {
+          "index": 1,
+          "text": "SUBMIT",
+          "className": "submit-button",
+          "ariaLabel": ""
+        },
+        {
+          "index": 2,
+          "text": "SUBMIT",
+          "className": "newsletter-button",
+          "ariaLabel": ""
+        }
+      ],
+      "images": [
+        {
+          "index": 0,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/logo-header.png",
+          "alt": "PLANET AVIATION",
+          "className": "brand-logo"
+        },
+        {
+          "index": 1,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/logo-footer.png",
+          "alt": "PLANET AVIATION",
+          "className": "footer-brand-logo"
+        },
+        {
+          "index": 2,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/cert-mark.png",
+          "alt": "IATA Certification",
+          "className": "footer-cert-mark"
+        }
+      ],
+      "alternates": [],
+      "canonical": "",
+      "englishResidue": [
+        "Latest News",
+        "Contact Us",
+        "Who We Are",
+        "Our Services",
+        "Insights"
+      ]
+    }
+  },
+  "insights_air_cargo_market_analysis": {
+    "path": "/insights/air-cargo-market-analysis",
+    "url": "https://tanshan.lovestoblog.com/insights/air-cargo-market-analysis?lang=en",
+    "status": 200,
+    "ok": true,
+    "finalUrl": "https://tanshan.lovestoblog.com/insights/air-cargo-market-analysis/?lang=en",
+    "data": {
+      "requestedUrl": "https://tanshan.lovestoblog.com/insights/air-cargo-market-analysis?lang=en",
+      "lang": "en",
+      "title": "Air Cargo Market Analysis | PLANET AVIATION",
+      "metaDescription": "Air cargo market analysis.",
+      "ogTitle": "Air Cargo Market Analysis | PLANET AVIATION",
+      "ogDescription": "Air cargo market analysis.",
+      "headings": [
+        {
+          "index": 0,
+          "tag": "h1",
+          "text": "Air Cargo Market Analysis 2026: The Shift"
+        },
+        {
+          "index": 1,
+          "tag": "h2",
+          "text": "Contact Us"
+        },
+        {
+          "index": 2,
+          "tag": "h2",
+          "text": "Sign Up To The Logistics Pulse Newsletter"
+        }
+      ],
+      "sections": [
+        {
+          "index": 0,
+          "tag": "header",
+          "id": "",
+          "className": "site-header",
+          "dataSection": ""
+        },
+        {
+          "index": 1,
+          "tag": "main",
+          "id": "",
+          "className": "",
+          "dataSection": ""
+        },
+        {
+          "index": 2,
+          "tag": "section",
+          "id": "",
+          "className": "post-detail-page insight-detail-page",
+          "dataSection": ""
+        },
+        {
+          "index": 3,
+          "tag": "section",
+          "id": "contact",
+          "className": "contact-block home-contact-stage",
+          "dataSection": ""
+        },
+        {
+          "index": 4,
+          "tag": "section",
+          "id": "newsletter",
+          "className": "newsletter-block home-newsletter-stage",
+          "dataSection": ""
+        },
+        {
+          "index": 5,
+          "tag": "footer",
+          "id": "",
+          "className": "site-footer",
+          "dataSection": ""
+        }
+      ],
+      "links": [
+        {
+          "index": 0,
+          "text": "",
+          "href": "https://tanshan.lovestoblog.com",
+          "normalized": "/",
+          "className": "brand",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 1,
+          "text": "Home",
+          "href": "https://tanshan.lovestoblog.com",
+          "normalized": "/",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 2,
+          "text": "Who We Are",
+          "href": "https://tanshan.lovestoblog.com/about",
+          "normalized": "/about",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 3,
+          "text": "Our Services",
+          "href": "https://tanshan.lovestoblog.com/services",
+          "normalized": "/services",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 4,
+          "text": "Insights",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "active",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 5,
+          "text": "Contact",
+          "href": "https://tanshan.lovestoblog.com/contact",
+          "normalized": "/contact",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 6,
+          "text": "GET A QUOTE",
+          "href": "https://tanshan.lovestoblog.com/contact",
+          "normalized": "/contact",
+          "className": "quote-button",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 7,
+          "text": "English",
+          "href": "/insights/air-cargo-market-analysis?lang=en",
+          "normalized": "/insights/air-cargo-market-analysis",
+          "className": "active",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 8,
+          "text": "Español",
+          "href": "/insights/air-cargo-market-analysis?lang=es",
+          "normalized": "/insights/air-cargo-market-analysis",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": true
+        },
+        {
+          "index": 9,
+          "text": "",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "post-back-link",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 10,
+          "text": "Events",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 11,
+          "text": "Our awards",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 12,
+          "text": "Contact",
+          "href": "https://tanshan.lovestoblog.com/contact",
+          "normalized": "/contact",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 13,
+          "text": "News",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 14,
+          "text": "Obtain IATA certification",
+          "href": "https://tanshan.lovestoblog.com/about",
+          "normalized": "/about",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        }
+      ],
+      "buttons": [
+        {
+          "index": 0,
+          "text": "English +",
+          "className": "locale-current",
+          "ariaLabel": ""
+        },
+        {
+          "index": 1,
+          "text": "SUBMIT",
+          "className": "submit-button",
+          "ariaLabel": ""
+        },
+        {
+          "index": 2,
+          "text": "SUBMIT",
+          "className": "newsletter-button",
+          "ariaLabel": ""
+        }
+      ],
+      "images": [
+        {
+          "index": 0,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/logo-header.png",
+          "alt": "PLANET AVIATION",
+          "className": "brand-logo"
+        },
+        {
+          "index": 1,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/logo-footer.png",
+          "alt": "PLANET AVIATION",
+          "className": "footer-brand-logo"
+        },
+        {
+          "index": 2,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/cert-mark.png",
+          "alt": "IATA Certification",
+          "className": "footer-cert-mark"
+        }
+      ],
+      "alternates": [],
+      "canonical": "",
+      "englishResidue": [
+        "Contact Us",
+        "Who We Are",
+        "Our Services",
+        "Insights"
+      ]
+    }
+  },
+  "insights_planet_aviation_expands_regional_network": {
+    "path": "/insights/planet-aviation-expands-regional-network",
+    "url": "https://tanshan.lovestoblog.com/insights/planet-aviation-expands-regional-network?lang=en",
+    "status": 200,
+    "ok": true,
+    "finalUrl": "https://tanshan.lovestoblog.com/insights/planet-aviation-expands-regional-network/?lang=en",
+    "data": {
+      "requestedUrl": "https://tanshan.lovestoblog.com/insights/planet-aviation-expands-regional-network?lang=en",
+      "lang": "en",
+      "title": "Planet Aviation News | PLANET AVIATION",
+      "metaDescription": "Regional network support update.",
+      "ogTitle": "Planet Aviation News | PLANET AVIATION",
+      "ogDescription": "Regional network support update.",
+      "headings": [
+        {
+          "index": 0,
+          "tag": "h1",
+          "text": "Planet Aviation expands regional network support"
+        },
+        {
+          "index": 1,
+          "tag": "h2",
+          "text": "Contact Us"
+        },
+        {
+          "index": 2,
+          "tag": "h2",
+          "text": "Sign Up To The Logistics Pulse Newsletter"
+        }
+      ],
+      "sections": [
+        {
+          "index": 0,
+          "tag": "header",
+          "id": "",
+          "className": "site-header",
+          "dataSection": ""
+        },
+        {
+          "index": 1,
+          "tag": "main",
+          "id": "",
+          "className": "",
+          "dataSection": ""
+        },
+        {
+          "index": 2,
+          "tag": "section",
+          "id": "",
+          "className": "post-detail-page insight-detail-page",
+          "dataSection": ""
+        },
+        {
+          "index": 3,
+          "tag": "section",
+          "id": "contact",
+          "className": "contact-block home-contact-stage",
+          "dataSection": ""
+        },
+        {
+          "index": 4,
+          "tag": "section",
+          "id": "newsletter",
+          "className": "newsletter-block home-newsletter-stage",
+          "dataSection": ""
+        },
+        {
+          "index": 5,
+          "tag": "footer",
+          "id": "",
+          "className": "site-footer",
+          "dataSection": ""
+        }
+      ],
+      "links": [
+        {
+          "index": 0,
+          "text": "",
+          "href": "https://tanshan.lovestoblog.com",
+          "normalized": "/",
+          "className": "brand",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 1,
+          "text": "Home",
+          "href": "https://tanshan.lovestoblog.com",
+          "normalized": "/",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 2,
+          "text": "Who We Are",
+          "href": "https://tanshan.lovestoblog.com/about",
+          "normalized": "/about",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 3,
+          "text": "Our Services",
+          "href": "https://tanshan.lovestoblog.com/services",
+          "normalized": "/services",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 4,
+          "text": "Insights",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "active",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 5,
+          "text": "Contact",
+          "href": "https://tanshan.lovestoblog.com/contact",
+          "normalized": "/contact",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 6,
+          "text": "GET A QUOTE",
+          "href": "https://tanshan.lovestoblog.com/contact",
+          "normalized": "/contact",
+          "className": "quote-button",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 7,
+          "text": "English",
+          "href": "/insights/planet-aviation-expands-regional-network?lang=en",
+          "normalized": "/insights/planet-aviation-expands-regional-network",
+          "className": "active",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 8,
+          "text": "Español",
+          "href": "/insights/planet-aviation-expands-regional-network?lang=es",
+          "normalized": "/insights/planet-aviation-expands-regional-network",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": true
+        },
+        {
+          "index": 9,
+          "text": "",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "post-back-link",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 10,
+          "text": "Events",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 11,
+          "text": "Our awards",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 12,
+          "text": "Contact",
+          "href": "https://tanshan.lovestoblog.com/contact",
+          "normalized": "/contact",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 13,
+          "text": "News",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 14,
+          "text": "Obtain IATA certification",
+          "href": "https://tanshan.lovestoblog.com/about",
+          "normalized": "/about",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        }
+      ],
+      "buttons": [
+        {
+          "index": 0,
+          "text": "English +",
+          "className": "locale-current",
+          "ariaLabel": ""
+        },
+        {
+          "index": 1,
+          "text": "SUBMIT",
+          "className": "submit-button",
+          "ariaLabel": ""
+        },
+        {
+          "index": 2,
+          "text": "SUBMIT",
+          "className": "newsletter-button",
+          "ariaLabel": ""
+        }
+      ],
+      "images": [
+        {
+          "index": 0,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/logo-header.png",
+          "alt": "PLANET AVIATION",
+          "className": "brand-logo"
+        },
+        {
+          "index": 1,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/logo-footer.png",
+          "alt": "PLANET AVIATION",
+          "className": "footer-brand-logo"
+        },
+        {
+          "index": 2,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/cert-mark.png",
+          "alt": "IATA Certification",
+          "className": "footer-cert-mark"
+        }
+      ],
+      "alternates": [],
+      "canonical": "",
+      "englishResidue": [
+        "Contact Us",
+        "Who We Are",
+        "Our Services",
+        "Insights"
+      ]
+    }
+  },
+  "insights_transport_logistic_air_cargo_europe": {
+    "path": "/insights/transport-logistic-air-cargo-europe",
+    "url": "https://tanshan.lovestoblog.com/insights/transport-logistic-air-cargo-europe?lang=en",
+    "status": 200,
+    "ok": true,
+    "finalUrl": "https://tanshan.lovestoblog.com/insights/transport-logistic-air-cargo-europe/?lang=en",
+    "data": {
+      "requestedUrl": "https://tanshan.lovestoblog.com/insights/transport-logistic-air-cargo-europe?lang=en",
+      "lang": "en",
+      "title": "Transport Logistic Europe | PLANET AVIATION",
+      "metaDescription": "Event highlights from Europe.",
+      "ogTitle": "Transport Logistic Europe | PLANET AVIATION",
+      "ogDescription": "Event highlights from Europe.",
+      "headings": [
+        {
+          "index": 0,
+          "tag": "h1",
+          "text": "Transport Logistic & Air Cargo Europe 2025"
+        },
+        {
+          "index": 1,
+          "tag": "h2",
+          "text": "Contact Us"
+        },
+        {
+          "index": 2,
+          "tag": "h2",
+          "text": "Sign Up To The Logistics Pulse Newsletter"
+        }
+      ],
+      "sections": [
+        {
+          "index": 0,
+          "tag": "header",
+          "id": "",
+          "className": "site-header",
+          "dataSection": ""
+        },
+        {
+          "index": 1,
+          "tag": "main",
+          "id": "",
+          "className": "",
+          "dataSection": ""
+        },
+        {
+          "index": 2,
+          "tag": "section",
+          "id": "",
+          "className": "post-detail-page insight-detail-page",
+          "dataSection": ""
+        },
+        {
+          "index": 3,
+          "tag": "section",
+          "id": "contact",
+          "className": "contact-block home-contact-stage",
+          "dataSection": ""
+        },
+        {
+          "index": 4,
+          "tag": "section",
+          "id": "newsletter",
+          "className": "newsletter-block home-newsletter-stage",
+          "dataSection": ""
+        },
+        {
+          "index": 5,
+          "tag": "footer",
+          "id": "",
+          "className": "site-footer",
+          "dataSection": ""
+        }
+      ],
+      "links": [
+        {
+          "index": 0,
+          "text": "",
+          "href": "https://tanshan.lovestoblog.com",
+          "normalized": "/",
+          "className": "brand",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 1,
+          "text": "Home",
+          "href": "https://tanshan.lovestoblog.com",
+          "normalized": "/",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 2,
+          "text": "Who We Are",
+          "href": "https://tanshan.lovestoblog.com/about",
+          "normalized": "/about",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 3,
+          "text": "Our Services",
+          "href": "https://tanshan.lovestoblog.com/services",
+          "normalized": "/services",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 4,
+          "text": "Insights",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "active",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 5,
+          "text": "Contact",
+          "href": "https://tanshan.lovestoblog.com/contact",
+          "normalized": "/contact",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 6,
+          "text": "GET A QUOTE",
+          "href": "https://tanshan.lovestoblog.com/contact",
+          "normalized": "/contact",
+          "className": "quote-button",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 7,
+          "text": "English",
+          "href": "/insights/transport-logistic-air-cargo-europe?lang=en",
+          "normalized": "/insights/transport-logistic-air-cargo-europe",
+          "className": "active",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 8,
+          "text": "Español",
+          "href": "/insights/transport-logistic-air-cargo-europe?lang=es",
+          "normalized": "/insights/transport-logistic-air-cargo-europe",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": true
+        },
+        {
+          "index": 9,
+          "text": "",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "post-back-link",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 10,
+          "text": "Events",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 11,
+          "text": "Our awards",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 12,
+          "text": "Contact",
+          "href": "https://tanshan.lovestoblog.com/contact",
+          "normalized": "/contact",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 13,
+          "text": "News",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 14,
+          "text": "Obtain IATA certification",
+          "href": "https://tanshan.lovestoblog.com/about",
+          "normalized": "/about",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        }
+      ],
+      "buttons": [
+        {
+          "index": 0,
+          "text": "English +",
+          "className": "locale-current",
+          "ariaLabel": ""
+        },
+        {
+          "index": 1,
+          "text": "SUBMIT",
+          "className": "submit-button",
+          "ariaLabel": ""
+        },
+        {
+          "index": 2,
+          "text": "SUBMIT",
+          "className": "newsletter-button",
+          "ariaLabel": ""
+        }
+      ],
+      "images": [
+        {
+          "index": 0,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/logo-header.png",
+          "alt": "PLANET AVIATION",
+          "className": "brand-logo"
+        },
+        {
+          "index": 1,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/logo-footer.png",
+          "alt": "PLANET AVIATION",
+          "className": "footer-brand-logo"
+        },
+        {
+          "index": 2,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/cert-mark.png",
+          "alt": "IATA Certification",
+          "className": "footer-cert-mark"
+        }
+      ],
+      "alternates": [],
+      "canonical": "",
+      "englishResidue": [
+        "Contact Us",
+        "Who We Are",
+        "Our Services",
+        "Insights"
+      ]
+    }
+  },
+  "services": {
+    "path": "/services",
+    "url": "https://tanshan.lovestoblog.com/services?lang=en",
+    "status": 200,
+    "ok": true,
+    "finalUrl": "https://tanshan.lovestoblog.com/services/?lang=en",
+    "data": {
+      "requestedUrl": "https://tanshan.lovestoblog.com/services?lang=en",
+      "lang": "en",
+      "title": "Our Services | PLANET AVIATION",
+      "metaDescription": "Planet Aviation offers a comprehensive portfolio of air cargo products and services. Every shipment is handled with precision, care, and professionalism, ensuring reliability at every stage of the logistics chain.",
+      "ogTitle": "Our Services | PLANET AVIATION",
+      "ogDescription": "Planet Aviation offers a comprehensive portfolio of air cargo products and services. Every shipment is handled with precision, care, and professionalism, ensuring reliability at every stage of the logistics chain.",
+      "headings": [
+        {
+          "index": 0,
+          "tag": "h2",
+          "text": "Delivering Service Excellence"
+        },
+        {
+          "index": 1,
+          "tag": "h3",
+          "text": "General Sales & Service Agent"
+        },
+        {
+          "index": 2,
+          "tag": "h3",
+          "text": "Air Cargo Consolidation Experts"
+        },
+        {
+          "index": 3,
+          "tag": "h3",
+          "text": "Handling & Trucking"
+        },
+        {
+          "index": 4,
+          "tag": "h3",
+          "text": "General Sales & Service Agent"
+        },
+        {
+          "index": 5,
+          "tag": "h2",
+          "text": "Contact Us"
+        },
+        {
+          "index": 6,
+          "tag": "h2",
+          "text": "Sign Up To The Logistics Pulse Newsletter"
+        }
+      ],
+      "sections": [
+        {
+          "index": 0,
+          "tag": "header",
+          "id": "",
+          "className": "site-header",
+          "dataSection": ""
+        },
+        {
+          "index": 1,
+          "tag": "main",
+          "id": "",
+          "className": "",
+          "dataSection": ""
+        },
+        {
+          "index": 2,
+          "tag": "section",
+          "id": "",
+          "className": "service-overview services-entry-stage",
+          "dataSection": ""
+        },
+        {
+          "index": 3,
+          "tag": "section",
+          "id": "contact",
+          "className": "contact-block home-contact-stage",
+          "dataSection": ""
+        },
+        {
+          "index": 4,
+          "tag": "section",
+          "id": "newsletter",
+          "className": "newsletter-block home-newsletter-stage",
+          "dataSection": ""
+        },
+        {
+          "index": 5,
+          "tag": "footer",
+          "id": "",
+          "className": "site-footer",
+          "dataSection": ""
+        }
+      ],
+      "links": [
+        {
+          "index": 0,
+          "text": "",
+          "href": "https://tanshan.lovestoblog.com",
+          "normalized": "/",
+          "className": "brand",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 1,
+          "text": "Home",
+          "href": "https://tanshan.lovestoblog.com",
+          "normalized": "/",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 2,
+          "text": "Who We Are",
+          "href": "https://tanshan.lovestoblog.com/about",
+          "normalized": "/about",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 3,
+          "text": "Our Services",
+          "href": "https://tanshan.lovestoblog.com/services",
+          "normalized": "/services",
+          "className": "active",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 4,
+          "text": "Insights",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 5,
+          "text": "Contact",
+          "href": "https://tanshan.lovestoblog.com/contact",
+          "normalized": "/contact",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 6,
+          "text": "GET A QUOTE",
+          "href": "https://tanshan.lovestoblog.com/contact",
+          "normalized": "/contact",
+          "className": "quote-button",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 7,
+          "text": "English",
+          "href": "/services?lang=en",
+          "normalized": "/services",
+          "className": "active",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 8,
+          "text": "Español",
+          "href": "/services?lang=es",
+          "normalized": "/services",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": true
+        },
+        {
+          "index": 9,
+          "text": "Products & Services",
+          "href": "https://tanshan.lovestoblog.com/services",
+          "normalized": "/services",
+          "className": "services-filter-link",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 10,
+          "text": "LEARN MORE",
+          "href": "https://tanshan.lovestoblog.com/services/general-sales-service-agent",
+          "normalized": "/services/general-sales-service-agent",
+          "className": "hero-button mini",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 11,
+          "text": "LEARN MORE",
+          "href": "https://tanshan.lovestoblog.com/services/air-cargo-consolidation-experts",
+          "normalized": "/services/air-cargo-consolidation-experts",
+          "className": "hero-button mini",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 12,
+          "text": "LEARN MORE",
+          "href": "https://tanshan.lovestoblog.com/services/handling-trucking",
+          "normalized": "/services/handling-trucking",
+          "className": "hero-button mini",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 13,
+          "text": "LEARN MORE",
+          "href": "https://tanshan.lovestoblog.com/services/insurance-solutions",
+          "normalized": "/services/insurance-solutions",
+          "className": "hero-button mini",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 14,
+          "text": "View all",
+          "href": "https://tanshan.lovestoblog.com/services",
+          "normalized": "/services",
+          "className": "service-hotspot-all",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 15,
+          "text": "Products & Services",
+          "href": "https://tanshan.lovestoblog.com/services",
+          "normalized": "/services",
+          "className": "service-hotspot-filter",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 16,
+          "text": "General Sales & Service Agent",
+          "href": "https://tanshan.lovestoblog.com/services/general-sales-service-agent",
+          "normalized": "/services/general-sales-service-agent",
+          "className": "service-hotspot-1",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 17,
+          "text": "Air Cargo Consolidation Experts",
+          "href": "https://tanshan.lovestoblog.com/services/air-cargo-consolidation-experts",
+          "normalized": "/services/air-cargo-consolidation-experts",
+          "className": "service-hotspot-2",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 18,
+          "text": "Handling & Trucking",
+          "href": "https://tanshan.lovestoblog.com/services/handling-trucking",
+          "normalized": "/services/handling-trucking",
+          "className": "service-hotspot-3",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 19,
+          "text": "Insurance Solutions",
+          "href": "https://tanshan.lovestoblog.com/services/insurance-solutions",
+          "normalized": "/services/insurance-solutions",
+          "className": "service-hotspot-4",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 20,
+          "text": "Events",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 21,
+          "text": "Our awards",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 22,
+          "text": "Contact",
+          "href": "https://tanshan.lovestoblog.com/contact",
+          "normalized": "/contact",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 23,
+          "text": "News",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 24,
+          "text": "Obtain IATA certification",
+          "href": "https://tanshan.lovestoblog.com/about",
+          "normalized": "/about",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        }
+      ],
+      "buttons": [
+        {
+          "index": 0,
+          "text": "English +",
+          "className": "locale-current",
+          "ariaLabel": ""
+        },
+        {
+          "index": 1,
+          "text": "SUBMIT",
+          "className": "submit-button",
+          "ariaLabel": ""
+        },
+        {
+          "index": 2,
+          "text": "SUBMIT",
+          "className": "newsletter-button",
+          "ariaLabel": ""
+        }
+      ],
+      "images": [
+        {
+          "index": 0,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/logo-header.png",
+          "alt": "PLANET AVIATION",
+          "className": "brand-logo"
+        },
+        {
+          "index": 1,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/logo-footer.png",
+          "alt": "PLANET AVIATION",
+          "className": "footer-brand-logo"
+        },
+        {
+          "index": 2,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/cert-mark.png",
+          "alt": "IATA Certification",
+          "className": "footer-cert-mark"
+        }
+      ],
+      "alternates": [],
+      "canonical": "",
+      "englishResidue": [
+        "View all",
+        "Products & Services",
+        "Contact Us",
+        "Who We Are",
+        "Our Services",
+        "Insights"
+      ]
+    }
+  },
+  "services_air_cargo_consolidation_experts": {
+    "path": "/services/air-cargo-consolidation-experts",
+    "url": "https://tanshan.lovestoblog.com/services/air-cargo-consolidation-experts?lang=en",
+    "status": 200,
+    "ok": true,
+    "finalUrl": "https://tanshan.lovestoblog.com/services/air-cargo-consolidation-experts/?lang=en",
+    "data": {
+      "requestedUrl": "https://tanshan.lovestoblog.com/services/air-cargo-consolidation-experts?lang=en",
+      "lang": "en",
+      "title": "Air Cargo Consolidation Experts | PLANET AVIATION",
+      "metaDescription": "Cargo consolidation and capacity management.",
+      "ogTitle": "Air Cargo Consolidation Experts | PLANET AVIATION",
+      "ogDescription": "Cargo consolidation and capacity management.",
+      "headings": [
+        {
+          "index": 0,
+          "tag": "h1",
+          "text": "Air Cargo Consolidation Experts"
+        },
+        {
+          "index": 1,
+          "tag": "h2",
+          "text": "Contact Us"
+        },
+        {
+          "index": 2,
+          "tag": "h2",
+          "text": "Sign Up To The Logistics Pulse Newsletter"
+        }
+      ],
+      "sections": [
+        {
+          "index": 0,
+          "tag": "header",
+          "id": "",
+          "className": "site-header",
+          "dataSection": ""
+        },
+        {
+          "index": 1,
+          "tag": "main",
+          "id": "",
+          "className": "",
+          "dataSection": ""
+        },
+        {
+          "index": 2,
+          "tag": "section",
+          "id": "",
+          "className": "service-detail-page",
+          "dataSection": ""
+        },
+        {
+          "index": 3,
+          "tag": "section",
+          "id": "contact",
+          "className": "contact-block",
+          "dataSection": ""
+        },
+        {
+          "index": 4,
+          "tag": "section",
+          "id": "newsletter",
+          "className": "newsletter-block",
+          "dataSection": ""
+        },
+        {
+          "index": 5,
+          "tag": "footer",
+          "id": "",
+          "className": "site-footer",
+          "dataSection": ""
+        }
+      ],
+      "links": [
+        {
+          "index": 0,
+          "text": "",
+          "href": "https://tanshan.lovestoblog.com",
+          "normalized": "/",
+          "className": "brand",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 1,
+          "text": "Home",
+          "href": "https://tanshan.lovestoblog.com",
+          "normalized": "/",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 2,
+          "text": "Who We Are",
+          "href": "https://tanshan.lovestoblog.com/about",
+          "normalized": "/about",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 3,
+          "text": "Our Services",
+          "href": "https://tanshan.lovestoblog.com/services",
+          "normalized": "/services",
+          "className": "active",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 4,
+          "text": "Insights",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 5,
+          "text": "Contact",
+          "href": "https://tanshan.lovestoblog.com/contact",
+          "normalized": "/contact",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 6,
+          "text": "GET A QUOTE",
+          "href": "https://tanshan.lovestoblog.com/contact",
+          "normalized": "/contact",
+          "className": "quote-button",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 7,
+          "text": "English",
+          "href": "/services/air-cargo-consolidation-experts?lang=en",
+          "normalized": "/services/air-cargo-consolidation-experts",
+          "className": "active",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 8,
+          "text": "Español",
+          "href": "/services/air-cargo-consolidation-experts?lang=es",
+          "normalized": "/services/air-cargo-consolidation-experts",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": true
+        },
+        {
+          "index": 9,
+          "text": "Events",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 10,
+          "text": "Our awards",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 11,
+          "text": "Contact",
+          "href": "https://tanshan.lovestoblog.com/contact",
+          "normalized": "/contact",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 12,
+          "text": "News",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 13,
+          "text": "Obtain IATA certification",
+          "href": "https://tanshan.lovestoblog.com/about",
+          "normalized": "/about",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        }
+      ],
+      "buttons": [
+        {
+          "index": 0,
+          "text": "English +",
+          "className": "locale-current",
+          "ariaLabel": ""
+        },
+        {
+          "index": 1,
+          "text": "SUBMIT",
+          "className": "submit-button",
+          "ariaLabel": ""
+        },
+        {
+          "index": 2,
+          "text": "SUBMIT",
+          "className": "newsletter-button",
+          "ariaLabel": ""
+        }
+      ],
+      "images": [
+        {
+          "index": 0,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/logo-header.png",
+          "alt": "PLANET AVIATION",
+          "className": "brand-logo"
+        },
+        {
+          "index": 1,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/logo-footer.png",
+          "alt": "PLANET AVIATION",
+          "className": "footer-brand-logo"
+        },
+        {
+          "index": 2,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/cert-mark.png",
+          "alt": "IATA Certification",
+          "className": "footer-cert-mark"
+        }
+      ],
+      "alternates": [],
+      "canonical": "",
+      "englishResidue": [
+        "Contact Us",
+        "Who We Are",
+        "Our Services",
+        "Insights"
+      ]
+    }
+  },
+  "services_general_sales_service_agent": {
+    "path": "/services/general-sales-service-agent",
+    "url": "https://tanshan.lovestoblog.com/services/general-sales-service-agent?lang=en",
+    "status": 200,
+    "ok": true,
+    "finalUrl": "https://tanshan.lovestoblog.com/services/general-sales-service-agent/?lang=en",
+    "data": {
+      "requestedUrl": "https://tanshan.lovestoblog.com/services/general-sales-service-agent?lang=en",
+      "lang": "en",
+      "title": "General Sales & Service Agent | PLANET AVIATION",
+      "metaDescription": "Full GSSA representation for airline principals.",
+      "ogTitle": "General Sales & Service Agent | PLANET AVIATION",
+      "ogDescription": "Full GSSA representation for airline principals.",
+      "headings": [
+        {
+          "index": 0,
+          "tag": "h1",
+          "text": "General Sales & Service Agent"
+        },
+        {
+          "index": 1,
+          "tag": "h2",
+          "text": "Contact Us"
+        },
+        {
+          "index": 2,
+          "tag": "h2",
+          "text": "Sign Up To The Logistics Pulse Newsletter"
+        }
+      ],
+      "sections": [
+        {
+          "index": 0,
+          "tag": "header",
+          "id": "",
+          "className": "site-header",
+          "dataSection": ""
+        },
+        {
+          "index": 1,
+          "tag": "main",
+          "id": "",
+          "className": "",
+          "dataSection": ""
+        },
+        {
+          "index": 2,
+          "tag": "section",
+          "id": "",
+          "className": "service-detail-page",
+          "dataSection": ""
+        },
+        {
+          "index": 3,
+          "tag": "section",
+          "id": "contact",
+          "className": "contact-block",
+          "dataSection": ""
+        },
+        {
+          "index": 4,
+          "tag": "section",
+          "id": "newsletter",
+          "className": "newsletter-block",
+          "dataSection": ""
+        },
+        {
+          "index": 5,
+          "tag": "footer",
+          "id": "",
+          "className": "site-footer",
+          "dataSection": ""
+        }
+      ],
+      "links": [
+        {
+          "index": 0,
+          "text": "",
+          "href": "https://tanshan.lovestoblog.com",
+          "normalized": "/",
+          "className": "brand",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 1,
+          "text": "Home",
+          "href": "https://tanshan.lovestoblog.com",
+          "normalized": "/",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 2,
+          "text": "Who We Are",
+          "href": "https://tanshan.lovestoblog.com/about",
+          "normalized": "/about",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 3,
+          "text": "Our Services",
+          "href": "https://tanshan.lovestoblog.com/services",
+          "normalized": "/services",
+          "className": "active",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 4,
+          "text": "Insights",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 5,
+          "text": "Contact",
+          "href": "https://tanshan.lovestoblog.com/contact",
+          "normalized": "/contact",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 6,
+          "text": "GET A QUOTE",
+          "href": "https://tanshan.lovestoblog.com/contact",
+          "normalized": "/contact",
+          "className": "quote-button",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 7,
+          "text": "English",
+          "href": "/services/general-sales-service-agent?lang=en",
+          "normalized": "/services/general-sales-service-agent",
+          "className": "active",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 8,
+          "text": "Español",
+          "href": "/services/general-sales-service-agent?lang=es",
+          "normalized": "/services/general-sales-service-agent",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": true
+        },
+        {
+          "index": 9,
+          "text": "Events",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 10,
+          "text": "Our awards",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 11,
+          "text": "Contact",
+          "href": "https://tanshan.lovestoblog.com/contact",
+          "normalized": "/contact",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 12,
+          "text": "News",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 13,
+          "text": "Obtain IATA certification",
+          "href": "https://tanshan.lovestoblog.com/about",
+          "normalized": "/about",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        }
+      ],
+      "buttons": [
+        {
+          "index": 0,
+          "text": "English +",
+          "className": "locale-current",
+          "ariaLabel": ""
+        },
+        {
+          "index": 1,
+          "text": "SUBMIT",
+          "className": "submit-button",
+          "ariaLabel": ""
+        },
+        {
+          "index": 2,
+          "text": "SUBMIT",
+          "className": "newsletter-button",
+          "ariaLabel": ""
+        }
+      ],
+      "images": [
+        {
+          "index": 0,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/logo-header.png",
+          "alt": "PLANET AVIATION",
+          "className": "brand-logo"
+        },
+        {
+          "index": 1,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/logo-footer.png",
+          "alt": "PLANET AVIATION",
+          "className": "footer-brand-logo"
+        },
+        {
+          "index": 2,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/cert-mark.png",
+          "alt": "IATA Certification",
+          "className": "footer-cert-mark"
+        }
+      ],
+      "alternates": [],
+      "canonical": "",
+      "englishResidue": [
+        "Contact Us",
+        "Who We Are",
+        "Our Services",
+        "Insights"
+      ]
+    }
+  },
+  "services_handling_trucking": {
+    "path": "/services/handling-trucking",
+    "url": "https://tanshan.lovestoblog.com/services/handling-trucking?lang=en",
+    "status": 200,
+    "ok": true,
+    "finalUrl": "https://tanshan.lovestoblog.com/services/handling-trucking/?lang=en",
+    "data": {
+      "requestedUrl": "https://tanshan.lovestoblog.com/services/handling-trucking?lang=en",
+      "lang": "en",
+      "title": "Handling & Trucking | PLANET AVIATION",
+      "metaDescription": "Ground handling and trucking services.",
+      "ogTitle": "Handling & Trucking | PLANET AVIATION",
+      "ogDescription": "Ground handling and trucking services.",
+      "headings": [
+        {
+          "index": 0,
+          "tag": "h1",
+          "text": "Handling & Trucking"
+        },
+        {
+          "index": 1,
+          "tag": "h2",
+          "text": "Contact Us"
+        },
+        {
+          "index": 2,
+          "tag": "h2",
+          "text": "Sign Up To The Logistics Pulse Newsletter"
+        }
+      ],
+      "sections": [
+        {
+          "index": 0,
+          "tag": "header",
+          "id": "",
+          "className": "site-header",
+          "dataSection": ""
+        },
+        {
+          "index": 1,
+          "tag": "main",
+          "id": "",
+          "className": "",
+          "dataSection": ""
+        },
+        {
+          "index": 2,
+          "tag": "section",
+          "id": "",
+          "className": "service-detail-page",
+          "dataSection": ""
+        },
+        {
+          "index": 3,
+          "tag": "section",
+          "id": "contact",
+          "className": "contact-block",
+          "dataSection": ""
+        },
+        {
+          "index": 4,
+          "tag": "section",
+          "id": "newsletter",
+          "className": "newsletter-block",
+          "dataSection": ""
+        },
+        {
+          "index": 5,
+          "tag": "footer",
+          "id": "",
+          "className": "site-footer",
+          "dataSection": ""
+        }
+      ],
+      "links": [
+        {
+          "index": 0,
+          "text": "",
+          "href": "https://tanshan.lovestoblog.com",
+          "normalized": "/",
+          "className": "brand",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 1,
+          "text": "Home",
+          "href": "https://tanshan.lovestoblog.com",
+          "normalized": "/",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 2,
+          "text": "Who We Are",
+          "href": "https://tanshan.lovestoblog.com/about",
+          "normalized": "/about",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 3,
+          "text": "Our Services",
+          "href": "https://tanshan.lovestoblog.com/services",
+          "normalized": "/services",
+          "className": "active",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 4,
+          "text": "Insights",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 5,
+          "text": "Contact",
+          "href": "https://tanshan.lovestoblog.com/contact",
+          "normalized": "/contact",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 6,
+          "text": "GET A QUOTE",
+          "href": "https://tanshan.lovestoblog.com/contact",
+          "normalized": "/contact",
+          "className": "quote-button",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 7,
+          "text": "English",
+          "href": "/services/handling-trucking?lang=en",
+          "normalized": "/services/handling-trucking",
+          "className": "active",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 8,
+          "text": "Español",
+          "href": "/services/handling-trucking?lang=es",
+          "normalized": "/services/handling-trucking",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": true
+        },
+        {
+          "index": 9,
+          "text": "Events",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 10,
+          "text": "Our awards",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 11,
+          "text": "Contact",
+          "href": "https://tanshan.lovestoblog.com/contact",
+          "normalized": "/contact",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 12,
+          "text": "News",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 13,
+          "text": "Obtain IATA certification",
+          "href": "https://tanshan.lovestoblog.com/about",
+          "normalized": "/about",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        }
+      ],
+      "buttons": [
+        {
+          "index": 0,
+          "text": "English +",
+          "className": "locale-current",
+          "ariaLabel": ""
+        },
+        {
+          "index": 1,
+          "text": "SUBMIT",
+          "className": "submit-button",
+          "ariaLabel": ""
+        },
+        {
+          "index": 2,
+          "text": "SUBMIT",
+          "className": "newsletter-button",
+          "ariaLabel": ""
+        }
+      ],
+      "images": [
+        {
+          "index": 0,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/logo-header.png",
+          "alt": "PLANET AVIATION",
+          "className": "brand-logo"
+        },
+        {
+          "index": 1,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/logo-footer.png",
+          "alt": "PLANET AVIATION",
+          "className": "footer-brand-logo"
+        },
+        {
+          "index": 2,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/cert-mark.png",
+          "alt": "IATA Certification",
+          "className": "footer-cert-mark"
+        }
+      ],
+      "alternates": [],
+      "canonical": "",
+      "englishResidue": [
+        "Contact Us",
+        "Who We Are",
+        "Our Services",
+        "Insights"
+      ]
+    }
+  },
+  "services_insurance_solutions": {
+    "path": "/services/insurance-solutions",
+    "url": "https://tanshan.lovestoblog.com/services/insurance-solutions?lang=en",
+    "status": 200,
+    "ok": true,
+    "finalUrl": "https://tanshan.lovestoblog.com/services/insurance-solutions/?lang=en",
+    "data": {
+      "requestedUrl": "https://tanshan.lovestoblog.com/services/insurance-solutions?lang=en",
+      "lang": "en",
+      "title": "Insurance Solutions | PLANET AVIATION",
+      "metaDescription": "Cargo insurance products for logistics partners.",
+      "ogTitle": "Insurance Solutions | PLANET AVIATION",
+      "ogDescription": "Cargo insurance products for logistics partners.",
+      "headings": [
+        {
+          "index": 0,
+          "tag": "h1",
+          "text": "Insurance Solutions"
+        },
+        {
+          "index": 1,
+          "tag": "h2",
+          "text": "Contact Us"
+        },
+        {
+          "index": 2,
+          "tag": "h2",
+          "text": "Sign Up To The Logistics Pulse Newsletter"
+        }
+      ],
+      "sections": [
+        {
+          "index": 0,
+          "tag": "header",
+          "id": "",
+          "className": "site-header",
+          "dataSection": ""
+        },
+        {
+          "index": 1,
+          "tag": "main",
+          "id": "",
+          "className": "",
+          "dataSection": ""
+        },
+        {
+          "index": 2,
+          "tag": "section",
+          "id": "",
+          "className": "service-detail-page",
+          "dataSection": ""
+        },
+        {
+          "index": 3,
+          "tag": "section",
+          "id": "contact",
+          "className": "contact-block",
+          "dataSection": ""
+        },
+        {
+          "index": 4,
+          "tag": "section",
+          "id": "newsletter",
+          "className": "newsletter-block",
+          "dataSection": ""
+        },
+        {
+          "index": 5,
+          "tag": "footer",
+          "id": "",
+          "className": "site-footer",
+          "dataSection": ""
+        }
+      ],
+      "links": [
+        {
+          "index": 0,
+          "text": "",
+          "href": "https://tanshan.lovestoblog.com",
+          "normalized": "/",
+          "className": "brand",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 1,
+          "text": "Home",
+          "href": "https://tanshan.lovestoblog.com",
+          "normalized": "/",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 2,
+          "text": "Who We Are",
+          "href": "https://tanshan.lovestoblog.com/about",
+          "normalized": "/about",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 3,
+          "text": "Our Services",
+          "href": "https://tanshan.lovestoblog.com/services",
+          "normalized": "/services",
+          "className": "active",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 4,
+          "text": "Insights",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 5,
+          "text": "Contact",
+          "href": "https://tanshan.lovestoblog.com/contact",
+          "normalized": "/contact",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 6,
+          "text": "GET A QUOTE",
+          "href": "https://tanshan.lovestoblog.com/contact",
+          "normalized": "/contact",
+          "className": "quote-button",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 7,
+          "text": "English",
+          "href": "/services/insurance-solutions?lang=en",
+          "normalized": "/services/insurance-solutions",
+          "className": "active",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 8,
+          "text": "Español",
+          "href": "/services/insurance-solutions?lang=es",
+          "normalized": "/services/insurance-solutions",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": true
+        },
+        {
+          "index": 9,
+          "text": "Events",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 10,
+          "text": "Our awards",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 11,
+          "text": "Contact",
+          "href": "https://tanshan.lovestoblog.com/contact",
+          "normalized": "/contact",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 12,
+          "text": "News",
+          "href": "https://tanshan.lovestoblog.com/insights",
+          "normalized": "/insights",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        },
+        {
+          "index": 13,
+          "text": "Obtain IATA certification",
+          "href": "https://tanshan.lovestoblog.com/about",
+          "normalized": "/about",
+          "className": "",
+          "ariaLabel": "",
+          "hasSpanishLang": false
+        }
+      ],
+      "buttons": [
+        {
+          "index": 0,
+          "text": "English +",
+          "className": "locale-current",
+          "ariaLabel": ""
+        },
+        {
+          "index": 1,
+          "text": "SUBMIT",
+          "className": "submit-button",
+          "ariaLabel": ""
+        },
+        {
+          "index": 2,
+          "text": "SUBMIT",
+          "className": "newsletter-button",
+          "ariaLabel": ""
+        }
+      ],
+      "images": [
+        {
+          "index": 0,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/logo-header.png",
+          "alt": "PLANET AVIATION",
+          "className": "brand-logo"
+        },
+        {
+          "index": 1,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/logo-footer.png",
+          "alt": "PLANET AVIATION",
+          "className": "footer-brand-logo"
+        },
+        {
+          "index": 2,
+          "src": "https://tanshan.lovestoblog.com/assets/figma/cert-mark.png",
+          "alt": "IATA Certification",
+          "className": "footer-cert-mark"
+        }
+      ],
+      "alternates": [],
+      "canonical": "",
+      "englishResidue": [
+        "Contact Us",
+        "Who We Are",
+        "Our Services",
+        "Insights"
+      ]
+    }
+  }
+}

@@ -55,6 +55,31 @@ function app_url(string $path = ''): string
     return $path ? "{$base}/{$path}" : $base;
 }
 
+function localized_url(string $path = '', ?string $locale = null): string
+{
+    $fragment = '';
+    if (str_contains($path, '#')) {
+        [$path, $fragment] = array_pad(explode('#', $path, 2), 2, '');
+        $fragment = $fragment === '' ? '' : '#' . $fragment;
+    }
+
+    $locale ??= current_locale();
+    $allowed = config('app.locales', []);
+    $url = app_url($path);
+
+    if (!isset($allowed[$locale])) {
+        return $url . $fragment;
+    }
+
+    $separator = str_contains($url, '?') ? '&' : '?';
+    return $url . $separator . 'lang=' . rawurlencode($locale) . $fragment;
+}
+
+function localized_current_url(?string $locale = null): string
+{
+    return localized_url(ltrim(request_path(), '/'), $locale);
+}
+
 function current_locale(): string
 {
     return $_SESSION['locale'] ?? config('app.locale', 'en');

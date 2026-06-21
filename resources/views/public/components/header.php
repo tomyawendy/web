@@ -11,18 +11,18 @@ $activeLocaleLabel = $locales[$activeLocale] ?? 'English';
 ?>
 <header class="site-header">
     <div class="container nav-shell">
-        <a class="brand" href="<?= e(app_url()) ?>">
+        <a class="brand" href="<?= e(localized_url()) ?>">
             <img class="brand-logo" src="<?= e(asset_url('figma/logo-header.png')) ?>" alt="<?= e(setting_value($settings ?? [], 'site_name', 'Planet Aviation')) ?>">
         </a>
         <nav class="site-nav">
-            <a class="<?= $isHome ? 'active' : '' ?>" href="<?= e(app_url()) ?>"><?= e(setting_value($settings ?? [], 'nav_home_label', 'Home')) ?></a>
-            <a class="<?= $isAbout ? 'active' : '' ?>" href="<?= e(app_url('about')) ?>"><?= e(setting_value($settings ?? [], 'nav_about_label', 'Who We Are?')) ?></a>
-            <a class="<?= $isServices ? 'active' : '' ?>" href="<?= e(app_url('services')) ?>"><?= e(setting_value($settings ?? [], 'nav_services_label', 'Our Services')) ?></a>
-            <a class="<?= $isInsights ? 'active' : '' ?>" href="<?= e(app_url('insights')) ?>"><?= e(setting_value($settings ?? [], 'nav_insights_label', 'Insights')) ?></a>
-            <a class="<?= $isContact ? 'active' : '' ?>" href="<?= e(app_url('contact')) ?>"><?= e(setting_value($settings ?? [], 'nav_contact_label', 'Contact')) ?></a>
+            <a class="<?= $isHome ? 'active' : '' ?>" href="<?= e(localized_url()) ?>"><?= e(setting_value($settings ?? [], 'nav_home_label', 'Home')) ?></a>
+            <a class="<?= $isAbout ? 'active' : '' ?>" href="<?= e(localized_url('about')) ?>"><?= e(setting_value($settings ?? [], 'nav_about_label', 'Who We Are?')) ?></a>
+            <a class="<?= $isServices ? 'active' : '' ?>" href="<?= e(localized_url('services')) ?>"><?= e(setting_value($settings ?? [], 'nav_services_label', 'Our Services')) ?></a>
+            <a class="<?= $isInsights ? 'active' : '' ?>" href="<?= e(localized_url('insights')) ?>"><?= e(setting_value($settings ?? [], 'nav_insights_label', 'Insights')) ?></a>
+            <a class="<?= $isContact ? 'active' : '' ?>" href="<?= e(localized_url('contact')) ?>"><?= e(setting_value($settings ?? [], 'nav_contact_label', 'Contact')) ?></a>
         </nav>
         <div class="nav-tools">
-            <a class="quote-button" href="<?= e(app_url('contact')) ?>"><?= e(setting_value($settings ?? [], 'nav_quote_label', 'GET A QUOTE')) ?></a>
+            <a class="quote-button" href="<?= e(localized_url('contact')) ?>"><?= e(setting_value($settings ?? [], 'nav_quote_label', 'GET A QUOTE')) ?></a>
             <div class="locale-switch">
                 <span class="locale-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24" role="presentation" focusable="false">
@@ -37,7 +37,7 @@ $activeLocaleLabel = $locales[$activeLocale] ?? 'English';
                 </button>
                 <div class="locale-links" aria-label="Language selector">
                     <?php foreach ($locales as $localeCode => $localeName): ?>
-                        <a href="<?= e($currentPath . '?lang=' . $localeCode) ?>" class="<?= $activeLocale === $localeCode ? 'active' : '' ?>"><?= e($localeName) ?></a>
+                        <a href="<?= e(localized_current_url($localeCode)) ?>" class="<?= $activeLocale === $localeCode ? 'active' : '' ?>"><?= e($localeName) ?></a>
                     <?php endforeach; ?>
                 </div>
             </div>

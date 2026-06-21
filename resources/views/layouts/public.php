@@ -7,6 +7,7 @@
     $resolvedMetaDescription = $metaDescription ?? setting_value($publicSettings, 'site_meta_description');
     $resolvedMetaKeywords = $metaKeywords ?? setting_value($publicSettings, 'site_meta_keywords');
     $resolvedMetaImage = $metaImage ?? setting_value($publicSettings, 'site_og_image');
+    $resolvedCanonical = localized_current_url(current_locale());
     ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,18 +15,24 @@
     <?php if (!empty($resolvedMetaDescription)): ?>
         <meta name="description" content="<?= e((string) $resolvedMetaDescription) ?>">
         <meta property="og:description" content="<?= e((string) $resolvedMetaDescription) ?>">
+        <meta name="twitter:description" content="<?= e((string) $resolvedMetaDescription) ?>">
     <?php endif; ?>
     <?php if (!empty($resolvedMetaKeywords)): ?>
         <meta name="keywords" content="<?= e((string) $resolvedMetaKeywords) ?>">
     <?php endif; ?>
     <meta property="og:title" content="<?= e($resolvedMetaTitle) ?>">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="<?= e(app_url(ltrim(request_path(), '/'))) ?>">
+    <meta property="og:url" content="<?= e($resolvedCanonical) ?>">
+    <meta name="twitter:title" content="<?= e($resolvedMetaTitle) ?>">
     <?php if (!empty($resolvedMetaImage)): ?>
         <meta property="og:image" content="<?= e(media_url((string) $resolvedMetaImage)) ?>">
     <?php endif; ?>
+    <link rel="canonical" href="<?= e($resolvedCanonical) ?>">
+    <link rel="alternate" hreflang="en" href="<?= e(localized_current_url('en')) ?>">
+    <link rel="alternate" hreflang="es" href="<?= e(localized_current_url('es')) ?>">
+    <link rel="alternate" hreflang="x-default" href="<?= e(localized_current_url('en')) ?>">
     <link rel="stylesheet" href="<?= e(asset_url('css/design-tokens.css') . '?v=20260617b') ?>">
-    <link rel="stylesheet" href="<?= e(asset_url('css/site-main.css') . '?v=20260621b') ?>">
+    <link rel="stylesheet" href="<?= e(asset_url('css/site-main.css') . '?v=20260621c') ?>">
     <link rel="preload" href="<?= e(asset_url('figma/world-map-noedge.png')) ?>" as="image">
     <link rel="preload" href="<?= e(asset_url('figma/news-1.png')) ?>" as="image">
     <link rel="preload" href="<?= e(asset_url('figma/news-2-noedge.png')) ?>" as="image">

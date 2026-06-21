@@ -14,7 +14,7 @@ if (strpos($heroTitle, "\n") === false && preg_match('/^Premium Choice for Air L
             <?php if ($heroSubtitle !== ''): ?>
                 <p class="hero-subtitle"><?= e($heroSubtitle) ?></p>
             <?php endif; ?>
-            <a class="hero-button" href="<?= e(app_url() . '#about') ?>"><?= e($heroButtonText) ?></a>
+            <a class="hero-button" href="<?= e(localized_url('#about')) ?>"><?= e($heroButtonText) ?></a>
         </div>
         <div class="hero-home-image">
             <?php if (($heroBanner['image'] ?? '') !== ''): ?>

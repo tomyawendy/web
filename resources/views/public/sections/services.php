@@ -69,7 +69,7 @@ for ($i = 0; $i < 4; $i++) {
                                 <?php endforeach; ?>
                         </ul>
                         <?php endif; ?>
-                        <a class="hero-button mini" href="<?= e(app_url('services/' . $service['slug'])) ?>"><?= e(setting_value($settings, 'services_learn_more_label', 'LEARN MORE')) ?></a>
+                        <a class="hero-button mini" href="<?= e(localized_url('services/' . $service['slug'])) ?>"><?= e(setting_value($settings, 'services_learn_more_label', 'LEARN MORE')) ?></a>
                     </div>
                     <div class="<?= e($serviceVisualClass) ?>"<?= background_style($service['cover_image'] ?? '') ?>></div>
                 </article>

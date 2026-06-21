@@ -27,7 +27,7 @@ $returnTo = normalize_return_path(request_path() . '#contact', '/contact#contact
                 <div class="flash flash-<?= e($flashMessage['type']) ?>"><?= e($flashMessage['message']) ?></div>
                 <?php clear_flash(); ?>
             <?php endif; ?>
-            <form class="contact-grid" method="post" action="<?= e(app_url('contact')) ?>">
+            <form class="contact-grid" method="post" action="<?= e(localized_url('contact')) ?>">
                 <?= csrf_field() ?>
                 <label><?= e(setting_value($settings ?? [], 'contact_name_label', 'Full Name')) ?> *<input name="name" value="<?= e((string) old('name')) ?>" required></label>
                 <label><?= e(setting_value($settings ?? [], 'contact_phone_label', 'Phone')) ?><input name="phone" value="<?= e((string) old('phone')) ?>"></label>

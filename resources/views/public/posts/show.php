@@ -16,7 +16,7 @@
             </div>
             <?php $backToInsightsDefault = current_locale() === 'es' ? 'VOLVER A NOTICIAS' : 'BACK TO INSIGHTS'; ?>
             <?php $backToDocumentsDefault = current_locale() === 'es' ? 'VOLVER A DOCUMENTOS' : 'BACK TO DOCUMENTS'; ?>
-            <a class="post-back-link" href="<?= e(app_url($post['type'] === 'news' ? 'insights' : 'documents')) ?>"><?= e($post['type'] === 'news' ? setting_value($settings ?? [], 'back_to_insights_label', $backToInsightsDefault) : setting_value($settings ?? [], 'back_to_documents_label', $backToDocumentsDefault)) ?></a>
+            <a class="post-back-link" href="<?= e(localized_url($post['type'] === 'news' ? 'insights' : 'documents')) ?>"><?= e($post['type'] === 'news' ? setting_value($settings ?? [], 'back_to_insights_label', $backToInsightsDefault) : setting_value($settings ?? [], 'back_to_documents_label', $backToDocumentsDefault)) ?></a>
         </div>
         <div class="post-detail-visual"<?= background_style($post['cover_image'] ?? '') ?>></div>
     </div>
