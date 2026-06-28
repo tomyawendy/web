@@ -1,0 +1,405 @@
+﻿/*
+ * Spanish alignment layer.
+ * Principle: English layout is the master. This file only adapts Spanish copy
+ * length and asset positioning after site-main.css has loaded.
+ */
+
+html[lang="es"] body.page-home .hero-panel-home,
+html[lang="es"] body.page-home .home-about-section,
+html[lang="es"] body.page-home .service-overview,
+html[lang="es"] body.page-home .why-section,
+html[lang="es"] body.page-home .world-section,
+html[lang="es"] body.page-home .partners-section,
+html[lang="es"] body.page-home .home-news-stage,
+html[lang="es"] body.page-home .home-contact-stage,
+html[lang="es"] body.page-home .home-newsletter-stage,
+html[lang="es"] body.page-home .site-footer {
+    font-family: var(--font-body);
+}
+
+/* Hero: inherit the English master geometry; only protect Spanish copy. */
+html[lang="es"] body.page-home .hero-panel-home {
+    position: relative;
+    height: 647px;
+    background: #fff url("/assets/figma/hero-full-stage.png") center top / 1924px 647px no-repeat;
+}
+
+html[lang="es"] body.page-home .hero-panel-home::before {
+    content: "";
+    position: absolute;
+    left: calc(50% - 720px);
+    top: 0;
+    z-index: 1;
+    width: 900px;
+    height: 392px;
+    background: linear-gradient(90deg, rgba(239, 249, 253, 1) 0%, rgba(239, 249, 253, 1) 66%, rgba(239, 249, 253, 0.78) 84%, rgba(239, 249, 253, 0.18) 96%, rgba(239, 249, 253, 0) 100%);
+    pointer-events: none;
+}
+
+html[lang="es"] body.page-home .hero-panel-home .hero-home-shell {
+    position: relative;
+    z-index: 2;
+    opacity: 1;
+}
+
+html[lang="es"] body.page-home .hero-home-image {
+    background: none;
+}
+
+html[lang="es"] body.page-home .hero-home-card {
+    display: block;
+    left: 28px;
+    top: 56px;
+    width: 650px;
+    min-height: 330px;
+    background: transparent;
+}
+
+html[lang="es"] body.page-home .hero-kicker {
+    width: 680px;
+    max-width: 680px;
+    margin-bottom: 14px;
+    font-size: 50px;
+    line-height: 1.02;
+    font-weight: 700;
+    letter-spacing: -0.042em;
+}
+
+html[lang="es"] body.page-home .hero-home-card h1 {
+    width: 610px;
+    max-width: 610px;
+    margin-bottom: 0;
+    font-size: 42px;
+    line-height: 1.06;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+}
+
+html[lang="es"] body.page-home .hero-subtitle {
+    display: none;
+}
+
+html[lang="es"] body.page-home .hero-home-card .hero-button {
+    margin-top: 34px;
+    min-width: 222px;
+    min-height: 58px;
+    padding: 0 38px;
+    font-size: 15px;
+    line-height: 58px;
+    border-radius: 30px;
+    white-space: nowrap;
+}
+
+/* About: keep paragraph rhythm stable when Spanish text runs longer. */
+html[lang="es"] body.page-home .home-about-section {
+    height: auto;
+    min-height: 581px;
+    padding: 112px 0;
+    background: #fff;
+}
+
+html[lang="es"] body.page-home .home-about-section .home-about-shell {
+    visibility: visible;
+}
+
+html[lang="es"] body.page-home .home-about-copy {
+    max-width: 1240px;
+}
+
+html[lang="es"] body.page-home .home-about-copy h2 {
+    max-width: 690px;
+    margin-bottom: 24px;
+    font-size: 40px;
+    line-height: 1.22;
+}
+
+html[lang="es"] body.page-home .home-about-copy p {
+    max-width: 1110px;
+    min-height: 128px;
+    margin-bottom: 34px;
+    font-size: 16px;
+    line-height: 1.55;
+    letter-spacing: -0.01em;
+}
+
+html[lang="es"] body.page-home .home-about-copy p br {
+    display: block;
+    margin: 16px 0 0;
+    content: "";
+}
+
+/* Services: do not let Spanish text push image cards out of the English grid. */
+html[lang="es"] body.page-home .service-overview .home-services-head {
+    grid-template-columns: 520px 650px;
+    gap: 198px;
+}
+
+html[lang="es"] body.page-home .service-overview .home-services-head p {
+    max-width: 650px;
+    margin-top: 48px;
+    padding-left: 92px;
+    font-size: 16px;
+    line-height: 1.55;
+}
+
+html[lang="es"] body.page-home .home-service-row {
+    grid-template-columns: 646px 690px;
+    gap: 66px;
+}
+
+html[lang="es"] body.page-home .home-service-visual {
+    width: 692px;
+    height: 272px !important;
+    min-height: 272px;
+    flex: 0 0 272px;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+html[lang="es"] body.page-home .home-services-list > article.home-service-row .home-service-visual {
+    background-size: 100% 100% !important;
+    background-position: center center !important;
+}
+
+html[lang="es"] body.page-home .home-service-row:nth-child(4)::before {
+    content: "Soluciones logisticas y seguro de carga aerea";
+    position: absolute;
+    left: 746px;
+    top: 48px;
+    width: 520px;
+    color: #6a6a6a;
+    font-size: 14px;
+    line-height: 1.45;
+}
+
+/* Why: one grid, same icon rhythm, no Spanish-only stagger drift. */
+html[lang="es"] body.page-home .why-section {
+    height: 709px;
+    min-height: 709px;
+    padding: 0;
+    overflow: hidden;
+}
+
+html[lang="es"] body.page-home .why-shell {
+    display: block;
+    padding-top: 94px;
+}
+
+html[lang="es"] body.page-home .why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 58px 92px;
+    margin-top: 70px;
+}
+
+html[lang="es"] body.page-home .why-grid article {
+    min-height: 168px;
+}
+
+html[lang="es"] body.page-home .why-grid .why-card-title {
+    margin: 16px 0 12px;
+    color: #46dedb;
+    font-size: 22px;
+    line-height: 1.15;
+    font-weight: 700;
+}
+
+html[lang="es"] body.page-home .why-grid article > p:not(.why-card-title) {
+    max-width: 360px;
+    font-size: 15px;
+    line-height: 1.48;
+}
+
+/* World: use one clean full-map asset; stats align to the overall stage. */
+html[lang="es"] body.page-home .world-section {
+    height: 1087px;
+    min-height: 1087px;
+    padding: 112px 0 0;
+    background: #fff;
+    overflow: hidden;
+}
+
+html[lang="es"] body.page-home .world-section > .container {
+    visibility: visible;
+}
+
+html[lang="es"] body.page-home .world-shell {
+    display: grid;
+    grid-template-columns: 360px minmax(0, 1fr);
+    gap: 88px;
+    align-items: start;
+}
+
+html[lang="es"] body.page-home .world-shell > div:first-child {
+    position: relative;
+    z-index: 3;
+}
+
+html[lang="es"] body.page-home .world-note {
+    position: absolute;
+    top: 0;
+    left: 570px;
+    display: grid;
+    grid-template-columns: 56px 340px;
+    gap: 20px;
+    align-items: center;
+}
+
+html[lang="es"] body.page-home .world-note span {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    background: #f2f4f8;
+}
+
+html[lang="es"] body.page-home .world-note span::before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 28px;
+    margin: 14px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230b2b5c' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M3 12h18'/%3E%3Cpath d='M12 3c2.4 2.7 3.6 5.7 3.6 9s-1.2 6.3-3.6 9c-2.4-2.7-3.6-5.7-3.6-9S9.6 5.7 12 3Z'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+html[lang="es"] body.page-home .world-note p {
+    max-width: 340px;
+    margin: 0;
+    color: #0b2b5c;
+    font-size: 13px;
+    line-height: 1.42;
+}
+
+html[lang="es"] body.page-home .world-map-card {
+    position: relative;
+    z-index: 1;
+    padding-top: 120px;
+}
+
+html[lang="es"] body.page-home .world-map {
+    width: 1060px;
+    min-height: 430px;
+    margin-left: -24px;
+    background-image: url("/assets/figma/world-map-noedge.png") !important;
+    background-size: 1060px auto !important;
+    background-position: left top !important;
+    background-repeat: no-repeat !important;
+    border: 0;
+    border-radius: 0;
+}
+
+html[lang="es"] body.page-home .world-map-card .stats-row {
+    width: 1060px;
+    margin-top: 50px;
+    margin-left: -24px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0;
+}
+
+/* Partners: inherit English logo rendering; only keep Spanish section rhythm. */
+html[lang="es"] body.page-home .partners-section {
+    height: 433px;
+    min-height: 433px;
+    padding: 0;
+}
+
+html[lang="es"] body.page-home .partners-section > .container {
+    visibility: visible;
+    padding-top: 112px;
+}
+
+html[lang="es"] body.page-home .partner-strip {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 28px;
+}
+
+html[lang="es"] body.page-home .partner-strip span {
+    width: 246px;
+    min-width: 246px;
+    height: 72px;
+    min-height: 72px;
+    padding: 14px 24px;
+    border: 1px solid #e7ebf1;
+}
+
+html[lang="es"] body.page-home .partner-strip img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* Contact and newsletter: English uses baked stage artwork; Spanish must show real editable content. */
+html[lang="es"] body.page-home .contact-block.home-contact-stage > .container,
+html[lang="es"] body.page-home .contact-block.home-contact-stage .contact-shell,
+html[lang="es"] body.page-home .contact-block.home-contact-stage .contact-shell *,
+html[lang="es"] body.page-home .newsletter-block.home-newsletter-stage > .container,
+html[lang="es"] body.page-home .newsletter-block.home-newsletter-stage .newsletter-shell,
+html[lang="es"] body.page-home .newsletter-block.home-newsletter-stage .newsletter-shell * {
+    visibility: visible !important;
+}
+
+html[lang="es"] body.page-home .home-contact-stage {
+    background: var(--lookup-strip-bg);
+}
+
+html[lang="es"] body.page-home .home-contact-stage .contact-shell {
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    gap: 70px;
+    align-items: start;
+    padding-top: 112px;
+}
+
+html[lang="es"] body.page-home .home-contact-stage .contact-visual {
+    min-height: 390px;
+    background: url("/assets/figma/contact-photo.png") center / cover no-repeat;
+}
+
+html[lang="es"] body.page-home .home-newsletter-stage {
+    background: #151831 url("/assets/figma/newsletter-stage.png") center top / 1924px 490px no-repeat;
+}
+
+html[lang="es"] body.page-home .home-newsletter-stage .newsletter-shell {
+    min-height: 490px;
+    display: flex;
+    align-items: center;
+}
+
+html[lang="es"] body.page-home .home-newsletter-stage .newsletter-copy {
+    width: min(520px, 100%);
+}
+
+/* Long Spanish labels must not alter shared component geometry. */
+html[lang="es"] body.page-home .lookup-pills a,
+html[lang="es"] body.page-home .hero-button,
+html[lang="es"] body.page-home .hero-button.mini,
+html[lang="es"] body.page-home .news-link,
+html[lang="es"] body.page-home .submit-button,
+html[lang="es"] body.page-home .newsletter-button {
+    white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+    html[lang="es"] body.page-home .service-overview .home-services-head,
+    html[lang="es"] body.page-home .home-service-row,
+    html[lang="es"] body.page-home .world-shell {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    html[lang="es"] body.page-home .world-note,
+    html[lang="es"] body.page-home .world-map,
+    html[lang="es"] body.page-home .world-map-card .stats-row {
+        position: static;
+        width: 100%;
+        margin-left: 0;
+    }
+
+}
+

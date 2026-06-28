@@ -38,6 +38,7 @@ class HomeController extends Controller
             'metaDescription' => $activeSettings['homepage_meta_description'] ?? ($activeSettings['homepage_subtitle'] ?? ''),
             'metaKeywords' => $activeSettings['homepage_meta_keywords'] ?? '',
             'metaImage' => $activeSettings['homepage_og_image'] ?? '',
+            'bodyClass' => 'page-home',
         ], 'layouts/public');
     }
 }

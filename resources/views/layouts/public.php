@@ -32,7 +32,10 @@
     <link rel="alternate" hreflang="es" href="<?= e(localized_current_url('es')) ?>">
     <link rel="alternate" hreflang="x-default" href="<?= e(localized_current_url('en')) ?>">
     <link rel="stylesheet" href="<?= e(asset_url('css/design-tokens.css') . '?v=20260617b') ?>">
-    <link rel="stylesheet" href="<?= e(asset_url('css/site-main.css') . '?v=20260621m') ?>">
+    <link rel="stylesheet" href="<?= e(asset_url('css/site-main.css') . '?v=20260628a') ?>">
+    <?php if (current_locale() === 'es'): ?>
+        <link rel="stylesheet" href="<?= e(asset_url('css/es-alignment.css') . '?v=20260628a') ?>">
+    <?php endif; ?>
     <link rel="preload" href="<?= e(asset_url('figma/world-map-noedge.png')) ?>" as="image">
     <link rel="preload" href="<?= e(asset_url('figma/news-1.png')) ?>" as="image">
     <link rel="preload" href="<?= e(asset_url('figma/news-2-noedge.png')) ?>" as="image">
@@ -44,7 +47,7 @@
     <link rel="preload" href="<?= e(asset_url('figma/contact-photo.png')) ?>" as="image">
     <link rel="preload" href="<?= e(asset_url('figma/newsletter-bg.png')) ?>" as="image">
 </head>
-<body class="site-body">
+<body class="<?= e(trim('site-body ' . (string) ($bodyClass ?? ''))) ?>">
 <?php include base_path('resources/views/public/components/header.php'); ?>
 <main>
     <?= $content ?>

@@ -12,8 +12,8 @@ $heroSubtitle = $heroBanner['subtitle'] ?? setting_value($settings, 'homepage_su
 $isSpanishHome = current_locale() === 'es';
 if ($isSpanishHome) {
     $heroButtonText = setting_value($settings, 'hero_button_text', $heroButtonText);
-    $heroTitle = "Soluciones premium\npara logística\naérea!";
     $heroSubtitle = setting_value($settings, 'homepage_subtitle', $heroSubtitle);
+    $heroTitle = "Soluciones premium\npara logística aérea!";
 }
 $heroImage = (string) ($heroBanner['image'] ?? '');
 if ($heroImage === 'assets/figma/hero-plane.png') {
@@ -119,9 +119,9 @@ if (strpos($heroTitle, "\n") === false && preg_match('/^Premium Choice for Air L
             <?php foreach (array_slice($services, 0, 4) as $index => $service): ?>
                 <?php $serviceItems = array_slice(content_list_items($service['content'] ?? ''), 0, 4); ?>
                 <?php $serviceVisual = $service['cover_image'] ?? ''; ?>
-                <?php $figmaServiceVisual = $index === 3 ? 'figma/service-4-clean.png' : 'figma/service-' . ($index + 1) . '-crop.png'; ?>
+                <?php $figmaServiceVisual = 'figma/service-' . ($index + 1) . '-stage.png'; ?>
                 <?php $usesLegacyFigmaSeed = preg_match('#^assets/figma/service_[24]\.png$#', $serviceVisual) === 1; ?>
-                <?php $serviceVisualStyle = ($serviceVisual !== '' && !$usesLegacyFigmaSeed) ? background_style($serviceVisual) : ' style="background-image:url(' . e(asset_url($figmaServiceVisual)) . ')"'; ?>
+                <?php $serviceVisualStyle = (!$isSpanishHome && $serviceVisual !== '' && !$usesLegacyFigmaSeed) ? background_style($serviceVisual) : ' style="background-image:url(' . e(asset_url($figmaServiceVisual)) . ')"'; ?>
                 <article class="home-service-row" id="service-<?= e($service['slug']) ?>">
                     <div class="home-service-copy">
                         <span class="home-service-index"><?= e(sprintf('%02d', $index + 1)) ?></span>
@@ -213,10 +213,13 @@ if (strpos($heroTitle, "\n") === false && preg_match('/^Premium Choice for Air L
         <h2><?= e(setting_value($settings, 'partners_heading', 'Our Partners')) ?></h2>
         <p class="partners-subtitle"><?= e(setting_value($settings, 'partners_subtitle', 'These are our collaborators')) ?></p>
         <div class="partner-strip">
-            <?php foreach ($partners as $partner): ?>
+            <?php $partnerFallbacks = ['figma/partner-1.png', 'figma/partner-2.png', 'figma/partner-3.png', 'figma/partner-4.png', 'figma/partner-5.png']; ?>
+            <?php foreach ($partners as $partnerIndex => $partner): ?>
+                <?php $partnerPath = trim((string) ($partner['path'] ?? '')); ?>
+                <?php $partnerImage = ($isSpanishHome && isset($partnerFallbacks[$partnerIndex])) ? asset_url($partnerFallbacks[$partnerIndex]) : ($partnerPath !== '' ? media_url($partnerPath) : ''); ?>
                 <span>
-                    <?php if (($partner['path'] ?? '') !== ''): ?>
-                        <img src="<?= e(media_url($partner['path'])) ?>" alt="<?= e($partner['label'] ?? 'Partner') ?>">
+                    <?php if ($partnerImage !== ''): ?>
+                        <img src="<?= e($partnerImage) ?>" alt="<?= e($partner['label'] ?? 'Partner') ?>">
                     <?php else: ?>
                         <?= e($partner['label'] ?? '') ?>
                     <?php endif; ?>
@@ -236,9 +239,11 @@ if (strpos($heroTitle, "\n") === false && preg_match('/^Premium Choice for Air L
             <a class="news-link" href="<?= e(localized_url('insights')) ?>"><?= e(setting_value($settings, 'news_view_all_label', 'VIEW ALL ARTICLES')) ?></a>
         </div>
         <div class="news-grid">
-            <?php foreach ($news as $item): ?>
+            <?php foreach ($news as $newsIndex => $item): ?>
+                <?php $newsFallbacks = ['figma/news-1.png', 'figma/news-2-noedge.png', 'figma/news-3-noedge.png']; ?>
+                <?php $newsImage = $isSpanishHome ? ($newsFallbacks[(int) $newsIndex] ?? '') : (trim((string) ($item['cover_image'] ?? '')) !== '' ? $item['cover_image'] : ($newsFallbacks[(int) $newsIndex] ?? '')); ?>
                 <article class="news-card" id="news-<?= e($item['slug']) ?>">
-                    <div class="news-thumb"<?= background_style($item['cover_image'] ?? '') ?>></div>
+                    <div class="news-thumb"<?= background_style($newsImage) ?>></div>
                     <span><?= e(format_datetime($item['published_at'])) ?></span>
                     <h3><?= e($item['title']) ?></h3>
                     <p><?= e($item['excerpt']) ?></p>
