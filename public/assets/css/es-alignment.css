@@ -129,6 +129,13 @@ html[lang="es"] body.page-home .home-about-copy p br {
 }
 
 /* Services: do not let Spanish text push image cards out of the English grid. */
+html[lang="es"] body.page-home .service-overview {
+    height: auto;
+    min-height: 2218px;
+    padding: 122px 0 110px;
+    background: var(--lookup-strip-bg) !important;
+}
+
 html[lang="es"] body.page-home .service-overview .home-services-head {
     grid-template-columns: 520px 650px;
     gap: 198px;
