@@ -30,7 +30,12 @@ if ($isSpanishHome) {
     $homeAboutBody = "PLANET AVIATION, S.L. es un Agente General de Ventas y Servicios (GSSA) reconocido a nivel global, con sede en Europa. Conectamos necesidades logísticas complejas con una ejecución ágil y eficiente mediante un modelo de servicio basado en comercialización, tecnología, soluciones y sostenibilidad.\n\nDefinimos nuestra experiencia GSSA mediante estrategia comercial, digitalización y soporte operativo para reservas en línea, contabilidad de ingresos, gestión terrestre y seguimiento.";
     $servicesIntro = 'Planet Aviation ofrece una cartera integral de productos y servicios de carga aérea. Cada envío se gestiona con precisión, cuidado y profesionalidad, garantizando fiabilidad en cada etapa logística.';
 }
-$whyHeading = setting_value($settings, 'why_heading', 'Why Partners Choose Us');
+if ($isSpanishHome) {
+    $homeAboutHeading = 'Su socio lider en ventas y servicios de carga aerea';
+    $servicesHeading = 'Excelencia en cada servicio';
+    $servicesHeadingParts = preg_split("/\R+/", $servicesHeading, 2) ?: [$servicesHeading];
+}
+$whyHeading = $isSpanishHome ? 'Por que nos eligen' : setting_value($settings, 'why_heading', 'Why Partners Choose Us');
 $whyCards = array_map(static fn (string $item): array => ['icon' => '', 'title' => $item, 'body' => ''], array_slice(setting_lines($settings, 'why_items'), 0, 6));
 $whyDescriptions = array_slice(setting_lines($settings, 'why_descriptions'), 0, 6);
 $whyDefaultIcons = ['shield', 'bank', 'megaphone', 'team', 'chart', 'layers'];
@@ -45,6 +50,11 @@ foreach ($whyCards as $index => $card) {
 $worldKicker = setting_value($settings, 'world_kicker_label', 'GLOBAL MANAGEMENT. LOCAL EXPERTISE.');
 $worldHeading = setting_value($settings, 'world_heading', 'One World');
 $worldIntro = setting_value($settings, 'world_intro', 'Local expertise, global cargo reach, and responsive support.');
+if ($isSpanishHome) {
+    $worldKicker = 'GESTION GLOBAL. EXPERIENCIA LOCAL.';
+    $worldHeading = 'Un solo mundo';
+    $worldIntro = 'Gestion global con experiencia local en America, Europa, Oriente Medio, Africa y Asia-Pacifico.';
+}
 $worldRegionGroups = [];
 $worldNote = current_locale() === 'es'
     ? 'Experiencia local, alcance global: su puerta estratégica hacia Sudamérica y África.'
@@ -98,19 +108,19 @@ if (strpos($heroTitle, "\n") === false && preg_match('/^Premium Choice for Air L
         <div class="home-about-copy">
             <h2><?= e($homeAboutHeading) ?></h2>
             <p><?= nl2br(e($homeAboutBody)) ?></p>
-            <a class="hero-button mini" href="<?= e(localized_url('about')) ?>"><?= e(setting_value($settings, 'home_about_button', 'LEARN MORE')) ?></a>
+            <a class="hero-button mini" href="<?= e(localized_url('about')) ?>"><?= e($isSpanishHome ? 'SABER MAS' : setting_value($settings, 'home_about_button', 'LEARN MORE')) ?></a>
         </div>
         <div class="home-about-visual"<?= background_style($aboutPage['seo_image'] ?? '') ?>></div>
     </div>
-    <a class="about-hotspot" href="<?= e(localized_url('about')) ?>"><?= e(setting_value($settings, 'home_about_button', 'LEARN MORE')) ?></a>
+    <a class="about-hotspot" href="<?= e(localized_url('about')) ?>"><?= e($isSpanishHome ? 'SABER MAS' : setting_value($settings, 'home_about_button', 'LEARN MORE')) ?></a>
 </section>
 
 <section class="service-overview">
     <div class="container">
         <div class="service-head services-page-head home-services-head">
             <div>
-                <span class="tiny-link"><?= e(setting_value($settings, 'services_kicker_label', 'View all')) ?></span>
-                <a class="services-filter-link" href="<?= e(localized_url('services')) ?>"><?= e(setting_value($settings, 'services_filter_label', 'Products & Services')) ?></a>
+                <span class="tiny-link"><?= e($isSpanishHome ? 'Ver todo' : setting_value($settings, 'services_kicker_label', 'View all')) ?></span>
+                <a class="services-filter-link" href="<?= e(localized_url('services')) ?>"><?= e($isSpanishHome ? 'Productos y servicios' : setting_value($settings, 'services_filter_label', 'Products & Services')) ?></a>
                 <h2><span class="home-services-nowrap"><?= e($servicesHeadingParts[0] ?? $servicesHeading) ?></span><?php if (!empty($servicesHeadingParts[1])): ?><br><?= e($servicesHeadingParts[1]) ?><?php endif; ?></h2>
             </div>
             <p><?= e($servicesIntro) ?></p>
@@ -125,18 +135,20 @@ if (strpos($heroTitle, "\n") === false && preg_match('/^Premium Choice for Air L
                 <article class="home-service-row" id="service-<?= e($service['slug']) ?>">
                     <div class="home-service-copy">
                         <span class="home-service-index"><?= e(sprintf('%02d', $index + 1)) ?></span>
+                        <?php $spanishServiceTitles = ['Agente General de Ventas y Servicios', 'Expertos en consolidacion de carga aerea', 'Handling y transporte terrestre', 'Soluciones de seguro']; ?>
                         <?php $serviceTitle = ($index === 3 && current_locale() !== 'es') ? setting_value($settings, 'services_fourth_home_title', 'General Sales & Service Agent') : $service['title']; ?>
+                        <?php $serviceTitle = $isSpanishHome ? ($spanishServiceTitles[$index] ?? $serviceTitle) : $serviceTitle; ?>
                         <h3><?= e($serviceTitle) ?></h3>
                         <p class="home-service-lead"><?= e($service['summary']) ?></p>
                         <?php if ($serviceItems): ?>
-                            <strong class="home-service-label"><?= e(setting_value($settings, 'services_impact_label', 'Our Impact')) ?></strong>
+                            <strong class="home-service-label"><?= e($isSpanishHome ? 'Nuestro impacto' : setting_value($settings, 'services_impact_label', 'Our Impact')) ?></strong>
                             <ul class="home-service-bullets">
                                 <?php foreach ($serviceItems as $item): ?>
                                     <li><?= e($item) ?></li>
                                 <?php endforeach; ?>
                             </ul>
                         <?php endif; ?>
-                        <a class="hero-button mini" href="<?= e(localized_url('services/' . $service['slug'])) ?>"><?= e(setting_value($settings, 'services_learn_more_label', 'LEARN MORE')) ?></a>
+                        <a class="hero-button mini" href="<?= e(localized_url('services/' . $service['slug'])) ?>"><?= e($isSpanishHome ? 'SABER MAS' : setting_value($settings, 'services_learn_more_label', 'LEARN MORE')) ?></a>
                     </div>
                     <div class="home-service-visual"<?= $serviceVisualStyle ?>></div>
                 </article>
@@ -144,8 +156,8 @@ if (strpos($heroTitle, "\n") === false && preg_match('/^Premium Choice for Air L
         </div>
     </div>
     <nav class="service-hotspots" aria-label="<?= e(current_locale() === 'es' ? 'Enlaces rápidos de servicios' : 'Service quick links') ?>">
-        <a class="service-hotspot-all" href="<?= e(localized_url('services')) ?>"><?= e(setting_value($settings, 'services_kicker_label', 'View all')) ?></a>
-        <a class="service-hotspot-filter" href="<?= e(localized_url('services')) ?>"><?= e(setting_value($settings, 'services_filter_label', 'Products & Services')) ?></a>
+        <a class="service-hotspot-all" href="<?= e(localized_url('services')) ?>"><?= e($isSpanishHome ? 'Ver todo' : setting_value($settings, 'services_kicker_label', 'View all')) ?></a>
+        <a class="service-hotspot-filter" href="<?= e(localized_url('services')) ?>"><?= e($isSpanishHome ? 'Productos y servicios' : setting_value($settings, 'services_filter_label', 'Products & Services')) ?></a>
         <?php foreach (array_slice($services, 0, 4) as $index => $service): ?>
             <a class="service-hotspot-<?= e((string) ($index + 1)) ?>" href="<?= e(localized_url('services/' . $service['slug'])) ?>"><?= e($service['title']) ?></a>
         <?php endforeach; ?>
@@ -200,9 +212,9 @@ if (strpos($heroTitle, "\n") === false && preg_match('/^Premium Choice for Air L
             <div class="world-note"><span></span><p><?= e($worldNote) ?></p></div>
             <div class="world-map"<?= background_style(setting_value($settings, 'world_map_image')) ?>></div>
             <div class="stats-row">
-                <article><strong><?= e(setting_value($settings, 'stats_offices', '100+')) ?></strong><span><?= e(setting_value($settings, 'stats_offices_label', 'Global Partners')) ?></span></article>
-                <article><strong><?= e(setting_value($settings, 'stats_support', '24/7')) ?></strong><span><?= e(setting_value($settings, 'stats_support_label', 'Rapid Response Team')) ?></span></article>
-                <article><strong><?= e(setting_value($settings, 'stats_shipments', '16,000+')) ?></strong><span><?= e(setting_value($settings, 'stats_shipments_label', 'Freight Forwarders')) ?></span></article>
+                <article><strong><?= e(setting_value($settings, 'stats_offices', '100+')) ?></strong><span><?= e($isSpanishHome ? 'Socios globales' : setting_value($settings, 'stats_offices_label', 'Global Partners')) ?></span></article>
+                <article><strong><?= e(setting_value($settings, 'stats_support', '24/7')) ?></strong><span><?= e($isSpanishHome ? 'Equipo de respuesta rapida' : setting_value($settings, 'stats_support_label', 'Rapid Response Team')) ?></span></article>
+                <article><strong><?= e(setting_value($settings, 'stats_shipments', '16,000+')) ?></strong><span><?= e($isSpanishHome ? 'Transitarios' : setting_value($settings, 'stats_shipments_label', 'Freight Forwarders')) ?></span></article>
             </div>
         </div>
     </div>
@@ -210,8 +222,8 @@ if (strpos($heroTitle, "\n") === false && preg_match('/^Premium Choice for Air L
 
 <section class="partners-section">
     <div class="container">
-        <h2><?= e(setting_value($settings, 'partners_heading', 'Our Partners')) ?></h2>
-        <p class="partners-subtitle"><?= e(setting_value($settings, 'partners_subtitle', 'These are our collaborators')) ?></p>
+        <h2><?= e($isSpanishHome ? 'Nuestros socios' : setting_value($settings, 'partners_heading', 'Our Partners')) ?></h2>
+        <p class="partners-subtitle"><?= e($isSpanishHome ? 'Estos son nuestros colaboradores' : setting_value($settings, 'partners_subtitle', 'These are our collaborators')) ?></p>
         <div class="partner-strip">
             <?php $partnerFallbacks = ['figma/partner-1.png', 'figma/partner-2.png', 'figma/partner-3.png', 'figma/partner-4.png', 'figma/partner-5.png']; ?>
             <?php foreach ($partners as $partnerIndex => $partner): ?>
@@ -233,21 +245,23 @@ if (strpos($heroTitle, "\n") === false && preg_match('/^Premium Choice for Air L
     <div class="container">
         <div class="service-head">
             <div>
-                <span class="tiny-link"><?= e(setting_value($settings, 'news_kicker_label', 'INSIGHT')) ?></span>
-                <h2><?= e(setting_value($settings, 'news_heading', 'Latest News')) ?></h2>
+                <span class="tiny-link"><?= e($isSpanishHome ? 'NOTICIAS' : setting_value($settings, 'news_kicker_label', 'INSIGHT')) ?></span>
+                <h2><?= e($isSpanishHome ? 'Ultimas noticias' : setting_value($settings, 'news_heading', 'Latest News')) ?></h2>
             </div>
-            <a class="news-link" href="<?= e(localized_url('insights')) ?>"><?= e(setting_value($settings, 'news_view_all_label', 'VIEW ALL ARTICLES')) ?></a>
+            <a class="news-link" href="<?= e(localized_url('insights')) ?>"><?= e($isSpanishHome ? 'VER TODOS' : setting_value($settings, 'news_view_all_label', 'VIEW ALL ARTICLES')) ?></a>
         </div>
         <div class="news-grid">
             <?php foreach ($news as $newsIndex => $item): ?>
                 <?php $newsFallbacks = ['figma/news-1.png', 'figma/news-2-noedge.png', 'figma/news-3-noedge.png']; ?>
                 <?php $newsImage = $isSpanishHome ? ($newsFallbacks[(int) $newsIndex] ?? '') : (trim((string) ($item['cover_image'] ?? '')) !== '' ? $item['cover_image'] : ($newsFallbacks[(int) $newsIndex] ?? '')); ?>
+                <?php $spanishNewsTitles = ['Planet Aviation amplia su soporte regional', 'Transport Logistic & Air Cargo Europe 2025', 'Analisis del mercado de carga aerea 2026: la transformacion']; ?>
+                <?php $spanishNewsExcerpts = ['Un nuevo marco operativo mejora la coordinacion y la velocidad de respuesta para socios.', 'Puntos clave de uno de los principales eventos europeos de logistica y carga aerea.', 'Un analisis reciente muestra cambios de rutas y demanda en el mercado de carga aerea.']; ?>
                 <article class="news-card" id="news-<?= e($item['slug']) ?>">
                     <div class="news-thumb"<?= background_style($newsImage) ?>></div>
                     <span><?= e(format_datetime($item['published_at'])) ?></span>
-                    <h3><?= e($item['title']) ?></h3>
-                    <p><?= e($item['excerpt']) ?></p>
-                    <a class="news-link" href="<?= e(localized_url('insights/' . $item['slug'])) ?>"><?= e(setting_value($settings, 'read_more_label', 'READ MORE')) ?></a>
+                    <h3><?= e($isSpanishHome ? ($spanishNewsTitles[(int) $newsIndex] ?? $item['title']) : $item['title']) ?></h3>
+                    <p><?= e($isSpanishHome ? ($spanishNewsExcerpts[(int) $newsIndex] ?? $item['excerpt']) : $item['excerpt']) ?></p>
+                    <a class="news-link" href="<?= e(localized_url('insights/' . $item['slug'])) ?>"><?= e($isSpanishHome ? 'LEER MAS' : setting_value($settings, 'read_more_label', 'READ MORE')) ?></a>
                 </article>
             <?php endforeach; ?>
         </div>

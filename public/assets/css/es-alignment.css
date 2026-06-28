@@ -134,6 +134,10 @@ html[lang="es"] body.page-home .service-overview .home-services-head {
     gap: 198px;
 }
 
+html[lang="es"] body.page-home .service-overview > .container {
+    visibility: visible;
+}
+
 html[lang="es"] body.page-home .service-overview .home-services-head p {
     max-width: 650px;
     margin-top: 48px;
@@ -180,6 +184,7 @@ html[lang="es"] body.page-home .why-section {
     height: 709px;
     min-height: 709px;
     padding: 0;
+    background: #0c2a5d url("/assets/figma/why-bg-clean.png") center top / 1924px 709px no-repeat !important;
     overflow: hidden;
 }
 
@@ -303,6 +308,7 @@ html[lang="es"] body.page-home .partners-section {
     height: 433px;
     min-height: 433px;
     padding: 0;
+    background: var(--lookup-strip-bg) !important;
 }
 
 html[lang="es"] body.page-home .partners-section > .container {
@@ -335,6 +341,17 @@ html[lang="es"] body.page-home .partner-strip img {
 }
 
 /* Contact and newsletter: English uses baked stage artwork; Spanish must show real editable content. */
+html[lang="es"] body.page-home .home-news-stage {
+    height: auto;
+    min-height: 813px;
+    padding: 112px 0 118px;
+    background: #fff !important;
+}
+
+html[lang="es"] body.page-home .home-news-stage > .container {
+    visibility: visible;
+}
+
 html[lang="es"] body.page-home .contact-block.home-contact-stage > .container,
 html[lang="es"] body.page-home .contact-block.home-contact-stage .contact-shell,
 html[lang="es"] body.page-home .contact-block.home-contact-stage .contact-shell *,
@@ -362,7 +379,7 @@ html[lang="es"] body.page-home .home-contact-stage .contact-visual {
 }
 
 html[lang="es"] body.page-home .home-newsletter-stage {
-    background: #151831 url("/assets/figma/newsletter-stage.png") center top / 1924px 490px no-repeat;
+    background: #151831 !important;
 }
 
 html[lang="es"] body.page-home .home-newsletter-stage .newsletter-shell {
@@ -373,6 +390,21 @@ html[lang="es"] body.page-home .home-newsletter-stage .newsletter-shell {
 
 html[lang="es"] body.page-home .home-newsletter-stage .newsletter-copy {
     width: min(520px, 100%);
+}
+
+html[lang="es"] body.page-home .site-footer {
+    height: auto;
+    min-height: 520px;
+    background: var(--color-footer) !important;
+}
+
+html[lang="es"] body.page-home .site-footer > *,
+html[lang="es"] body.page-home .site-footer * {
+    visibility: visible !important;
+}
+
+html[lang="es"] body.page-home .site-footer .footer-shell {
+    min-height: 302px;
 }
 
 /* Long Spanish labels must not alter shared component geometry. */
