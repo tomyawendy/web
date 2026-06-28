@@ -252,7 +252,7 @@ if (strpos($heroTitle, "\n") === false && preg_match('/^Premium Choice for Air L
         </div>
         <div class="news-grid">
             <?php foreach ($news as $newsIndex => $item): ?>
-                <?php $newsFallbacks = ['figma/news-1.png', 'figma/news-2-noedge.png', 'figma/news-3-noedge.png']; ?>
+                <?php $newsFallbacks = ['assets/figma/news-1.png', 'assets/figma/news-2-noedge.png', 'assets/figma/news-3-noedge.png']; ?>
                 <?php $newsImage = $isSpanishHome ? ($newsFallbacks[(int) $newsIndex] ?? '') : (trim((string) ($item['cover_image'] ?? '')) !== '' ? $item['cover_image'] : ($newsFallbacks[(int) $newsIndex] ?? '')); ?>
                 <?php $spanishNewsTitles = ['Planet Aviation amplia su soporte regional', 'Transport Logistic & Air Cargo Europe 2025', 'Analisis del mercado de carga aerea 2026: la transformacion']; ?>
                 <?php $spanishNewsExcerpts = ['Un nuevo marco operativo mejora la coordinacion y la velocidad de respuesta para socios.', 'Puntos clave de uno de los principales eventos europeos de logistica y carga aerea.', 'Un analisis reciente muestra cambios de rutas y demanda en el mercado de carga aerea.']; ?>
